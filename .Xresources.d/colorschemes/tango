@@ -1,0 +1,33 @@
+! Tango colorscheme
+! ------------------
+*foreground:  #eeeeec
+*background:  #303030
+*cursorColor:  #eeeeec
+! foreground color for underline
+URxvt*colorUL:  #8ae234
+! line color for underline
+URxvt*underlineColor:  #92659a
+! Black
+*color0:  #303030
+*color8:  #555753
+! Orange
+*color1:  #f57900
+*color9:  #fcaf3e
+! Green
+*color2:  #73d216
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC

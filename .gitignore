@@ -1,0 +1,8 @@
+*.netrwhist
+geany.conf
+.config/vifm/vifminfo
+.icewm/themes/wal/
+.icewm/keys
+.icewm/startup
+.vim/bundle/
+.config/ranger/colorschemes

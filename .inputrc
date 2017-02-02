@@ -1,0 +1,19 @@
+#"\e[1;5C": forward-word
+#"\e[1;5D": backward-word
+#"\e[5C": forward-word
+#"\e[5D": backward-word
+#"\e\e[C": forward-word
+#"\e\e[D": backward-word
+
+# Ctrl+j para ejecutar tareas con notificacion
+# Se mueve al inicio (Ctrl+a), inserta measure (funcion) y ENTER (Ctrl+m)
+#"\C-j": "\C-a measure \C-m"
+
+# Make Tab autocomplete regardless of filename case
+#set completion-ignore-case on
+
+# List all matches in case multiple possible completions are possible
+set show-all-if-ambiguous on
+
+# Flip through autocompletion matches with Shift-Tab.
+"\e[Z": menu-complete

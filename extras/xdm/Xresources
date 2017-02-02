@@ -1,0 +1,103 @@
+!
+! Xresources:	Setup the resources used by xdm
+!
+xlogin*login.translations: #override\
+	Alt Ctrl<Key>R:	 abort-display()\n\
+	<Key>F1:	 set-session-argument(failsafe) finish-field()\n\
+	Ctrl<Key>Return: set-session-argument(failsafe) finish-field()\n\
+	<Key>Return:	 set-session-argument()		finish-field()
+
+#undef linux
+#undef Linux
+#undef LINUX
+xlogin*greeting:	
+xlogin*namePrompt:	\040\040\040\040\040\040\040Login:
+xlogin*fail:		Login incorrect
+
+#define FAMILY	Serif
+#if    (WIDTH < 800)
+xlogin*login.failFace:	FAMILY-16:bold
+xlogin*login.greetFace:	 FAMILY-18:italic
+xlogin*login.promptFace:    FAMILY-16:bold
+xlogin*login.Font:	  FAMILY-16
+#else
+xlogin*login.failFace:	FAMILY-18:bold
+xlogin*login.greetFace:	FAMILY-24:italic
+xlogin*login.promptFace:    FAMILY-18:bold
+xlogin*login.face:	  FAMILY-18
+#endif
+#undef  FAMILY
+
+#ifdef COLOR
+xlogin*useShape:		false
+xlogin*greetColor:		White
+xlogin*failColor:		red
+*Foreground:			white
+*Background:			#000000
+xlogin*borderWidth:		0
+xlogin*frameWidth:		0
+xlogin*innerFramesWidth:	0
+xlogin*Foreground:		white
+xlogin*Background:		#000000
+xlogin*shdColor:		#000000
+xlogin*hiColor:			#000000
+#else
+xlogin*useShape:		false
+xlogin*borderWidth:		4
+xlogin*frameWidth:		0
+xlogin*innerFramesWidth:	1
+xlogin*Foreground:		black
+xlogin*Background:		white
+xlogin*shdColor:		black
+xlogin*hiColor:			black
+#endif
+
+!#if PLANES >= 8
+!xlogin*logoFileName: /etc/X11/xdm/pixmaps/XFree86.xpm
+!#else
+!xlogin*logoFileName: /etc/X11/xdm/pixmaps/XFree86bw.xpm
+!#endif
+!xlogin*logoPadding: 10
+
+#if   (WIDTH < 320)
+XConsole*geometry:	125x80-0-0
+XConsole*font:		5x7
+#elif (WIDTH < 400)
+XConsole*geometry:	130x85-0-0
+XConsole*font:		5x8
+#elif (WIDTH < 640)
+XConsole*geometry:	150x90-0-0
+XConsole*font:		6x9
+#elif (WIDTH < 800)
+XConsole*geometry:	240x95-0-0
+XConsole*font:		6x10
+#elif (WIDTH < 1024)
+XConsole*geometry:	300x100-0-0
+XConsole*font:		6x10
+#elif (WIDTH < 1152)
+XConsole*geometry:	384x110-0-0
+XConsole*font:		6x12
+#elif (WIDTH < 1280)
+XConsole*geometry:	432x120-0-0
+XConsole*font:		6x13
+#else
+XConsole*geometry:	480x130-0-0
+XConsole*font:		7x14
+#endif
+XConsole.verbose:	true
+XConsole*iconic:	false
+XConsole*text.scrollVertical:	WhenNeeded
+XConsole*text.scrollHorizontal:	WhenNeeded
+
+Chooser*geometry:		700x500+300+200
+Chooser*allowShellResize:	false
+Chooser*viewport.forceBars:	false
+Chooser*label.font:		-*-new century schoolbook-bold-i-normal-*-240-*
+Chooser*label.label:		XDMCP Host Menu from CLIENTHOST
+Chooser*list.font:		-*-*-medium-r-normal-*-*-230-*-*-c-*-iso8859-1
+Chooser*Command.font:		-*-new century schoolbook-bold-r-normal-*-180-*
+
+!
+! Include system wide Xresources
+!
+#include "/etc/X11/Xresources"

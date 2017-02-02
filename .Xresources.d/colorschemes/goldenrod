@@ -1,0 +1,31 @@
+! Goldenrod colorscheme
+! ------------------
+*foreground:       #e4e4e4
+*background:       #000000
+*cursorColor:      #e4e4e4
+*colorUL:          #8ae234
+*underlineColor:   #92659a
+! - Black
+*color0:           #000000
+*color8:           #080808
+! - Red
+*color1:           #d70000
+*color9:           #ff5f00
+! - Green
+*color2:           #008700
+*color10:          #00d700
+! - Yellow
+*color3:           #ff8700
+*color11:          #ffd700
+! - Blue
+*color4:           #0000af
+*color12:          #0087ff
+! - Magenta
+*color5:           #8700af
+*color13:          #ff005f
+! - Cyan 
+*color6:           #00afff
+*color14:          #00ffff
+! - White
+*color7:           #ffffff
+*color15:          #e4e4e4

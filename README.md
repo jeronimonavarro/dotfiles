@@ -1,1 +1,3 @@
-# dotfiles
+# Mis dotfiles
+
+> Recopilando **dots**

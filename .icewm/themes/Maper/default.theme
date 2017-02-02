@@ -1,0 +1,227 @@
+ThemeName="Maper"
+ThemeDescription="Un tema flat para iceWM con colores Material"
+ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
+License="GPL"
+Look=flat
+
+TitleBarHeight=18
+TitleButtonsSupported="hdsrxmi"
+TitleBarJustify=50
+RolloverButtonsSupported=1
+TitleButtonsLeft="r"
+TitleButtonsRight="xmi"
+
+BorderSizeX=1
+BorderSizeY=1
+CornerSizeX=22
+CornerSizeY=22
+DlgBorderSizeX=1
+DlgBorderSizeY=1
+
+## DIALOG
+#  Background of dialog windows
+ColorDialog="#bdbdbd"
+
+## INPUT
+#  Background of text entry fields (e.g. the addressbar)
+ColorInput="#212121"
+#  Textcolor of text entry fields (e.g. the addressbar)
+ColorInputText="#eceff1"
+#  Background of selected text in an entry field
+ColorInputSelection="#3e2723"
+#  Selected text in an entry field
+ColorInputSelectionText="#eceff1"
+
+## WINDOW BORDERS
+#  Border of inactive windows (unused)
+# ColorNormalBorder="rgb:99/99/99"
+#  Border of active windows (unused)
+# ColorActiveBorder="rgb:e2/e2/e2"
+
+## BUTTONS
+#  Background of regular buttons
+ColorNormalButton="rgb:C0/C0/C0"
+#  Textcolor of regular buttons
+ColorNormalButtonText="rgb:ff/ff/ff"
+#  Background of pressed buttons
+ColorActiveButton="rgb:E0/E0/E0"
+#  Textcolor of pressed buttons
+ColorActiveButtonText="rgb:00/00/00"
+
+## TOOLBAR/WORKSPACE BUTTONS
+#  Background of toolbar buttons, ColorNormalButton is used if empty
+ColorToolButton=""
+#  Textcolor of toolbar buttons, ColorNormalButtonText is used if empty
+ColorToolButtonText=""
+#  Background of workspace buttons, ColorNormalButton is used if empty
+ColorNormalWorkspaceButton=""
+#  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
+ColorNormalWorkspaceButtonText="#eceff1"
+#  Background of the active workspace button, ColorActiveButton is used if empty
+ColorActiveWorkspaceButton=""
+#  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
+ColorActiveWorkspaceButtonText="#000000"
+
+## TITLEBAR
+#  Textcolor of the titlebar of regular windows
+ColorNormalTitleBarText="#757575"
+#  Textshadow of the titlebar of regular windows
+ColorNormalTitleBarShadow=""
+#  Background of the titlebar of active windows
+ColorActiveTitleBar="rgb:cf/cf/cf"
+#  Background of the titlebar of regular windows
+ColorNormalTitleBar="rgb:99/99/99"
+#  Textcolor of the titlebar of active windows
+ColorActiveTitleBarText="#eceff1"
+#  Textshadow of the titlebar of active windows
+ColorActiveTitleBarShadow=""
+
+## MINI ICONS
+#  Background for mini icons of regular windows
+# ColorNormalMinimizedWindow="rgb:C0/C0/C0"
+#  Textcolor for mini icons of regular windows
+# ColorNormalMinimizedWindowText="rgb:00/00/00"
+#  Background for mini icons of active windows
+# ColorActiveMinimizedWindow="rgb:E0/E0/E0"
+#  Textcolor for mini icons of active windows
+# ColorActiveMinimizedWindowText="rgb:00/00/00"
+
+## MENU
+#  Background of pop-up menus
+ColorNormalMenu="#e0e0e0"
+#  Background of selected menu item, leave empty to force transparency
+ColorActiveMenuItem="#bdbdbd"
+#  Textcolor of regular menu items
+ColorNormalMenuItemText="#424242"
+#  Textcolor of selected menu items
+ColorActiveMenuItemText="#eceff1"
+#  Textcolor of disabled menu items
+ColorDisabledMenuItemText="#959595"
+#  Shadow of regular menu items
+ColorDisabledMenuItemShadow=""
+
+## MOVE/RESIZE
+#  Background of move/resize status window
+ColorMoveSizeStatus="#212121"
+#  Textcolor of move/resize status window
+ColorMoveSizeStatusText="#eceff1"
+
+## QUICK SWITCH
+#  Background of the quick switch window
+ColorQuickSwitch="#424242"
+#  Textcolor in the quick switch window
+ColorQuickSwitchText="#eceff1"
+#  Rectangle arround the active icon in the quick switch window
+ColorQuickSwitchActive="#ab47bc"
+
+## TASKBAR
+#  Background of the taskbar (tray, etc)
+ColorDefaultTaskBar="#263238"
+#  Background for task buttons of regular windows
+ColorNormalTaskBarApp="#eceff1"
+#  Textcolor for task buttons of regular windows
+ColorNormalTaskBarAppText="#d2d2d2"
+#  Background for task buttons of the active window
+ColorActiveTaskBarApp="#00afaf"
+#  Textcolor for task buttons of the active window
+ColorActiveTaskBarAppText="#000000"
+#  Background for task buttons of minimized windows
+ColorMinimizedTaskBarApp="#eceff1"
+#  Textcolor for task buttons of minimized windows
+ColorMinimizedTaskBarAppText="#9e9e9e"
+#  Background for task buttons of windows on other workspaces
+# ColorInvisibleTaskBarApp="rgb:80/80/80"
+#  Textcolor for task buttons of windows on other workspaces
+# ColorInvisibleTaskBarAppText="rgb:00/00/00"
+
+## LISTBOX
+#  Background of listboxes (eg, WindowList)
+ColorListBox="#212121"
+#  Textcolor in listboxes
+ColorListBoxText="#d2d2d2"
+#  Background of selected listbox items
+ColorListBoxSelection="#00afaf"
+#  Textcolor of selected listbox items
+ColorListBoxSelectionText="#000000"
+
+## SCROLLBAR
+#  Scrollbar background (sliding area)
+ColorScrollBar="#263238"
+#  Background of the slider button in scrollbars
+ColorScrollBarSlider="#263238"
+#  Background of the arrow buttons in scrollbars
+ColorScrollBarButton="#ec407a"
+#  Color of active arrows on scrollbar buttons
+ColorScrollBarButtonArrow="#e91e63"
+
+## CPU STATUS MONITOR
+ColorCPUStatusIdle="#263238"
+ColorCPUStatusInterrupts="#c51162"
+ColorCPUStatusIoWait="#ff80ab"
+ColorCPUStatusSoftIrq="#f50057"
+ColorCPUStatusUser="#ff4081"
+ColorCPUStatusSystem="#ad1457"
+ColorCPUStatusNice="#880e4f"
+
+## MEMORY STATUS MONITOR
+ColorMEMStatusFree="#263238"
+ColorMEMStatusUser="#00bfa5"
+ColorMEMStatusBuffers="#a7ffeb"
+ColorMEMStatusCached="#1de9b6"
+
+## NET STATUS MONITOR
+ColorNetIdle="#263238"
+ColorNetReceive="#aeea00"
+ColorNetSend="#f4ff81"
+
+## BATTERY
+ColorApm="#263238"
+ColorApmText="#eceff1"
+ColorApmBattary="#ff5722"
+ColorApmLine="#8bc34a"
+ColorApmGraphBg="#dcedc8"
+
+## TOOLTIP/LABEL
+#  Background of tooltips
+ColorToolTip="#aed581"
+#  Textcolor of tooltips
+ColorToolTipText="#212121"
+#  Background of labels, leave empty to force transparency
+ColorLabel="#bdbdbd"
+#ColorLabel="#ffeb3b"
+#  Textcolor of labels
+ColorLabelText="#212121" 
+
+## CLOCK
+#  Background of non-LCD clock, leave empty to force transparency
+ColorClock="#263238"
+#  Background of non-LCD monitor
+ColorClockText="#eceff1"
+
+## BACKGROUND
+DesktopBackgroundCenter=1
+DesktopBackgroundScaled=1
+DesktopBackgroundImage="bg-Calm_Darya_gradient-1600x900.png"
+
+## FONTS
+TitleFontNameXft="droid sans:size=8:bold"
+MenuFontNameXft="droid sans:size=8:bold"
+StatusFontNameXft="droid sans:size=8"
+QuickSwitchFontNameXft="droid sans:size=9:bold"
+NormalButtonFontNameXft="droid sans:size=9:bold"
+ActiveButtonFontNameXft="droid sans:size=9:bold"
+NormalTaskBarFontNameXft="droid sans:size=8:bold"
+ActiveTaskBarFontNameXft="droid sans:size=8:bold"
+ToolButtonFontNameXft="droid sans:size=8"
+NormalWorkspaceFontNameXft="sf digital readout:size=12:bold"
+ActiveWorkspaceFontNameXft="sf digital readout:size=12:bold"
+MinimizedWindowFontNameXft="droid sans:size=8"
+ListBoxFontNameXft="droid sans:size=8:bold"
+ToolTipFontNameXft="droid sans:size=8"
+ClockFontNameXft="droid sans:size=10:bold"
+ApmFontNameXft="droid sans:size=8"
+InputFontNameXft="droid sans:size=9:bold"
+LabelFontNameXft="droid sans:size=8"
+
+## LEDCLOCK option
+TaskBarClockLeds=0

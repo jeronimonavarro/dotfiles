@@ -1,0 +1,122 @@
+# Extra many types of compressed packages
+# Credit: http://nparikh.org/notes/zshrc.txt
+extr() {
+  if [ -f "$1" ]; then
+    case "$1" in
+      *.tar.bz2)  tar -jxvf "$1"                        ;;
+      *.tar.gz)   tar -zxvf "$1"                        ;;
+      *.tar.xz)   tar xvf "$1"                         ;;
+      *.bz2)      bunzip2 "$1"                          ;;
+      *.dmg)      hdiutil mount "$1"                    ;;
+      *.gz)       gunzip "$1"                           ;;
+      *.tar)      tar -xvf "$1"                         ;;
+      *.tbz2)     tar -jxvf "$1"                        ;;
+      *.tgz)      tar -zxvf "$1"                        ;;
+      *.zip)      unzip "$1"                            ;;
+      *.ZIP)      unzip "$1"                            ;;
+      *.pax)      cat "$1" | pax -r                     ;;
+      *.pax.Z)    uncompress "$1" --stdout | pax -r     ;;
+      *.Z)        uncompress "$1"                       ;;
+      *) echo "'$1' no se puede extraer/montar via extr()" ;;
+    esac
+  else
+     echo "'$1' no es un tipo de archivo valido para extraer"
+  fi
+}
+
+compr() {
+  # La seguridad es primero
+  target=${1%/}
+  if [ -d "${target}" ]; then
+    tar czvf "${target}.tar.gz" "${target}"
+  fi
+}
+
+bcup() {
+  if [ -f "$1" ]; then
+    cp -av "${1}" "${1}.bak"
+  fi
+}
+
+bcupm() {
+  if [ -f "$1" ]; then
+    mv -v "${1}" "${1}.bak"
+  fi
+}
+
+measure() {
+  /usr/bin/time --output="~/.timefile" -f "%e" $@ 
+
+  if [ $( cat ~/.timefile| cut -d'.' -f1 ) -gt 15 ]; then
+
+        notify-send "» $@ terminó!"
+
+        fi
+}
+
+mountfat() {
+  uid=`id -u`
+  gid=`id -g`
+  sudo mount -t vfat "${1}" "${2}" -o uid="${uid}",gid="${gid}",umask=022
+}
+
+dif() {
+  diff -r "${1}" "${2}" | grep "${1}" | awk '{print $4}'
+}
+
+ver() {
+  if [ -f "$1" ]; then
+    case "$1" in
+      *.pdf)       evince "$1" &                   ;;
+      *.png)       ristretto "$1" &                      ;;
+      *.jpg)       ristretto "$1" &                      ;;
+      *.jpeg)      ristretto "$1" &                      ;;
+      *.bmp)       ristretto "$1" &                      ;;
+      *.JPG)       ristretto "$1" &                      ;;
+      *.PNG)       ristretto "$1" &                      ;;
+      *.doc)       libreoffice "$1" &              ;;
+      *.docx)      libreoffice "$1" &              ;;
+      *.odt)       libreoffice "$1" &              ;;
+      *.xls)       libreoffice "$1" &              ;;
+      *.xlsx)      libreoffice "$1" &              ;;
+      *.ods)       libreoffice "$1" &              ;;
+      *.txt)       vim "$1" &                      ;;
+      *.sql)       vim "$1" &                      ;;
+      *.sh)        vim "$1" &                      ;;
+      *.php)       vim "$1" &                      ;;
+      *.cpp)       vim "$1" &                      ;;
+      *.c)         vim "$1" &                      ;;
+      *.conf)      vim "$1" &                      ;;
+      *.yml)       vim "$1" &                      ;;
+      *.log)       less "$1" &                     ;;
+      *)           vim "$1" &                      ;;
+    esac
+  else
+     echo "'$1' no es un tipo de archivo valido para ver"
+  fi
+}
+
+cf() {
+  find . -type f | wc -l
+}
+
+dog() {
+   cat "${1}" | egrep -v "^\s*(#|$)"
+}
+
+ayudin() {
+  echo
+  echo "Lista de funciones:"
+  echo 
+  echo "        extr() ........... extraer archivos"
+  echo "        compr() .......... comprimir archivos a tar.gz"
+  echo "        bcup() ........... crea una copia del archivo con extencion .bak"
+  echo "        bcupm() .......... mueve el archivo con extencion .bak"
+  echo "        measure() ........ toma el tiempo que tarda un proceso ejecutado con Ctrl+j"
+  echo "        mountfat() ....... monta una particion vfat [1] en [2]"
+  echo "        dif() ............ muestra la diferencia de archivos entre 2 carpetas"
+  echo "        ver() ............ abre archivos de acuerdo a su extension"
+  echo "        cf() ............. cuenta recursivamente la cantidad de archivos"
+  echo "        dog() ............ imprime un archivo pero sin comentarios y lineas vacias"
+  echo 
+}

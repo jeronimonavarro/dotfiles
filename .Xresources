@@ -1,0 +1,3 @@
+#include ".Xresources.d/rxvt-unicode"
+#include ".Xresources.d/font-rendering"
+#include ".Xresources.d/colorschemes/wal"

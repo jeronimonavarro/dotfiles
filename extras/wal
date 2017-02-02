@@ -1,0 +1,376 @@
+#!/usr/bin/env bash
+#
+# wal - Generate and change colorschemes on the fly.
+#
+# Created by Dylan Araps
+# 
+# Adapted to icewm by Jerónimo Navarro
+
+# Speed up script by not using unicode.
+export LC_ALL=C
+export LANG=C
+
+shopt -s nullglob nocasematch
+
+# Internal variables.
+cache_dir="${HOME}/.cache/wal"
+newline=$'\n'
+icewm_base_dir="${HOME}/.icewm"
+icewm_theme_dir="${icewm_base_dir}/themes/wal"
+icewm_theme_file="${icewm_theme_dir}/default.theme"
+icewm_keys_file="${icewm_base_dir}/keys"
+icewm_startup_file="${icewm_base_dir}/startup"
+scheme_file="${HOME}/.Xresources.d/colorschemes/wal"
+
+# GENERATE COLORSCHEME
+
+get_colors() {
+   # Create the cache dir.
+   mkdir -p "${cache_dir}"
+
+   # Get the current wallpaper.
+   wall_file=$(cat ${HOME}/.icewm/themes/wal/default.theme | grep DesktopBackgroundImage | cut -d \" -f2)
+   current_wall="${HOME}/.icewm/themes/wal/${wall_file}"
+
+   # Generate 16 colors from the image and save them to a file.
+   colors=($(convert "${current_wall}" +dither -colors 18 -unique-colors txt:- | grep -E -o " \#.{6}" | tail -n +2))
+
+   # If imagemagick finds less than 16 colors, abort and warn the user.
+   (( "${#colors[@]}" <= 15 )) && {
+   echo "Error: Imagemagick failed to generate a 16 color palette for ${wal##*/}"
+   echo "Error: Imagemagick could only generate a ${#colors[@]} color palette."
+   echo "Error: wal won't do guesswork to fill in the blanks."
+   echo "Error: Please try a different image."
+   exit 1
+   }
+
+echo "colors: Generated colorscheme"
+}
+
+# SET COLORSCHEME
+
+set_color() {
+   sequences+="\033]4;${1};${2}\007"
+   x_colors+="*color${1}: ${2}${newline}"
+   sh_colors+="color${1}='${2}'${newline}"
+}
+
+set_special() {
+   sequences+="\033]${1};${2}\007"
+
+   # Set X colors
+   case "$1" in
+      10) x_colors+="*foreground: ${2}${newline}" ;;
+      11) x_colors+="*background: ${2}${newline}" ;;
+      12) x_colors+="*cursor: ${2}${newline}" ;;
+   esac
+ }
+
+set_icewm_titlebar() {
+   #  Textcolor of the titlebar of regular windows
+   sed -i "/\bColorNormalTitleBarText\b/c\ColorNormalTitleBarText=\"${1}\"" $icewm_theme_file
+   #  Background of the titlebar of active windows
+   sed -i "/\bColorActiveTitleBar\b/c\ColorActiveTitleBar=\"${1}\"" $icewm_theme_file
+   #  Background of the titlebar of regular windows
+   sed -i "/\bColorNormalTitleBar\b/c\ColorNormalTitleBar=\"${1}\"" $icewm_theme_file
+   #  Textcolor of the titlebar of active windows
+   sed -i "/\bColorActiveTitleBarText\b/c\ColorActiveTitleBarText=\"${2}\"" $icewm_theme_file
+}
+
+set_icewm_taskbar() {
+   #  Background of the taskbar (tray, etc)
+   sed -i "/\bColorDefaultTaskBar\b/c\ColorDefaultTaskBar=\"${1}\"" $icewm_theme_file
+   #  Background for task buttons of regular windows
+   sed -i "/\bColorNormalTaskBarApp\b/c\ColorNormalTaskBarApp=\"${1}\"" $icewm_theme_file
+   #  Textcolor for task buttons of regular windows
+   sed -i "/\bColorNormalTaskBarAppText\b/c\ColorNormalTaskBarAppText=\"${2}\"" $icewm_theme_file
+   #  Background for task buttons of the active window
+   sed -i "/\bColorActiveTaskBarApp\b/c\ColorActiveTaskBarApp=\"${4}\"" $icewm_theme_file
+   #  Textcolor for task buttons of the active window
+   sed -i "/\bColorActiveTaskBarAppText\b/c\ColorActiveTaskBarAppText=\"${3}\"" $icewm_theme_file
+   #  Background for task buttons of minimized windows
+   sed -i "/\bColorMinimizedTaskBarApp\b/c\ColorMinimizedTaskBarApp=\"${1}\"" $icewm_theme_file
+   #  Textcolor for task buttons of minimized windows
+   sed -i "/\bColorMinimizedTaskBarAppText\b/c\ColorMinimizedTaskBarAppText=\"${2}\"" $icewm_theme_file
+}
+
+set_icewm_buttons() {
+   #  Background of regular buttons
+   sed -i "/\bColorNormalButton\b/c\ColorNormalButton=\"${1}\"" $icewm_theme_file
+   #  Textcolor of regular buttons
+   sed -i "/\bColorNormalButtonText\b/c\ColorNormalButtonText=\"${2}\"" $icewm_theme_file
+   #  Background of pressed buttons
+   sed -i "/\bColorActiveButton\b/c\ColorActiveButton=\"${1}\"" $icewm_theme_file
+   #  Textcolor of pressed buttons
+   sed -i "/\bColorActiveButtonText\b/c\ColorActiveButtonText=\"${2}\"" $icewm_theme_file
+}
+
+set_icewm_workspaces() {
+   #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
+   sed -i "/\bColorNormalWorkspaceButtonText\b/c\ColorNormalWorkspaceButtonText=\"${1}\"" $icewm_theme_file
+   #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
+   sed -i "/\bColorActiveWorkspaceButtonText\b/c\ColorActiveWorkspaceButtonText=\"${2}\"" $icewm_theme_file
+}
+
+set_icewm_clock() {
+   #  Textcolor of non-LCD monitor
+   sed -i "/\bColorClockText\b/c\ColorClockText=\"${1}\"" $icewm_theme_file
+}
+
+set_icewm_menu() {
+   #  Background of pop-up menus
+   sed -i "/\bColorNormalMenu\b/c\ColorNormalMenu=\"${1}\"" $icewm_theme_file
+   #  Textcolor of regular menu items
+   sed -i "/\bColorNormalMenuItemText\b/c\ColorNormalMenuItemText=\"${2}\"" $icewm_theme_file
+   #  Textcolor of selected menu items
+   sed -i "/\bColorActiveMenuItemText\b/c\ColorActiveMenuItemText=\"${3}\"" $icewm_theme_file
+   #  Textcolor of disabled menu items
+   sed -i "/\bColorDisabledMenuItemText\b/c\ColorDisabledMenuItemText=\"${1}\"" $icewm_theme_file
+}
+
+set_icewm_dialog() {
+   #  Background of dialog windows
+   sed -i "/\bColorDialog\b/c\ColorDialog=\"${1}\"" $icewm_theme_file
+}
+
+set_icewm_input() {
+   #  Background of text entry fields (e.g. the addressbar)
+   sed -i "/\bColorInput\b/c\ColorInput=\"${1}\"" $icewm_theme_file
+   #  Textcolor of text entry fields (e.g. the addressbar)
+   sed -i "/\bColorInputText\b/c\ColorInputText=\"${2}\"" $icewm_theme_file
+   #  Background of selected text in an entry field
+   sed -i "/\bColorInputSelection\b/c\ColorInputSelection=\"${1}\"" $icewm_theme_file
+   #  Selected text in an entry field
+   sed -i "/\bColorInputSelectionText\b/c\ColorInputSelectionText=\"${3}\"" $icewm_theme_file
+}
+
+set_icewm_move_resize() {
+   #  Background of move/resize status window
+   sed -i "/\bColorMoveSizeStatus\b/c\ColorMoveSizeStatus=\"${1}\"" $icewm_theme_file
+   #  Textcolor of move/resize status window
+   sed -i "/\bColorMoveSizeStatusText\b/c\ColorMoveSizeStatusText=\"${2}\"" $icewm_theme_file
+}
+
+set_icewm_quickswitch() {
+   #  Background of the quick switch window
+   sed -i "/\bColorQuickSwitch\b/c\ColorQuickSwitch=\"${1}\"" $icewm_theme_file
+   #  Textcolor in the quick switch window
+   sed -i "/\bColorQuickSwitchText\b/c\ColorQuickSwitchText=\"${2}\"" $icewm_theme_file
+   #  Rectangle arround the active icon in the quick switch window
+   sed -i "/\bColorQuickSwitchActive\b/c\ColorQuickSwitchActive=\"${1}\"" $icewm_theme_file
+}
+
+set_icewm_listbox() {
+   #  Background of listboxes (eg, WindowList)
+   sed -i "/\bColorListBox\b/c\ColorListBox=\"${1}\"" $icewm_theme_file
+   #  Textcolor in listboxes
+   sed -i "/\bColorListBoxText\b/c\ColorListBoxText=\"${2}\"" $icewm_theme_file
+   #  Background of selected listbox items
+   sed -i "/\bColorListBoxSelection\b/c\ColorListBoxSelection=\"${3}\"" $icewm_theme_file
+   #  Textcolor of selected listbox items
+   sed -i "/\bColorListBoxSelectionText\b/c\ColorListBoxSelectionText=\"${1}\"" $icewm_theme_file
+}
+
+set_icewm_taskbar_icons() {
+   local icewm_theme_taskbar_dir="${icewm_theme_dir}/taskbar"
+   convert "${icewm_theme_taskbar_dir}/windows.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/windows.xpm"
+   convert "${icewm_theme_taskbar_dir}/collapse.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/collapse.xpm"
+   convert "${icewm_theme_taskbar_dir}/desktop.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/desktop.xpm"
+   convert "${icewm_theme_taskbar_dir}/expand.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/expand.xpm"
+   convert "${icewm_theme_taskbar_dir}/linux.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/linux.xpm"
+}
+
+reload_icewm() {
+   icewm --theme="${icewm_theme_file}"
+}
+
+set_icewm() {
+   # General colors
+   set_icewm_titlebar ${colors[9]} ${colors[15]}   # bg, fg
+   set_icewm_taskbar ${colors[0]} ${comment} ${colors[15]} ${colors[10]}   # bgN, fgN, fgA, bgA
+   set_icewm_buttons ${colors[0]} ${colors[10]}   # bg{N,A}, fg{N,A}
+   set_icewm_workspaces ${comment} ${colors[15]}   # fgN, fgA
+   set_icewm_clock ${comment}   # fgN
+   set_icewm_menu ${colors[0]} ${comment} ${colors[15]}   # bg, fgI, fgA
+   set_icewm_dialog ${colors[13]}   # bg
+   set_icewm_input ${colors[0]} ${comment} ${colors[9]}   # bg, fg, fgSel
+   set_icewm_move_resize ${colors[13]} ${colors[0]}   # bg, fg
+   set_icewm_quickswitch ${colors[11]} ${colors[0]}   # bgN, fgN
+   set_icewm_listbox ${colors[0]} ${comment} ${colors[14]}   # bg{N,fgSel}, fgN, bgSel
+   echo "icewm: Changed general colors"
+
+   # Images colors
+   set_icewm_taskbar_icons ${comment}   # textN
+   echo "icewm: Changed image colors"
+
+   # Reload icewm theme
+   reload_icewm
+}
+
+send_sequences() {
+   # Create string of escape sequences to send to the terminals.
+   set_special 10  "${colors[15]}"
+   set_special 11  "${colors[0]}"
+   set_special 12  "${colors[15]}"
+   set_special 13  "${colors[15]}"
+   set_special 14  "${colors[0]}"
+
+   # This escape sequence doesn't work in VTE terminals.
+   [[ "$vte" != "on" ]] && set_special 708 "${colors[0]}"
+
+   set_color 0  "${colors[0]}"
+   set_color 1  "${colors[9]}"
+   set_color 2  "${colors[10]}"
+   set_color 3  "${colors[11]}"
+   set_color 4  "${colors[12]}"
+   set_color 5  "${colors[13]}"
+   set_color 6  "${colors[14]}"
+   set_color 7  "${colors[15]}"
+   set_color 9  "${colors[9]}"
+   set_color 10 "${colors[10]}"
+   set_color 11 "${colors[11]}"
+   set_color 12 "${colors[12]}"
+   set_color 13 "${colors[13]}"
+   set_color 14 "${colors[14]}"
+   set_color 15 "${colors[15]}"
+
+   # Create a comment color based on the brightness of the background.
+   case "${colors[0]:1:1}" in
+      [0-1]) comment="#666666" ;;
+          2) comment="#757575" ;;
+      [3-4]) comment="#999999" ;;
+          5) comment="#8a8a8a" ;;
+      [6-9]) comment="#a1a1a1" ;;
+          *) comment="${colors[7]}" ;;
+   esac
+
+   set_color 8 "${comment}" 
+
+   # Directing output to /dev/pts/* allows you to send output to all open terminals
+   # on your system.
+   for term in /dev/pts/[0-9]*; do
+      printf "%b" "$sequences" > "$term" &
+   done
+
+   echo "colors: Set terminal colors"
+}
+
+# RELOAD COLORSCHEME
+
+reload_xrdb() {
+   # Merge the colors into the X db so new terminals use them.
+   xrdb -merge >/dev/null 2>&1 <<< "$x_colors" && \
+      echo "colors: Merged colors with X env"
+}
+
+# EXPORT COLORS
+
+export_sequences() {
+   printf "%s" "$sequences"
+}
+
+export_envar() {
+   printf "%s\n%s" "# wal - Colors generated by wal " "$sh_colors"
+}
+
+export_colors() {
+   export_sequences > "${cache_dir}/colors"
+   echo "export: Exported escape sequences"
+
+   export_envar     > "${cache_dir}/colors.sh"
+   echo "export: Exported sh colors"
+}
+
+export_xresources() {
+   printf "*foreground: %s\n" "${colors[15]}" > "$scheme_file"
+   printf "*background: %s\n" "${colors[0]}" >> "$scheme_file"
+   printf "*cursor: %s\n" "${colors[15]}" >> "$scheme_file"
+   printf "*color0: %s\n" "${colors[0]}" >> "$scheme_file"
+   printf "*color1: %s\n" "${colors[9]}" >> "$scheme_file"
+   printf "*color2: %s\n" "${colors[10]}" >> "$scheme_file"
+   printf "*color3: %s\n" "${colors[11]}" >> "$scheme_file"
+   printf "*color4: %s\n" "${colors[12]}" >> "$scheme_file"
+   printf "*color5: %s\n" "${colors[13]}" >> "$scheme_file"
+   printf "*color6: %s\n" "${colors[14]}" >> "$scheme_file"
+   printf "*color7: %s\n" "${colors[15]}" >> "$scheme_file"
+   printf "*color8: %s\n" "${comment}" >> "$scheme_file"
+   printf "*color9: %s\n" "${colors[9]}" >> "$scheme_file"
+   printf "*color10: %s\n" "${colors[10]}" >> "$scheme_file"
+   printf "*color11: %s\n" "${colors[11]}" >> "$scheme_file"
+   printf "*color12: %s\n" "${colors[12]}" >> "$scheme_file"
+   printf "*color13: %s\n" "${colors[13]}" >> "$scheme_file"
+   printf "*color14: %s\n" "${colors[14]}" >> "$scheme_file"
+   printf "*color15: %s\n" "${colors[15]}" >> "$scheme_file"
+   echo "colors: Exported Xresources"
+}
+
+# OTHER
+
+reload_dunst() {
+    pkill dunst && \
+        dunst \
+            -lb "${colors[15]}" \
+            -nb "${colors[15]}" \
+            -cb "${colors[15]}" \
+            -lf "${colors[0]}"  \
+            -bf "${colors[0]}"  \
+            -cf "${colors[9]}" &
+
+   # Make it permanent
+   sed -i "/\bdunst\b/c\dunst -lb \"${colors[15]}\" -nb \"${colors[15]}\" -cb \"${colors[15]}\" -lf \"${colors[0]}\" -bf \"${colors[0]}\" -cf \"${colors[9]}\" &" $icewm_startup_file
+}
+
+reload_bar() {
+   pkill bar
+   bar "${colors[15]}" "${colors[0]}" 2>/dev/null &
+   
+   # Make it permanent
+   sed -i "/\bbar\b/c\bar \"${colors[15]}\" \"${colors[0]}\" &" $icewm_startup_file
+}
+
+reload_icewmbg() {
+   icewmbg -r >/dev/null 2>&1 
+}
+
+set_dmenu() {
+   string="key \"Ctrl+Space\" dmenu_run -i -b -nb \"${colors[0]}\" -nf \"${colors[15]}\" -sb \"${colors[0]}\" -sf \"${colors[10]}\""
+
+   # Make it permanent
+   sed -i "/\bdmenu_run\b/c $string" $icewm_keys_file
+}
+
+# FINISH UP
+
+main () {
+   # Get 16 unique colors from the image.
+   get_colors
+
+   # Send the color changing sequences to every open terminal emulator.
+   send_sequences
+
+   # Export the colors in other formats.
+   export_colors
+
+   # Exportamos nuevo esquema xresources
+   export_xresources
+
+   # Merge colors into X env.
+   reload_xrdb
+
+   # Reload dunst
+   reload_dunst
+
+   # Reload lemonbar
+   reload_bar
+
+   # Set dmenu
+   set_dmenu
+
+   # Set icewm theme
+   set_icewm
+
+   # Reload icewmbg
+   reload_icewmbg
+}
+
+main

@@ -1,0 +1,42 @@
+! General settings
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: rxvt
+URxvt.termName: xterm-256color
+URxvt.urgentOnBell: False
+URxvt.cursorBlink: True
+URxvt.letterSpace: -1
+URxvt.iconFile: /usr/share/icons/Hedera/48/applications/utilities-terminal.png
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! UTF-8
+URxvt*locale: true
+
+! Tipografias
+URxvt.font: xft:Hack:size=9
+URxvt.boldFont: xft:Hack:style=bold:size=9
+!URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
+!URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
+
+! Geometria
+URxvt.geometry: 108x31
+
+! Borders
+! pixels for external border
+URxvt*externalBorder:     0
+! pixels for internal border
+URxvt*internalBorder:     15
+! remove border
+URxvt*borderLess:         false
+
+! Extensiones
+URxvt.perl-ext-common: selection-to-clipboard,fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch

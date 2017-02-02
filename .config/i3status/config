@@ -1,0 +1,88 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 5
+        #color_good = "#000000" # Light green
+        #color_degraded = "#222222" # Light yellow
+        #color_bad = "#444444" # Light red
+        ## color_good = "#79ff81" # Light green
+        color_good = "#afd700" # Light green
+        ##color_degraded = "#fafe7c" # Light yellow
+        color_degraded = "#d7af5f" # Light yellow
+        ##color_bad = "#ff7770" # Light red
+        color_bad = "#808080" # Light red
+}
+
+# order += "ipv6"
+order += "disk /"
+order += "run_watch DHCP"
+order += "run_watch VPN"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery 0"
+order += "load"
+# order += "cpu_usage"
+order += "tztime local"
+order += "volume master"
+
+volume master {
+        format = "♪ %volume "
+        format_muted = "♪ muted (%volume) "
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+        #background = "#ff0000"
+}
+
+wireless _first_ {
+        format_up = "⚺ Signal: %quality ⮊ %ip"
+        format_down = "WiFi: down"
+}
+
+ethernet _first_ {
+        # if you use %speed, i3status requires root privileges
+        format_up = "enp3s0 ⮊ %ip (%speed)"
+        format_down = "enp3s0: down"
+}
+
+battery 0 {
+        format = "%status %percentage %remaining"
+        hide_seconds = true
+        integer_battery_capacity = true
+        last_full_capacity = true
+        status_chr = "⚇"
+        status_bat = "⚡"
+        status_full = "☻ FULL"
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPN {
+        pidfile = "/var/run/vpnc/pid"
+}
+
+tztime local {
+        format = "%a %d, %H:%M"
+}
+
+load {
+        format = "load: %1min"
+}
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+disk "/" {
+        format = "⛁ root: %avail"
+}

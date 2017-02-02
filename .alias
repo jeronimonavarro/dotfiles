@@ -1,0 +1,39 @@
+# base
+alias l="ls"       
+alias la="ls -lah"       
+alias ll="ls -lh"       
+alias ld="ls -ldh */"   # Solo directories
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ee='exit'
+# util
+alias du='du -sxh'
+alias cc='clear'
+alias findall='find . -name'
+# programas
+alias mc='. /usr/share/mc/mc-wrapper.sh'
+alias mix='alsamixer'
+alias mpv='mpv --hwdec=vaapi'
+alias radio='mpv http://188.226.176.70:8000/killallradio'
+alias tvd='sudo teamviewer --daemon start'
+alias reX='xrdb -merge ~/.Xresources && xrdb -load ~/.Xresources'
+alias ran='W3MIMGDISPLAY_PATH=/usr/libexec/w3m/w3mimgdisplay ranger'
+alias ranger='W3MIMGDISPLAY_PATH=/usr/libexec/w3m/w3mimgdisplay ranger'
+alias gato='telnet nyancat.dakko.us'
+# estado pc
+alias suspend='systemctl suspend'
+alias nosuspender='kill -9 `pidof xautolock`'
+alias sisuspender='xautolock -time 10 -locker "systemctl suspend" -detectsleep &'
+alias reboot='systemctl reboot'
+alias apagar='systemctl poweroff'
+# manejo de software
+alias search='zypper se'
+alias install='sudo zypper in'
+alias up='sudo zypper up'
+alias dup='sudo zypper dup'
+alias remove='sudo zypper rm'
+alias purge='sudo zypper remove -u'
+alias ref='sudo zypper ref'
