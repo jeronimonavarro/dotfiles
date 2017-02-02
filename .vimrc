@@ -15,9 +15,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'acoustichero/goldenrod.vim'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'veloce/vim-aldmeris'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
