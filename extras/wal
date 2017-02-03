@@ -180,8 +180,8 @@ set_icewm_taskbar_icons() {
    convert "${icewm_theme_taskbar_dir}/linux.xpm" -fuzz 100% -fill "${1}" -opaque '#d3bfb5' "${icewm_theme_taskbar_dir}/linux.xpm"
 }
 
-reload_icewm() {
-   icewm --theme="${icewm_theme_file}"
+reset_icewm() {
+   killall -SIGHUP icewm
 }
 
 set_icewm() {
@@ -204,7 +204,7 @@ set_icewm() {
    echo "icewm: Changed image colors"
 
    # Reload icewm theme
-   reload_icewm
+   reset_icewm
 }
 
 send_sequences() {
