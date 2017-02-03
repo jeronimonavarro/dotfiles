@@ -6,3 +6,4 @@ geany.conf
 .icewm/startup
 .vim/bundle/
 .config/ranger/colorschemes
+.Xresources.d/colorschemes/wal
