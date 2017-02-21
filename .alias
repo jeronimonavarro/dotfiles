@@ -32,6 +32,7 @@ alias apagar='systemctl poweroff'
 # manejo de software
 alias search='zypper se'
 alias install='sudo zypper in'
+alias install-nr='sudo zypper in --no-recommends'
 alias up='sudo zypper up'
 alias dup='sudo zypper dup'
 alias remove='sudo zypper rm'
