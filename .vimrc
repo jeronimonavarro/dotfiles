@@ -52,7 +52,7 @@ set t_ut=
 syntax on
 set t_Co=256
 "set termguicolors
-set background=light
+set background=dark
 "let g:gruvbox_italic=1
 "colorscheme wal
 "let g:aldmeris_termcolors = "tango"
