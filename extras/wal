@@ -29,15 +29,15 @@ get_colors() {
    mkdir -p "${cache_dir}"
 
    # Get the current wallpaper.
-   wall_file=$(cat ${HOME}/.icewm/themes/wal/default.theme | grep DesktopBackgroundImage | cut -d \" -f2)
-   current_wall="${HOME}/.icewm/themes/wal/${wall_file}"
+   wallpaper_file=$(cat "${icewm_theme_file}" | grep DesktopBackgroundImage | cut -d \" -f2)
+   current_wallpaper="${HOME}/.icewm/themes/wal/${wallpaper_file}"
 
    # Generate 16 colors from the image and save them to a file.
-   colors=($(convert "${current_wall}" +dither -colors 18 -unique-colors txt:- | grep -E -o " \#.{6}" | tail -n +2))
+   colors=($(convert "${current_wallpaper}" +dither -colors 18 -unique-colors txt:- | grep -E -o " \#.{6}" | tail -n +2))
 
    # If imagemagick finds less than 16 colors, abort and warn the user.
    (( "${#colors[@]}" <= 15 )) && {
-   echo "Error: Imagemagick failed to generate a 16 color palette for ${wal##*/}"
+   echo "Error: Imagemagick failed to generate a 16 color palette for ${current_wallpaper##*/}"
    echo "Error: Imagemagick could only generate a ${#colors[@]} color palette."
    echo "Error: wal won't do guesswork to fill in the blanks."
    echo "Error: Please try a different image."
