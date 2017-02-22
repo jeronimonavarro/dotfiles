@@ -1,0 +1,39 @@
+# This is an example for IceWM's hotkey definition file.
+#
+# Place your variants in @CFGDIR@ or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
+#
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysym.h, keysymdefs.h, XF86keysym.h, ...
+# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
+# XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
+#
+key "Alt+Ctrl+t"			urxvtc-256color
+key "Super+Return"		urxvtc-256color
+key "Alt+Ctrl+b"			xdg-open about:blank
+key "Alt+Ctrl+s"			xdg-open http://www.google.com
+
+key "Super+KP_Subtract"			amixer sset PCM 5%-
+key "Super+KP_Add"			amixer sset PCM 5%+
+key "Ctrl+Space" dmenu_run -i -b -nb "#303533" -nf "#E3CFCA" -sb "#303533" -sf "#BE833E"
+
+# "Multimedia key" bindings for XFree86. Gather the keycodes of your
+# advanced function keys by watching the output of the xev command whilest
+# pressing those keys and map those symbols by using xmodmap.
+
+key "XF86Standby"			/bin/sh -c "{ test -e /run/systemd/system && systemctl suspend; } ||:"
+key "XF86Sleep"				/bin/sh -c "{ test -e /run/systemd/system && systemctl suspend; } ||:"
+key "XF86AudioLowerVolume"  /bin/sh -c "{	amixer sset Master 5%- && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga; }"
+key "XF86AudioRaiseVolume"  /bin/sh -c "{ amixer sset Master 5%+ && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga; }"
+key "XF86AudioMute"			amixer sset Master 0%
+key "XF86HomePage"			xdg-open about:blank
+key "XF86Search"			xdg-open http://www.google.com
+key "XF86Eject"				eject
+key "XF86Calculator"  /bin/sh -c "gnome-calculator || xcalc || ( type bc >/dev/null 2>&1 && xterm -e bc -l)"
+
+key "XF86MonBrightnessUp" /bin/sh -c "light -A 10" # Increase Brightness 10%
+key "XF86MonBrightnessDown" /bin/sh -c "light -U 10" # Increase Brightness 10%
+key "Print"  /bin/sh -c "xfce4-screenshooter"
+key "Alt+Print"  /bin/sh -c "{ xfce4-screenshooter -w && paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; }"
+#key "Print"  /bin/sh -c "{ scrot -q 100 && paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; }"

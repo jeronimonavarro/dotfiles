@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dunst -lb "#E3CFCA" -nb "#E3CFCA" -cb "#E3CFCA" -lf "#303533" -bf "#303533" -cf "#768971" &
+urxvtd-256color &
+compton -b &
+nm-applet &
+bar "#E3CFCA" "#303533" &
+pulseaudio -D
