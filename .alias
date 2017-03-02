@@ -13,6 +13,7 @@ alias ee='exit'
 alias du='du -sxh'
 alias cc='clear'
 alias findall='find . -name'
+alias topp='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head'
 # programas
 alias mc='. /usr/share/mc/mc-wrapper.sh'
 alias mix='alsamixer'
