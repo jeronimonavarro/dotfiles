@@ -34,6 +34,6 @@ key "XF86Calculator"  /bin/sh -c "gnome-calculator || xcalc || ( type bc >/dev/n
 
 key "XF86MonBrightnessUp" /bin/sh -c "light -A 10" # Increase Brightness 10%
 key "XF86MonBrightnessDown" /bin/sh -c "light -U 10" # Increase Brightness 10%
-key "Print"  /bin/sh -c "xfce4-screenshooter"
-key "Alt+Print"  /bin/sh -c "{ xfce4-screenshooter -w && paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; }"
+key "Print"  /bin/sh -c "gnome-screenshot"
+key "Alt+Print"  /bin/sh -c "{ gnome-screenshot -w && paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; }"
 #key "Print"  /bin/sh -c "{ scrot -q 100 && paplay /usr/share/sounds/freedesktop/stereo/screen-capture.oga; }"
