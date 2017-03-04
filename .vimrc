@@ -15,8 +15,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'acoustichero/goldenrod.vim'
+Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'acoustichero/goldenrod.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -53,12 +53,12 @@ set t_ut=
 syntax on
 set t_Co=256
 "set termguicolors
-set background=dark
+set background=light
 "let g:gruvbox_italic=1
 "colorscheme wal
 "let g:aldmeris_termcolors = "tango"
-"colorscheme PaperColor
-colorscheme goldenrod 
+colorscheme PaperColor
+"colorscheme goldenrod 
 "set gruvbox_contrast_dark
 
 " Set extra options when running in GUI mode
