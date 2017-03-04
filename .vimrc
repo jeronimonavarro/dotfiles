@@ -152,7 +152,7 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.o']
 
 " Color para marca de indentado
-let g:indentLine_color_term = 238
+"let g:indentLine_color_term = 238
 
 " Close NERDTree when there's no active buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
