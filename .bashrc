@@ -30,8 +30,3 @@ fi
 
 # Nivel de seguridad bajo
 umask 022
-
-# Compatibilidad con apps Qt en tema "Hedera"
-export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_PLATFORMTHEME=qt5ct
-export QT_PLATFORM_PLUGIN=qt5ct
