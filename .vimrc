@@ -76,7 +76,7 @@ endif
 "highlight Comment cterm=italic
 
 "set relativenumber
-"set colorcolumn=90
+set colorcolumn=85
 "set number
 
 " oculta el buffer si tiene cambios al abrir otro (!)
