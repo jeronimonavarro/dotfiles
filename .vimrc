@@ -41,13 +41,14 @@ filetype plugin indent on    " required
 set wildmenu
 
 " No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+" Eliminating delays on ESC in vim
+set timeoutlen=1000 ttimeoutlen=0
 
 " Deshabilita Background Color Erase (BCE)
-set t_ut=
+"set t_ut=
 
 " Enable syntax highlighting
 syntax on
@@ -63,7 +64,6 @@ colorscheme PaperColor
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-   colorscheme goldenrod
    set guioptions-=T
    set guioptions-=r
    set guioptions-=m
@@ -79,7 +79,7 @@ endif
 set colorcolumn=85
 "set number
 
-" oculta el buffer si tiene cambios al abrir otro (!)
+" Oculta el buffer si tiene cambios al abrir otro (!)
 set hidden
 set history=100
 
@@ -110,14 +110,13 @@ set showmatch
 set laststatus=1
 
 " Solo actualiza la pantalla cuando se tipea una accion
-set lazyredraw
+"set lazyredraw
 " Le mete BOOST
-set ttyfast
+"set ttyfast
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
-set noswapfile
 
 " Mantiene el cursor 5 lineas de los bordes arriba/abajo
 set scrolloff=5
@@ -126,7 +125,7 @@ set scrolloff=5
 " el clipboard para mantener el identado
 set pastetoggle=<F2>
 
-" Splitea a la derecha/abajo
+" Splitea a la derecha/abajo por defecto
 set splitbelow
 set splitright
 
