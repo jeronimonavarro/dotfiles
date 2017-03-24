@@ -1,14 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
+"set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
+"let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Mis plugins
+"Mis plugins
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -37,7 +37,7 @@ syntax on
 "set background=light
 "colorscheme PaperColor
 
-"" Set extra options when running in GUI mode
+"Set extra options when running in GUI mode
 "if has("gui_running")
 "   set guioptions-=T
 "   set guioptions-=r
