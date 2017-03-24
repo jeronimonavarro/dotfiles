@@ -4,8 +4,6 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -18,126 +16,95 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'acoustichero/goldenrod.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-
-" All of your Plugins must be added before the following line
+"All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" Enable filetype plugins and indent detection
+"Enable filetype plugins and indent detection
 filetype plugin indent on    " required
-"
-" Turn on the Wild menu
+
+"Turn on the Wild menu
 set wildmenu
 
-" No annoying sound on errors
+"No annoying sound on errors
 set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
 
-" Eliminating delays on ESC in vim
+"Eliminating delays on ESC in vim
 set timeoutlen=1000 ttimeoutlen=0
 
-" Deshabilita Background Color Erase (BCE)
-"set t_ut=
-
-" Enable syntax highlighting
+"Enable syntax highlighting
 syntax on
-set t_Co=256
-"set termguicolors
-set background=light
-"let g:gruvbox_italic=1
-"colorscheme wal
-"let g:aldmeris_termcolors = "tango"
-colorscheme PaperColor
-"colorscheme goldenrod 
-"set gruvbox_contrast_dark
+"set t_Co=256
+"set background=light
+"colorscheme PaperColor
 
-" Set extra options when running in GUI mode
-if has("gui_running")
-   set guioptions-=T
-   set guioptions-=r
-   set guioptions-=m
-   set guioptions-=e
-   set guitablabel=%M\ %t
-endif
+"" Set extra options when running in GUI mode
+"if has("gui_running")
+"   set guioptions-=T
+"   set guioptions-=r
+"   set guioptions-=m
+"   set guioptions-=e
+"   set guitablabel=%M\ %t
+"endif
 
+"Color numero de linea actual
 "hi LineNr ctermfg=Gray
-"hi StatusLine ctermfg=White ctermbg=none
-"highlight Comment cterm=italic
 
 "set relativenumber
-set colorcolumn=85
+"set colorcolumn=85
 "set number
 
-" Oculta el buffer si tiene cambios al abrir otro (!)
+"Oculta el buffer si tiene cambios al abrir otro (!)
 set hidden
-set history=100
+"set history=100
 
-set wrap  "corta al ancho de la ventana
-set linebreak   "no corta palabras enteras en el wrap
+"corta al ancho de la ventana
+set wrap  
+
+"no corta palabras enteras en el wrap
+set linebreak 
 set tabstop=3
 set shiftwidth=3
 set expandtab
 set smartindent
 set autoindent
 
+"Resalta resultado de busqueda
 set hlsearch
+
+"Busqueda incremental
 set incsearch
 
-" Ignore case when searching
+"Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+"When searching try to be smart about cases 
 set smartcase
-
-set encoding=utf8
-
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
 
 set showmatch
 
-set laststatus=1
+"set laststatus=1
 
-" Solo actualiza la pantalla cuando se tipea una accion
-"set lazyredraw
-" Le mete BOOST
-"set ttyfast
-
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+"Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
-set nowb
+"set nowb
 
-" Mantiene el cursor 5 lineas de los bordes arriba/abajo
+"Mantiene el cursor 5 lineas de los bordes arriba/abajo
 set scrolloff=5
 
-" Toggle modo 'paste' antes y despues de pegar desde
-" el clipboard para mantener el identado
+"Toggle modo 'paste' antes y despues de pegar desde
+"el clipboard para mantener el identado
 set pastetoggle=<F2>
 
-" Splitea a la derecha/abajo por defecto
+"Splitea a la derecha/abajo por defecto
 set splitbelow
 set splitright
 
 let mapleader=","
 
-"reload config file
-map <leader>s :source ~/.vimrc<CR>
-
 "reopen previously opened file
 nnoremap <Leader><Leader> :e#<CR>
 nnoremap <Leader><CR> :noh<CR>
-
+"
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>s :bnext<CR>
 nnoremap <Leader>a :bprev<CR>
@@ -145,34 +112,22 @@ nnoremap <leader>q :bp<CR>:bd #<CR>
 
 nnoremap <Tab> :buffers<CR>:buffer<Space>
 
-" Toggle NERDTree
+"NERDTree #Toggle
 map <C-n> :NERDTreeToggle<CR>
-" Ignora archivos objeto
+
+"NERDTree #Ignora archivos objeto
 let NERDTreeIgnore = ['\.o']
 
-" Color para marca de indentado
-"let g:indentLine_color_term = 238
-
-" Close NERDTree when there's no active buffer
+"NERDTree #Close when there's no active buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Tell vim to remember certain things when we exit
-"  '10  :  marks will be remembered for up to 10 previously edited files
-"  "100 :  will save up to 100 lines for each register
-"  :20  :  up to 20 lines of command-line history will be remembered
-"  %    :  saves and restores the buffer list
-"  n... :  where to save the viminfo files
-set viminfo='10,\"100,:20,%,n~/.viminfo
+"IndenLine #Color para marca de indentado
+"let g:indentLine_color_term = 238
 
-" Funcion que restaura a la ultima posicion del cursor
-"function! ResCur()
-"   if line("'\"") <= line("$")
-"      normal! g`"
-"      return 1
-"   endif
-"endfunction
-" autocmd que llama a ResCur
-"augroup resCur
-"   autocmd!
-"   autocmd BufWinEnter * call ResCur()
-"augroup END
+"" Tell vim to remember certain things when we exit
+""  '10  :  marks will be remembered for up to 10 previously edited files
+""  "100 :  will save up to 100 lines for each register
+""  :20  :  up to 20 lines of command-line history will be remembered
+""  %    :  saves and restores the buffer list
+""  n... :  where to save the viminfo files
+"set viminfo='10,\"100,:20,%,n~/.viminfo
