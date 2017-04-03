@@ -59,7 +59,7 @@ ColorNormalWorkspaceButton="#2e3436"
 #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
 ColorNormalWorkspaceButtonText="#eeeeec"
 #  Background of the active workspace button, ColorActiveButton is used if empty
-ColorActiveWorkspaceButton="#729fcf"
+ColorActiveWorkspaceButton="#72CF8C"
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
 ColorActiveWorkspaceButtonText="#000000"
 
@@ -127,9 +127,9 @@ ColorActiveTaskBarApp="#729fcf"
 #  Textcolor for task buttons of the active window
 ColorActiveTaskBarAppText="#000000"
 #  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="#2D3651"
+ColorMinimizedTaskBarApp="#2e3436"
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="#a2a2a2"
+ColorMinimizedTaskBarAppText="#729fcf"
 #  Background for task buttons of windows on other workspaces
 # ColorInvisibleTaskBarApp="rgb:80/80/80"
 #  Textcolor for task buttons of windows on other workspaces
