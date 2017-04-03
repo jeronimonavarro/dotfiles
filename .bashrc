@@ -11,21 +11,21 @@ test -s ~/.functions && . ~/.functions || true
 test -s ~/.env && . ~/.env || true
 
 if [[ $EUID -ne 0 ]]; then
-  # Default prompt
-  PS1="\[\e[1;32m\]@\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
+   # Default prompt
+   PS1="\[\e[1;32m\]@\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
 else
-  # Root prompt
-  PS1="\[\e[1;31m\](root) @\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
+   # Root prompt
+   PS1="\[\e[1;31m\](root) @\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
 fi
 
 # Prompt dentro de tmux con status bar disabled
 if [ -n "$TMUX" ]; then
-  PS1="\[\e[1;33m\][$(tmux display-message -p '#I')] $PS1"
+   PS1="\[\e[1;33m\][$(tmux display-message -p '#{window_index}')] $PS1"
 fi
 
 # Fix variable TERM en tmux
 if [ -n "$TMUX" ]; then
-  export TERM=screen-256color
+   export TERM=screen-256color
 fi
 
 # Nivel de seguridad bajo
