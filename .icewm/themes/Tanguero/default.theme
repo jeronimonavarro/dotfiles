@@ -8,7 +8,7 @@ TitleBarHeight=18
 TitleButtonsSupported="hdsrxmi"
 TitleBarJustify=50
 RolloverButtonsSupported=1
-TitleButtonsLeft="r"
+TitleButtonsLeft="sr"
 TitleButtonsRight="xmi"
 
 BorderSizeX=1
@@ -51,15 +51,15 @@ ColorActiveButtonText="rgb:00/00/00"
 
 ## TOOLBAR/WORKSPACE BUTTONS
 #  Background of toolbar buttons, ColorNormalButton is used if empty
-ColorToolButton=""
+ColorToolButton="#2e3436"
 #  Textcolor of toolbar buttons, ColorNormalButtonText is used if empty
-ColorToolButtonText=""
+ColorToolButtonText="eeeeec"
 #  Background of workspace buttons, ColorNormalButton is used if empty
-ColorNormalWorkspaceButton=""
+ColorNormalWorkspaceButton="#2e3436"
 #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
 ColorNormalWorkspaceButtonText="#eeeeec"
 #  Background of the active workspace button, ColorActiveButton is used if empty
-ColorActiveWorkspaceButton=""
+ColorActiveWorkspaceButton="#729fcf"
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
 ColorActiveWorkspaceButtonText="#000000"
 
@@ -73,7 +73,7 @@ ColorActiveTitleBar="rgb:cf/cf/cf"
 #  Background of the titlebar of regular windows
 ColorNormalTitleBar="rgb:99/99/99"
 #  Textcolor of the titlebar of active windows
-ColorActiveTitleBarText="#2e3436"
+ColorActiveTitleBarText="#fcfcfc"
 #  Textshadow of the titlebar of active windows
 ColorActiveTitleBarShadow=""
 
@@ -113,15 +113,15 @@ ColorQuickSwitch="#555753"
 #  Textcolor in the quick switch window
 ColorQuickSwitchText="#d3d7cf"
 #  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="#888a85"
+ColorQuickSwitchActive="#a8aaa5"
 
 ## TASKBAR
 #  Background of the taskbar (tray, etc)
 ColorDefaultTaskBar="#2e3436"
 #  Background for task buttons of regular windows
-ColorNormalTaskBarApp="#eeeeec"
+ColorNormalTaskBarApp="#2e3436"
 #  Textcolor for task buttons of regular windows
-ColorNormalTaskBarAppText="#d2d2d2"
+ColorNormalTaskBarAppText="#b2b2b2"
 #  Background for task buttons of the active window
 ColorActiveTaskBarApp="#729fcf"
 #  Textcolor for task buttons of the active window

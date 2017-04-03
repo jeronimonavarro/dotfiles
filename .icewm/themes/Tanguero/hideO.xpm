@@ -2,7 +2,7 @@
 static char * hideO_xpm[] = {
 "18 36 5 1",
 " 	c None",
-".	c #BABDB6",
+".	c #454D54",
 "+	c #EEEEEC",
 "@	c #729FCF",
 "#	c #888A85",

@@ -2,7 +2,7 @@
 static char * menuButtonI_xpm[] = {
 "18 36 4 1",
 " 	c None",
-".	c #BABDB6",
+".	c #454D54",
 "+	c #888A85",
 "@	c #204A87",
 "..................",
