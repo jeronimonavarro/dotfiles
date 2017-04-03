@@ -63,6 +63,9 @@ export SSH_AUTH_SOCK
 # Deshabilitamos el beep (campanilla) de atencion/urgencia
 xset b off
 
+# Establecer distribucion del teclado
+setxkbmap -layout latam
+
 # 
 # finally start the window manager
 #
