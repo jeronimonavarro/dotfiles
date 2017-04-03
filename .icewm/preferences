@@ -119,7 +119,7 @@ ShowWorkspaceStatus=0 # 0/1
 # SmartPlacement=1 # 0/1
 
 #  Hide title bar when maximized
-HideTitleBarWhenMaximized=1 # 0/1
+HideTitleBarWhenMaximized=0 # 0/1
 
 #  Center large windows
 # CenterLarge=0 # 0/1
@@ -218,7 +218,7 @@ QuickSwitchMaxWidth=1 # 0/1
 # ShowTaskBar=1 # 0/1
 
 #  Task bar at top of the screen
-TaskBarAtTop=1 # 0/1
+TaskBarAtTop=0 # 0/1
 
 #  Keep the task bar below regular windows
 # TaskBarKeepBelow=0 # 0/1
@@ -278,7 +278,7 @@ TaskBarShowWorkspaces=1 # 0/1
 # TaskBarShowAllWindows=0 # 0/1
 
 #  Show icons of windows on the task bar
-TaskBarShowWindowIcons=0 # 0/1
+TaskBarShowWindowIcons=1 # 0/1
 
 #  Show 'Start' menu on task bar
 # TaskBarShowStartMenu=1 # 0/1
@@ -540,7 +540,7 @@ ConfirmLogout=0 # 0/1
 
 #  Icon search path (colon separated)
 #IconPath="/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
-IconPath="/usr/share/icons/Hedera/24/applications:/usr/share/icons/Papirus-GTK/16x16/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
+IconPath="/usr/share/icons/Adwaita/24x24/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
 # MailBoxPath=""
