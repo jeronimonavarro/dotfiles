@@ -66,12 +66,12 @@ ver() {
   if [ -f "$1" ]; then
     case "$1" in
       *.pdf)       evince "$1" &                   ;;
-      *.png)       ristretto "$1" &                      ;;
-      *.jpg)       ristretto "$1" &                      ;;
-      *.jpeg)      ristretto "$1" &                      ;;
-      *.bmp)       ristretto "$1" &                      ;;
-      *.JPG)       ristretto "$1" &                      ;;
-      *.PNG)       ristretto "$1" &                      ;;
+      *.png)       eog "$1" &                      ;;
+      *.jpg)       eog "$1" &                      ;;
+      *.jpeg)      eog "$1" &                      ;;
+      *.bmp)       eog "$1" &                      ;;
+      *.JPG)       eog "$1" &                      ;;
+      *.PNG)       eog "$1" &                      ;;
       *.doc)       libreoffice "$1" &              ;;
       *.docx)      libreoffice "$1" &              ;;
       *.odt)       libreoffice "$1" &              ;;
