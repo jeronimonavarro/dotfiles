@@ -284,7 +284,7 @@ TaskBarShowWindowIcons=1 # 0/1
 # TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=1 # 0/1
+TaskBarShowWindowListMenu=0 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
 TaskBarShowCPUStatus=0 # 0/1
@@ -606,7 +606,7 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 NetworkStatusDevice="wlp2s0"
 
 #  Clock Time format (strftime format string)
-TimeFormat="%R"
+TimeFormat=" %R "
 # TimeFormat="%R, %a %d de %b"
 
 #  Alternate Clock Time format (e.g. for blinking effects)
@@ -887,7 +887,7 @@ TrayDrawBevel=0 # 0/1
 # TitleBarJoinRight=0 # 0/1
 
 #  Show application icon over menu button
-ShowMenuButtonIcon=0 # 0/1
+ShowMenuButtonIcon=1 # 0/1
 
 #  Horizontal window border
 # BorderSizeX=6 # [0-128]
