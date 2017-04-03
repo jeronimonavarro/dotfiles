@@ -10,14 +10,14 @@
 #prog XChat xchat xchat
 #
 prog "Terminal" utilities-terminal urxvtc-256color
-prog "Mozilla Firefox" network-firefox firefox
-prog "Thunar" utilities-thunar thunar
-prog "Google Chrome" network-chrome google-chrome
-prog Gimp graphics-gimp gimp
+prog "Mozilla Firefox" firefox firefox
+prog "Files" system-file-manager nautilus
+prog "Google Chrome" google-chrome google-chrome
+prog Gimp gimp gimp
 prog Geany geany geany
 separator
-prog "Configurar sonido" pavucontrol pavucontrol
-prog "Configurar pantallas" xrandr arandr
+prog "Configurar sonido" multimedia-volume-control pavucontrol
+prog "Configurar pantallas" preferences-desktop-display arandr
 separator
 menu "Opciones gráficas" - {
 prog "Salida HDMI (TV)" xrandr /home/jnavarro/.screenlayout/solo-hdmi.sh
