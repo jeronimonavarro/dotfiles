@@ -127,9 +127,9 @@ ColorActiveTaskBarApp="#729fcf"
 #  Textcolor for task buttons of the active window
 ColorActiveTaskBarAppText="#000000"
 #  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="#eeeeec"
+ColorMinimizedTaskBarApp="#2D3651"
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="#888a85"
+ColorMinimizedTaskBarAppText="#a2a2a2"
 #  Background for task buttons of windows on other workspaces
 # ColorInvisibleTaskBarApp="rgb:80/80/80"
 #  Textcolor for task buttons of windows on other workspaces
@@ -213,8 +213,8 @@ ActiveButtonFontNameXft="droid sans:size=9:bold"
 NormalTaskBarFontNameXft="droid sans:size=8:bold"
 ActiveTaskBarFontNameXft="droid sans:size=8:bold"
 ToolButtonFontNameXft="droid sans:size=8"
-NormalWorkspaceFontNameXft="sf digital readout:size=12:bold"
-ActiveWorkspaceFontNameXft="sf digital readout:size=12:bold"
+NormalWorkspaceFontNameXft="droid sans:size=12:bold"
+ActiveWorkspaceFontNameXft="droid sans:size=12:bold"
 MinimizedWindowFontNameXft="droid sans:size=8"
 ListBoxFontNameXft="droid sans:size=8:bold"
 ToolTipFontNameXft="droid sans:size=8"
