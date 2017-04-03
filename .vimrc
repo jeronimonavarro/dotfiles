@@ -13,7 +13,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'NLKNguyen/papercolor-theme'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,7 +34,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on
 "set t_Co=256
 set background=light
-colorscheme solarized
+colorscheme PaperColor
 
 "Set extra options when running in GUI mode
 "if has("gui_running")
