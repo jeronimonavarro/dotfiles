@@ -887,7 +887,7 @@ TrayDrawBevel=0 # 0/1
 # TitleBarJoinRight=0 # 0/1
 
 #  Show application icon over menu button
-ShowMenuButtonIcon=1 # 0/1
+ShowMenuButtonIcon=0 # 0/1
 
 #  Horizontal window border
 # BorderSizeX=6 # [0-128]
