@@ -4,7 +4,7 @@ ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
 License="GPL"
 Look=flat
 
-TitleBarHeight=18
+TitleBarHeight=22
 TitleButtonsSupported="hdsrxmi"
 TitleBarJustify=50
 RolloverButtonsSupported=1
@@ -41,9 +41,9 @@ ColorInputSelectionText="#eeeeec"
 
 ## BUTTONS
 #  Background of regular buttons
-ColorNormalButton="rgb:C0/C0/C0"
+ColorNormalButton="#454d54"
 #  Textcolor of regular buttons
-ColorNormalButtonText="rgb:ff/ff/ff"
+ColorNormalButtonText="#fcfcfc"
 #  Background of pressed buttons
 ColorActiveButton="rgb:E0/E0/E0"
 #  Textcolor of pressed buttons
@@ -69,9 +69,9 @@ ColorNormalTitleBarText="#888a85"
 #  Textshadow of the titlebar of regular windows
 ColorNormalTitleBarShadow=""
 #  Background of the titlebar of active windows
-ColorActiveTitleBar="rgb:cf/cf/cf"
+ColorActiveTitleBar="#454d54"
 #  Background of the titlebar of regular windows
-ColorNormalTitleBar="rgb:99/99/99"
+ColorNormalTitleBar="#454d54"
 #  Textcolor of the titlebar of active windows
 ColorActiveTitleBarText="#fcfcfc"
 #  Textshadow of the titlebar of active windows
