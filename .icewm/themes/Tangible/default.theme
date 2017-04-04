@@ -89,15 +89,15 @@ ColorActiveTitleBarShadow=""
 
 ## MENU
 #  Background of pop-up menus
-ColorNormalMenu="#d3d7cf"
+ColorNormalMenu="#EEEEEC"
 #  Background of selected menu item, leave empty to force transparency
 ColorActiveMenuItem="#babdb6"
 #  Textcolor of regular menu items
-ColorNormalMenuItemText="#1C2021"
+ColorNormalMenuItemText="#424242"
 #  Textcolor of selected menu items
-ColorActiveMenuItemText="#eeeeec"
+ColorActiveMenuItemText="#B06D04"
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="#888a85"
+ColorDisabledMenuItemText="#979993"
 #  Shadow of regular menu items
 ColorDisabledMenuItemShadow=""
 #  Menu icon size
