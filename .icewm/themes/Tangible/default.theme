@@ -4,7 +4,7 @@ ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
 License="GPL"
 Look=flat
 
-TitleBarHeight=22
+TitleBarHeight=24
 TitleButtonsSupported="hdsrxmi"
 TitleBarJustify=50
 RolloverButtonsSupported=1
