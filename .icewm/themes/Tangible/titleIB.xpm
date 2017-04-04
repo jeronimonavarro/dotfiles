@@ -1,9 +1,9 @@
 /* XPM */
-static char * titleAB_xpm[] = {
+static char * titleIB_xpm[] = {
 "4 22 3 1",
 " 	c None",
-".	c #454D54",
-"+	c #729FCF",
+".	c #EEEEEC",
+"+	c #204A87",
 "....",
 "....",
 "....",

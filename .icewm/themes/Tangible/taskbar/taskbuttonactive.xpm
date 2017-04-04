@@ -1,9 +1,9 @@
 /* XPM */
-static char * titleIB_xpm[] = {
-"4 22 3 1",
+static char * taskbuttonactive_xpm[] = {
+"4 25 3 1",
 " 	c None",
-".	c #454D54",
-"+	c #204A87",
+".	c #2E3436",
+"+	c #72CF8C",
 "....",
 "....",
 "....",
@@ -25,4 +25,7 @@ static char * titleIB_xpm[] = {
 "....",
 "....",
 "....",
+"....",
+"....",
+"++++",
 "++++"};
