@@ -83,9 +83,10 @@ set showmatch
 
 "set laststatus=1
 
-"Turn backup off, since most stuff is in SVN, git et.c anyway...
+"Turn backup and swap off
 set nobackup
-"set nowb
+set noswapfile
+set nowb
 
 "Mantiene el cursor 5 lineas de los bordes arriba/abajo
 set scrolloff=5
