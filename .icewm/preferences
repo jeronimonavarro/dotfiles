@@ -1333,7 +1333,7 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 #  
 
 #WorkspaceNames=" web ", " code ", " media "
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+WorkspaceNames=" 1 ", " 2 "
 
 #
 # icewmbg preferences
