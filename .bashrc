@@ -20,7 +20,7 @@ fi
 
 # Prompt dentro de tmux con status bar disabled
 if [ -n "$TMUX" ]; then
-   PS1="\[\e[1;33m\][$(tmux display-message -p '#{window_index}')] $PS1"
+   PS1="\[\e[1;33m\] *$PS1"
 fi
 
 # Fix variable TERM en tmux
