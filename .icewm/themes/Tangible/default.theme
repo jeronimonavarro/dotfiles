@@ -100,6 +100,14 @@ ColorActiveMenuItemText="#eeeeec"
 ColorDisabledMenuItemText="#888a85"
 #  Shadow of regular menu items
 ColorDisabledMenuItemShadow=""
+#  Menu icon size
+MenuIconSize=22 # [8-128]
+#  Dimension of the small icons
+SmallIconSize=16
+#  Dimension of the large icons
+LargeIconSize=22
+#  Dimension of the large icons
+HugeIconSize=48
 
 ## MOVE/RESIZE
 #  Background of move/resize status window
