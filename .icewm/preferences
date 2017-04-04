@@ -539,8 +539,7 @@ ConfirmLogout=0 # 0/1
 # NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-#IconPath="/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
-IconPath="/usr/share/icons/Adwaita/24x24/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
+IconPath="/usr/share/icons/Adwaita/22x22/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
 # MailBoxPath=""
