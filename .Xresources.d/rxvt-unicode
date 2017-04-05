@@ -6,7 +6,7 @@ URxvt.termName: xterm-256color
 URxvt.urgentOnBell: False
 URxvt.cursorBlink: True
 URxvt.letterSpace: -1
-URxvt.iconFile: /usr/share/icons/Hedera/48/applications/utilities-terminal.png
+URxvt.iconFile: /usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
