@@ -284,7 +284,7 @@ TaskBarShowWindowIcons=1 # 0/1
 # TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=0 # 0/1
+TaskBarShowWindowListMenu=1 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
 TaskBarShowCPUStatus=0 # 0/1
@@ -539,7 +539,7 @@ TaskbarButtonWidthDivisor=5 # [1-25]
 # NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/share/icons/Adwaita/22x22/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/22x22/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
+IconPath="/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
 # MailBoxPath=""
@@ -1332,7 +1332,7 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 #  
 
 #WorkspaceNames=" web ", " code ", " media "
-WorkspaceNames=" 1 ", " 2 "
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
 
 #
 # icewmbg preferences

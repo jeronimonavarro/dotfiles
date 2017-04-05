@@ -2,7 +2,7 @@ ThemeName="Tangible"
 ThemeDescription="Un tema flat para iceWM"
 ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
 License="GPL"
-Look=flat
+Look=motif
 
 TitleBarHeight=24
 TitleButtonsSupported="hdsrxmi"
@@ -11,12 +11,12 @@ RolloverButtonsSupported=1
 TitleButtonsLeft="sr"
 TitleButtonsRight="xmi"
 
-BorderSizeX=1
-BorderSizeY=1
-CornerSizeX=22
-CornerSizeY=22
-DlgBorderSizeX=1
-DlgBorderSizeY=1
+BorderSizeX=4
+BorderSizeY=4
+CornerSizeX=28
+CornerSizeY=28
+DlgBorderSizeX=4
+DlgBorderSizeY=4
 
 ## DIALOG
 #  Background of dialog windows
@@ -34,10 +34,10 @@ ColorInputSelection="#404040"
 ColorInputSelectionText="#eeeeec"
 
 ## WINDOW BORDERS
-#  Border of inactive windows (unused)
-# ColorNormalBorder="rgb:99/99/99"
-#  Border of active windows (unused)
-# ColorActiveBorder="rgb:e2/e2/e2"
+#  Border of inactive windows
+ColorNormalBorder="#aaaaac"
+#  Border of active windows
+ColorActiveBorder="#eeeeec"
 
 ## BUTTONS
 #  Background of regular buttons
@@ -51,31 +51,39 @@ ColorActiveButtonText="rgb:00/00/00"
 
 ## TOOLBAR/WORKSPACE BUTTONS
 #  Background of toolbar buttons, ColorNormalButton is used if empty
-ColorToolButton="#1C2021"
+ColorToolButton="#2e3436"
 #  Textcolor of toolbar buttons, ColorNormalButtonText is used if empty
 ColorToolButtonText="eeeeec"
 #  Background of workspace buttons, ColorNormalButton is used if empty
-ColorNormalWorkspaceButton="#1C2021"
+ColorNormalWorkspaceButton="#2e3436"
 #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
-ColorNormalWorkspaceButtonText="#eeeeec"
+ColorNormalWorkspaceButtonText="#aaaaac"
 #  Background of the active workspace button, ColorActiveButton is used if empty
-ColorActiveWorkspaceButton="#72cf8c"
+#ColorActiveWorkspaceButton="#72cf8c"
+ColorActiveWorkspaceButton="#eeeeec"
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
-ColorActiveWorkspaceButtonText="#000000"
+ColorActiveWorkspaceButtonText="#eeeeec"
 
 ## TITLEBAR
 #  Textcolor of the titlebar of regular windows
 ColorNormalTitleBarText="#888a85"
 #  Textshadow of the titlebar of regular windows
 ColorNormalTitleBarShadow=""
-#  Background of the titlebar of active windows
-ColorActiveTitleBar="#eeeeec"
 #  Background of the titlebar of regular windows
 ColorNormalTitleBar="#aaaaac"
+#  Background of the titlebar of active windows
+ColorActiveTitleBar="#eeeeec"
 #  Textcolor of the titlebar of active windows
 ColorActiveTitleBarText="#454d54"
 #  Textshadow of the titlebar of active windows
 ColorActiveTitleBarShadow=""
+
+#  Background of titlebar buttons
+ColorNormalTitleButton="#eeeeec"
+#  Background of active titlebar buttons
+ColorActiveTitleButton="#eeeeec"
+#  Textcolor of titlebar buttons
+ColorNormalTitleButtonText="#888a85"
 
 ## MINI ICONS
 #  Background for mini icons of regular windows
@@ -89,23 +97,24 @@ ColorActiveTitleBarShadow=""
 
 ## MENU
 #  Background of pop-up menus
-ColorNormalMenu="#EEEEEC"
+ColorNormalMenu="#2e3436"
 #  Background of selected menu item, leave empty to force transparency
-ColorActiveMenuItem="#babdb6"
+ColorActiveMenuItem="#729fcf"
 #  Textcolor of regular menu items
-ColorNormalMenuItemText="#424242"
+ColorNormalMenuItemText="#aaaaac"
 #  Textcolor of selected menu items
-ColorActiveMenuItemText="#B06D04"
+ColorActiveMenuItemText="#eeeeec"
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="#979993"
+ColorDisabledMenuItemText="#444444"
 #  Shadow of regular menu items
 ColorDisabledMenuItemShadow=""
 #  Menu icon size
-MenuIconSize=22 # [8-128]
+MenuIconSize=16 # [8-128]
+
 #  Dimension of the small icons
 SmallIconSize=16
 #  Dimension of the large icons
-LargeIconSize=22
+LargeIconSize=32
 #  Dimension of the large icons
 HugeIconSize=48
 
@@ -125,27 +134,29 @@ ColorQuickSwitchActive="#a8aaa5"
 
 ## TASKBAR
 #  Background of the taskbar (tray, etc)
-ColorDefaultTaskBar="#1C2021"
+ColorDefaultTaskBar="#2e3436"
 #  Background for task buttons of regular windows
-ColorNormalTaskBarApp="#1C2021"
+ColorNormalTaskBarApp="#2e3436"
 #  Textcolor for task buttons of regular windows
 ColorNormalTaskBarAppText="#b2b2b2"
 #  Background for task buttons of the active window
-ColorActiveTaskBarApp="#729fcf"
+#ColorActiveTaskBarApp="#729fcf"
+ColorActiveTaskBarApp="#eeeeec"
 #  Textcolor for task buttons of the active window
-ColorActiveTaskBarAppText="#72cf8c"
+#ColorActiveTaskBarAppText="#729fcf"
+ColorActiveTaskBarAppText="#eeeeec"
 #  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="#1C2021"
+ColorMinimizedTaskBarApp="#2e3436"
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="#549967"
+ColorMinimizedTaskBarAppText="#729fcf"
 #  Background for task buttons of windows on other workspaces
-# ColorInvisibleTaskBarApp="rgb:80/80/80"
+ColorInvisibleTaskBarApp="#2e3436"
 #  Textcolor for task buttons of windows on other workspaces
-# ColorInvisibleTaskBarAppText="rgb:00/00/00"
+ColorInvisibleTaskBarAppText="#72CFCC"
 
 ## LISTBOX
 #  Background of listboxes (eg, WindowList)
-ColorListBox="#1C2021"
+ColorListBox="#2e3436"
 #  Textcolor in listboxes
 ColorListBoxText="#eeeeec"
 #  Background of selected listbox items
@@ -155,16 +166,16 @@ ColorListBoxSelectionText="#eeeeec"
 
 ## SCROLLBAR 
 #  Scrollbar background (sliding area)
-ColorScrollBar="#1C2021"
+ColorScrollBar="#2e3436"
 #  Background of the slider button in scrollbars
-ColorScrollBarSlider="#1C2021"
+ColorScrollBarSlider="#2e3436"
 #  Background of the arrow buttons in scrollbars
 ColorScrollBarButton="#555753"
 #  Color of active arrows on scrollbar buttons
 ColorScrollBarButtonArrow="#d3d7cf"
 
 ## CPU STATUS MONITOR
-ColorCPUStatusIdle="#1C2021"
+ColorCPUStatusIdle="#2e3436"
 ColorCPUStatusInterrupts="#cc0000"
 ColorCPUStatusIoWait="#fa2b2b"
 ColorCPUStatusSoftIrq="#ef1313"
@@ -173,18 +184,18 @@ ColorCPUStatusSystem="#75507b"
 ColorCPUStatusNice="#ad7fa8"
 
 ## MEMORY STATUS MONITOR
-ColorMEMStatusFree="#1C2021"
+ColorMEMStatusFree="#2e3436"
 ColorMEMStatusUser="#edd400"
 ColorMEMStatusBuffers="#fce94f"
 ColorMEMStatusCached="#e8951c"
 
 ## NET STATUS MONITOR
-ColorNetIdle="#1C2021"
+ColorNetIdle="#2e3436"
 ColorNetReceive="#75db12"
 ColorNetSend="#f57900"
 
 ## BATTERY
-ColorApm="#1C2021"
+ColorApm="#2e3436"
 ColorApmText="#eeeeec"
 ColorApmBattary="#ef2929"
 ColorApmLine="#72cf8c"
@@ -194,15 +205,15 @@ ColorApmGraphBg="#d3d7cf"
 #  Background of tooltips
 ColorToolTip="#d3d7cf"
 #  Textcolor of tooltips
-ColorToolTipText="#1C2021"
+ColorToolTipText="#2e3436"
 #  Background of labels, leave empty to force transparency
 ColorLabel="#d3d7cf"
 #  Textcolor of labels
-ColorLabelText="#1C2021" 
+ColorLabelText="#2e3436" 
 
 ## CLOCK
 #  Background of non-LCD clock, leave empty to force transparency
-ColorClock="#1C2021"
+ColorClock="#2e3436"
 #  Background of non-LCD monitor
 ColorClockText="#eeeeec"
 
