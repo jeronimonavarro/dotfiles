@@ -4,17 +4,17 @@ ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
 License="GPL"
 Look=motif
 
-TitleBarHeight=24
+TitleBarHeight=23
 TitleButtonsSupported="hdsrxmi"
 TitleBarJustify=50
 RolloverButtonsSupported=1
-TitleButtonsLeft="sr"
+TitleButtonsLeft="srhd"
 TitleButtonsRight="xmi"
 
 BorderSizeX=4
 BorderSizeY=4
-CornerSizeX=28
-CornerSizeY=28
+CornerSizeX=27
+CornerSizeY=27
 DlgBorderSizeX=4
 DlgBorderSizeY=4
 
@@ -24,14 +24,13 @@ ColorDialog="#d3d7cf"
 
 ## INPUT
 #  Background of text entry fields (e.g. the addressbar)
-ColorInput="#212525" (a ojo)
+ColorInput="#bababa" (a ojo)
 #  Textcolor of text entry fields (e.g. the addressbar)
-#ColorInputText="#909090"
-ColorInputText="#909090"
+ColorInputText="#383838"
 #  Background of selected text in an entry field
-ColorInputSelection="#404040"
+ColorInputSelection="#ffffff"
 #  Selected text in an entry field
-ColorInputSelectionText="#eeeeec"
+ColorInputSelectionText="#484848"
 
 ## WINDOW BORDERS
 #  Border of inactive windows
@@ -41,38 +40,37 @@ ColorActiveBorder="#eeeeec"
 
 ## BUTTONS
 #  Background of regular buttons
-ColorNormalButton="#454d54"
+ColorNormalButton="#585858"
 #  Textcolor of regular buttons
 ColorNormalButtonText="#fcfcfc"
 #  Background of pressed buttons
-ColorActiveButton="rgb:E0/E0/E0"
+ColorActiveButton="#484848"
 #  Textcolor of pressed buttons
-ColorActiveButtonText="rgb:00/00/00"
+ColorActiveButtonText="#ffffff"
 
 ## TOOLBAR/WORKSPACE BUTTONS
 #  Background of toolbar buttons, ColorNormalButton is used if empty
-ColorToolButton="#2e3436"
+ColorToolButton="#585858"
 #  Textcolor of toolbar buttons, ColorNormalButtonText is used if empty
 ColorToolButtonText="eeeeec"
 #  Background of workspace buttons, ColorNormalButton is used if empty
-ColorNormalWorkspaceButton="#2e3436"
+ColorNormalWorkspaceButton="#585858"
 #  Textcolor of workspace buttons, ColorNormalButtonText is used if empty
 ColorNormalWorkspaceButtonText="#aaaaac"
 #  Background of the active workspace button, ColorActiveButton is used if empty
-#ColorActiveWorkspaceButton="#72cf8c"
 ColorActiveWorkspaceButton="#eeeeec"
 #  Textcolor of the active workspace button, ColorActiveButtonText is used if empty
 ColorActiveWorkspaceButtonText="#eeeeec"
 
 ## TITLEBAR
 #  Textcolor of the titlebar of regular windows
-ColorNormalTitleBarText="#888a85"
+ColorNormalTitleBarText="#bababa"
 #  Textshadow of the titlebar of regular windows
 ColorNormalTitleBarShadow=""
 #  Background of the titlebar of regular windows
-ColorNormalTitleBar="#aaaaac"
+ColorNormalTitleBar="#8c8c8c"
 #  Background of the titlebar of active windows
-ColorActiveTitleBar="#eeeeec"
+ColorActiveTitleBar="#aba68c"
 #  Textcolor of the titlebar of active windows
 ColorActiveTitleBarText="#454d54"
 #  Textshadow of the titlebar of active windows
@@ -84,6 +82,11 @@ ColorNormalTitleButton="#eeeeec"
 ColorActiveTitleButton="#eeeeec"
 #  Textcolor of titlebar buttons
 ColorNormalTitleButtonText="#888a85"
+
+#  Border of inactive windows
+ColorNormalBorder="#8c8c8c"
+#  Border of active windows
+ColorActiveBorder="#aba68c"
 
 ## MINI ICONS
 #  Background for mini icons of regular windows
@@ -97,17 +100,17 @@ ColorNormalTitleButtonText="#888a85"
 
 ## MENU
 #  Background of pop-up menus
-ColorNormalMenu="#2e3436"
+ColorNormalMenu="#585858"
 #  Background of selected menu item, leave empty to force transparency
 ColorActiveMenuItem="#729fcf"
 #  Textcolor of regular menu items
-ColorNormalMenuItemText="#aaaaac"
+ColorNormalMenuItemText="#bababa"
 #  Textcolor of selected menu items
-ColorActiveMenuItemText="#eeeeec"
+ColorActiveMenuItemText="#fafafa"
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="#444444"
+ColorDisabledMenuItemText="#888888"
 #  Shadow of regular menu items
-ColorDisabledMenuItemShadow=""
+ColorDisabledMenuItemShadow="#585858"
 #  Menu icon size
 MenuIconSize=16 # [8-128]
 
@@ -120,62 +123,60 @@ HugeIconSize=48
 
 ## MOVE/RESIZE
 #  Background of move/resize status window
-ColorMoveSizeStatus="#303030"
+ColorMoveSizeStatus="#282828"
 #  Textcolor of move/resize status window
 ColorMoveSizeStatusText="#eeeeec"
 
 ## QUICK SWITCH
 #  Background of the quick switch window
-ColorQuickSwitch="#555753"
+ColorQuickSwitch="#585858"
 #  Textcolor in the quick switch window
-ColorQuickSwitchText="#d3d7cf"
+ColorQuickSwitchText="#fafafa"
 #  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="#a8aaa5"
+ColorQuickSwitchActive="#729fcf"
 
 ## TASKBAR
 #  Background of the taskbar (tray, etc)
-ColorDefaultTaskBar="#2e3436"
+ColorDefaultTaskBar="#585858"
 #  Background for task buttons of regular windows
-ColorNormalTaskBarApp="#2e3436"
+ColorNormalTaskBarApp="#585858"
 #  Textcolor for task buttons of regular windows
 ColorNormalTaskBarAppText="#b2b2b2"
 #  Background for task buttons of the active window
-#ColorActiveTaskBarApp="#729fcf"
 ColorActiveTaskBarApp="#eeeeec"
 #  Textcolor for task buttons of the active window
-#ColorActiveTaskBarAppText="#729fcf"
 ColorActiveTaskBarAppText="#eeeeec"
 #  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="#2e3436"
+ColorMinimizedTaskBarApp="#585858"
 #  Textcolor for task buttons of minimized windows
-ColorMinimizedTaskBarAppText="#729fcf"
+ColorMinimizedTaskBarAppText="#b2b2b2"
 #  Background for task buttons of windows on other workspaces
-ColorInvisibleTaskBarApp="#2e3436"
+ColorInvisibleTaskBarApp="#585858"
 #  Textcolor for task buttons of windows on other workspaces
-ColorInvisibleTaskBarAppText="#72CFCC"
+ColorInvisibleTaskBarAppText="#729fcf"
 
 ## LISTBOX
 #  Background of listboxes (eg, WindowList)
-ColorListBox="#2e3436"
+ColorListBox="#585858"
 #  Textcolor in listboxes
-ColorListBoxText="#eeeeec"
+ColorListBoxText="#bababa"
 #  Background of selected listbox items
 ColorListBoxSelection="#729fcf"
 #  Textcolor of selected listbox items
-ColorListBoxSelectionText="#eeeeec"
+ColorListBoxSelectionText="#fafafa"
 
 ## SCROLLBAR 
 #  Scrollbar background (sliding area)
-ColorScrollBar="#2e3436"
+ColorScrollBar="#585858"
 #  Background of the slider button in scrollbars
-ColorScrollBarSlider="#2e3436"
+ColorScrollBarSlider="#585858"
 #  Background of the arrow buttons in scrollbars
 ColorScrollBarButton="#555753"
 #  Color of active arrows on scrollbar buttons
-ColorScrollBarButtonArrow="#d3d7cf"
+ColorScrollBarButtonArrow="#bababa"
 
 ## CPU STATUS MONITOR
-ColorCPUStatusIdle="#2e3436"
+ColorCPUStatusIdle="#585858"
 ColorCPUStatusInterrupts="#cc0000"
 ColorCPUStatusIoWait="#fa2b2b"
 ColorCPUStatusSoftIrq="#ef1313"
@@ -184,18 +185,18 @@ ColorCPUStatusSystem="#75507b"
 ColorCPUStatusNice="#ad7fa8"
 
 ## MEMORY STATUS MONITOR
-ColorMEMStatusFree="#2e3436"
+ColorMEMStatusFree="#585858"
 ColorMEMStatusUser="#edd400"
 ColorMEMStatusBuffers="#fce94f"
 ColorMEMStatusCached="#e8951c"
 
 ## NET STATUS MONITOR
-ColorNetIdle="#2e3436"
+ColorNetIdle="#585858"
 ColorNetReceive="#75db12"
 ColorNetSend="#f57900"
 
 ## BATTERY
-ColorApm="#2e3436"
+ColorApm="#585858"
 ColorApmText="#eeeeec"
 ColorApmBattary="#ef2929"
 ColorApmLine="#72cf8c"
@@ -205,15 +206,15 @@ ColorApmGraphBg="#d3d7cf"
 #  Background of tooltips
 ColorToolTip="#d3d7cf"
 #  Textcolor of tooltips
-ColorToolTipText="#2e3436"
+ColorToolTipText="#484848"
 #  Background of labels, leave empty to force transparency
 ColorLabel="#d3d7cf"
 #  Textcolor of labels
-ColorLabelText="#2e3436" 
+ColorLabelText="#484848" 
 
 ## CLOCK
 #  Background of non-LCD clock, leave empty to force transparency
-ColorClock="#2e3436"
+ColorClock="#585858"
 #  Background of non-LCD monitor
 ColorClockText="#eeeeec"
 

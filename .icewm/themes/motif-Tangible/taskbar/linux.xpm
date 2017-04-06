@@ -1,6 +1,6 @@
 /* XPM */
 static char * linux_xpm[] = {
-"39 24 2 1",
+"39 22 2 1",
 " 	c None",
 ".	c #EEEEEC",
 "                                       ",
@@ -8,7 +8,6 @@ static char * linux_xpm[] = {
 "                                       ",
 "                                       ",
 "                                       ",
-"                                       ",
 "             ..   ..   ..              ",
 "             ..   ..   ..              ",
 "                                       ",
@@ -21,7 +20,6 @@ static char * linux_xpm[] = {
 "                                       ",
 "             ..   ..   ..              ",
 "             ..   ..   ..              ",
-"                                       ",
 "                                       ",
 "                                       ",
 "                                       ",

@@ -2,7 +2,7 @@
 static char * collapse_xpm[] = {
 "15 14 2 1",
 " 	c None",
-".	c #EEEEEC",
+".	c #000000",
 "               ",
 "               ",
 "               ",

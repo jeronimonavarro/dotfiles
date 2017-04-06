@@ -308,7 +308,7 @@ TaskBarShowMEMStatus=0 # 0/1
 TaskBarShowNetStatus=0 # 0/1
 
 #  Show a button to collapse the taskbar
-TaskBarShowCollapseButton=0 # 0/1
+TaskBarShowCollapseButton=1 # 0/1
 
 #  Use double-height task bar
 # TaskBarDoubleHeight=0 # 0/1
