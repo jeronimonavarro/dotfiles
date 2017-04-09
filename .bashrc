@@ -30,3 +30,6 @@ fi
 
 # Nivel de seguridad bajo
 umask 022
+
+# Agregamos perl6 al PATH si esta instalado
+test -s ~/.rakudobrew/bin/ && export PATH=~/.rakudobrew/bin:$PATH || true
