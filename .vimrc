@@ -33,7 +33,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on
 "set t_Co=256
 set background=dark
-colorscheme desert
+colorscheme slate
 
 "Set extra options when running in GUI mode
 "if has("gui_running")
