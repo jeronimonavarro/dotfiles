@@ -1,0 +1,35 @@
+! Latte Theme
+*foreground: #282828
+*background: #ebe4c5
+
+! black
+*color0: #282828
+*color8: #191970
+
+! red
+*color1: #ff4500
+*color9: #ff0000
+
+! green
+*color2: #008000
+*color10: #3cb371
+
+! yellow / orange
+*color3: #f08080
+*color11: #ff6347
+
+! blue
+*color4: #0000cd
+*color12: #4169e1
+
+! magenta
+*color5: #c71585
+*color13: #ff69b4
+
+! cyan
+*color6: #4682b4
+*color14: #186FC4
+
+! white
+*color7: #ebe4c5
+*color15: #cd853f
