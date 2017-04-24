@@ -27,7 +27,7 @@ URxvt.boldFont: xft:Hack:style=bold:size=9
 !URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
 
 ! Geometria
-URxvt.geometry: 108x31
+URxvt.geometry: 95x28
 
 ! Borders
 ! pixels for external border
