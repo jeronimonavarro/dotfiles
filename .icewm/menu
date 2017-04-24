@@ -11,7 +11,7 @@
 #
 prog "Terminal" utilities-terminal urxvtc-256color
 prog "Mozilla Firefox" firefox firefox
-prog "Files" system-file-manager nautilus
+prog "PCManFM" system-file-manager pcmanfm
 prog "Google Chrome" google-chrome google-chrome
 prog Gimp gimp gimp
 prog Geany geany geany
