@@ -6,4 +6,5 @@ urxvtd-256color &
 compton -b &
 nm-applet &
 volctl &
+pcmanfm -d &
 
