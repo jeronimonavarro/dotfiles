@@ -221,7 +221,7 @@ ColorClockText="#eeeeec"
 ## BACKGROUND
 DesktopBackgroundCenter=1
 DesktopBackgroundScaled=1
-DesktopBackgroundImage="escarabajo.jpg"
+DesktopBackgroundImage="tacitas.png"
 
 ## FONTS
 TitleFontNameXft="droid sans:size=8:bold"
