@@ -102,6 +102,14 @@ dog() {
    cat "${1}" | egrep -v "^\s*(#|$)"
 }
 
+rndpass() {
+   if [ -z "${1}" ]; then
+      echo "*** Debe indicar la longitud del password que desea"
+      return
+   fi
+   tr -cd '[:alnum:]' < /dev/urandom | fold -w${1} | head -n1
+}
+
 ayudin() {
   echo
   echo "Lista de funciones:"
@@ -116,5 +124,6 @@ ayudin() {
   echo "        ver() ............ abre archivos de acuerdo a su extension"
   echo "        cf() ............. cuenta recursivamente la cantidad de archivos"
   echo "        dog() ............ imprime un archivo pero sin comentarios ni lineas vacias"
+  echo "        rndpass() .........devuelve una contraseña aleatoria de longitud [1]"
   echo 
 }
