@@ -84,7 +84,7 @@ set showmatch
 "set laststatus=1
 
 "Turn backup and swap off
-set nobackup
+set backup
 set noswapfile
 set nowb
 
