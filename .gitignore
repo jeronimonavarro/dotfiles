@@ -1,4 +1,5 @@
 *.netrwhist
+*~
 geany.conf
 .config/vifm/vifminfo
 .vim/bundle/
