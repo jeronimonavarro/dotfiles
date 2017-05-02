@@ -6,5 +6,5 @@ urxvtd-256color &
 compton -b &
 nm-applet &
 volctl &
-pcmanfm --desktop --wallpaper-mode=stretch &
+pcmanfm --desktop &
 
