@@ -15,6 +15,7 @@ shopt -s nullglob nocasematch
 # Internal variables.
 cache_dir="${HOME}/.cache/wal"
 newline=$'\n'
+color_count=18
 icewm_base_dir="${HOME}/.icewm"
 icewm_theme_dir="${icewm_base_dir}/themes/wal"
 icewm_theme_file="${icewm_theme_dir}/default.theme"
@@ -25,6 +26,13 @@ scheme_file="${HOME}/.Xresources.d/colorschemes/wal"
 # GENERATE COLORSCHEME
 
 get_colors() {
+   # Check for imagemagick.
+   if ! type -p convert >/dev/null 2>&1; then
+      out "error: imagemagick not found, exiting..."
+      out "error: wal requires imagemagick to function."
+      exit 1
+   fi
+
    # Create the cache dir.
    mkdir -p "${cache_dir}"
 
@@ -33,18 +41,20 @@ get_colors() {
    current_wallpaper="${HOME}/.icewm/themes/wal/${wallpaper_file}"
 
    # Generate 16 colors from the image and save them to a file.
-   colors=($(convert "${current_wallpaper}" +dither -colors 18 -unique-colors txt:- | grep -E -o " \#.{6}" | tail -n +2))
+   colors=($(convert "${current_wallpaper}"  +dither -colors $color_count -unique-colors txt:- | grep -E -o " \#.{6}"))
+   #colors=($(convert "${current_wallpaper}" +dither -colors $color_count -unique-colors txt:- | grep -E -o " \#.{6}" | tail -n +2))
 
-   # If imagemagick finds less than 16 colors, abort and warn the user.
-   (( "${#colors[@]}" <= 15 )) && {
-   echo "Error: Imagemagick failed to generate a 16 color palette for ${current_wallpaper##*/}"
-   echo "Error: Imagemagick could only generate a ${#colors[@]} color palette."
-   echo "Error: wal won't do guesswork to fill in the blanks."
-   echo "Error: Please try a different image."
-   exit 1
-   }
+   # If imagemagick finds less than 16 colors, use a larger source number of colors.
+   while (( "${#colors[@]}" <= 15 )); do
+      colors=($(convert "${wal}"  +dither -colors "$((color_count + ${index:-2}))" -unique-colors txt:- | grep -E -o " \#.{6}"))
+      ((index++))
+      out "colors: Imagemagick couldn't generate a $color_count color palette, trying a larger palette size ($((color_count + index)))."
 
-echo "colors: Generated colorscheme"
+      # Quit the loop if we're taking too long.
+      ((index == 10)) && break
+   done
+
+   echo "colors: Generated colorscheme"
 }
 
 # SET COLORSCHEME
@@ -60,9 +70,9 @@ set_special() {
 
    # Set X colors
    case "$1" in
-      10) x_colors+="*foreground: ${2}${newline}" ;;
-      11) x_colors+="*background: ${2}${newline}" ;;
-      12) x_colors+="*cursor: ${2}${newline}" ;;
+      10) x_colors+="URxvt*foreground: ${2}${newline}" ;;
+      11) x_colors+="URxvt*background: ${2}${newline}" ;;
+      12) x_colors+="URxvt*cursorColor: ${2}${newline}" ;;
    esac
  }
 
@@ -186,8 +196,8 @@ reset_icewm() {
 
 set_icewm() {
    # General colors
-   set_icewm_titlebar ${colors[9]} ${colors[15]}   # bg, fg
-   set_icewm_taskbar ${colors[0]} ${comment} ${colors[15]} ${colors[10]}   # bgN, fgN, fgA, bgA
+   set_icewm_titlebar ${colors[10]} ${colors[15]}   # bg, fg
+   set_icewm_taskbar ${colors[0]} ${comment} ${colors[15]} ${colors[9]}   # bgN, fgN, fgA, bgA
    set_icewm_buttons ${colors[0]} ${colors[10]}   # bg{N,A}, fg{N,A}
    set_icewm_workspaces ${comment} ${colors[15]}   # fgN, fgA
    set_icewm_clock ${comment}   # fgN
@@ -209,11 +219,16 @@ set_icewm() {
 
 send_sequences() {
    # Create string of escape sequences to send to the terminals.
+   #set_special 10  "${colors[15]}"
+   #set_special 11  "${colors[0]}"
+   #set_special 12  "${colors[15]}"
+   #set_special 13  "${colors[15]}"
+   #set_special 14  "${colors[0]}"
    set_special 10  "${colors[15]}"
-   set_special 11  "${colors[0]}"
+   set_special 11  "${alpha:+[${alpha}]}${colors[0]}"
    set_special 12  "${colors[15]}"
    set_special 13  "${colors[15]}"
-   set_special 14  "${colors[0]}"
+   set_special 14  "${alpha:+[${alpha}]}${colors[0]}"
 
    # This escape sequence doesn't work in VTE terminals.
    [[ "$vte" != "on" ]] && set_special 708 "${colors[0]}"
@@ -282,25 +297,25 @@ export_colors() {
 }
 
 export_xresources() {
-   printf "*foreground: %s\n" "${colors[15]}" > "$scheme_file"
-   printf "*background: %s\n" "${colors[0]}" >> "$scheme_file"
-   printf "*cursor: %s\n" "${colors[15]}" >> "$scheme_file"
-   printf "*color0: %s\n" "${colors[0]}" >> "$scheme_file"
-   printf "*color1: %s\n" "${colors[9]}" >> "$scheme_file"
-   printf "*color2: %s\n" "${colors[10]}" >> "$scheme_file"
-   printf "*color3: %s\n" "${colors[11]}" >> "$scheme_file"
-   printf "*color4: %s\n" "${colors[12]}" >> "$scheme_file"
-   printf "*color5: %s\n" "${colors[13]}" >> "$scheme_file"
-   printf "*color6: %s\n" "${colors[14]}" >> "$scheme_file"
-   printf "*color7: %s\n" "${colors[15]}" >> "$scheme_file"
-   printf "*color8: %s\n" "${comment}" >> "$scheme_file"
-   printf "*color9: %s\n" "${colors[9]}" >> "$scheme_file"
-   printf "*color10: %s\n" "${colors[10]}" >> "$scheme_file"
-   printf "*color11: %s\n" "${colors[11]}" >> "$scheme_file"
-   printf "*color12: %s\n" "${colors[12]}" >> "$scheme_file"
-   printf "*color13: %s\n" "${colors[13]}" >> "$scheme_file"
-   printf "*color14: %s\n" "${colors[14]}" >> "$scheme_file"
-   printf "*color15: %s\n" "${colors[15]}" >> "$scheme_file"
+   printf "URxvt*foreground: %s\n" "${colors[15]}" > "$scheme_file"
+   printf "URxvt*background: %s\n" "${colors[0]}" >> "$scheme_file"
+   printf "URxvt*cursorColor: %s\n" "${colors[15]}" >> "$scheme_file"
+   printf "URxvt*color0: %s\n" "${colors[0]}" >> "$scheme_file"
+   printf "URxvt*color1: %s\n" "${colors[9]}" >> "$scheme_file"
+   printf "URxvt*color2: %s\n" "${colors[10]}" >> "$scheme_file"
+   printf "URxvt*color3: %s\n" "${colors[11]}" >> "$scheme_file"
+   printf "URxvt*color4: %s\n" "${colors[12]}" >> "$scheme_file"
+   printf "URxvt*color5: %s\n" "${colors[13]}" >> "$scheme_file"
+   printf "URxvt*color6: %s\n" "${colors[14]}" >> "$scheme_file"
+   printf "URxvt*color7: %s\n" "${colors[15]}" >> "$scheme_file"
+   printf "URxvt*color8: %s\n" "${comment}" >> "$scheme_file"
+   printf "URxvt*color9: %s\n" "${colors[9]}" >> "$scheme_file"
+   printf "URxvt*color10: %s\n" "${colors[10]}" >> "$scheme_file"
+   printf "URxvt*color11: %s\n" "${colors[11]}" >> "$scheme_file"
+   printf "URxvt*color12: %s\n" "${colors[12]}" >> "$scheme_file"
+   printf "URxvt*color13: %s\n" "${colors[13]}" >> "$scheme_file"
+   printf "URxvt*color14: %s\n" "${colors[14]}" >> "$scheme_file"
+   printf "URxvt*color15: %s\n" "${colors[15]}" >> "$scheme_file"
    echo "colors: Exported Xresources"
 }
 
@@ -361,16 +376,16 @@ main () {
    reload_dunst
 
    # Reload lemonbar
-   reload_bar
+   #reload_bar
 
    # Set dmenu
-   set_dmenu
+   #set_dmenu
 
    # Set icewm theme
    set_icewm
 
    # Reload icewmbg
-   reload_icewmbg
+   #reload_icewmbg
 }
 
 main
