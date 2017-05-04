@@ -6,17 +6,17 @@
 hi clear
 set background=dark
 
-if exists("syntax_on")
+if exists('syntax_on')
     syntax reset
 endif
 
 " Colorscheme name
-let colors_name = "wal"
+let g:colors_name = 'wal'
 
 " highlight groups {{{
 
 set t_Co=16
-hi Normal ctermbg=0 ctermfg=7 cterm=NONE
+hi Normal ctermbg=NONE ctermfg=7 cterm=NONE
 hi NonText ctermbg=NONE ctermfg=0 cterm=NONE
 hi Comment ctermbg=NONE ctermfg=8 cterm=NONE
 hi Constant ctermbg=NONE ctermfg=3 cterm=NONE
@@ -62,7 +62,7 @@ hi IncSearch ctermbg=3 ctermfg=0 cterm=NONE
 hi Search ctermbg=3 ctermfg=0 cterm=NONE
 hi Directory ctermbg=NONE ctermfg=4 cterm=NONE
 hi MatchParen ctermbg=8 ctermfg=0 cterm=NONE
-hi ColorColumn ctermbg=4 ctermfg=4 cterm=NONE
+hi ColorColumn ctermbg=4 ctermfg=0 cterm=NONE
 hi signColumn ctermbg=NONE ctermfg=4 cterm=NONE
 hi ErrorMsg ctermbg=NONE ctermfg=8 cterm=NONE
 hi ModeMsg ctermbg=NONE ctermfg=2 cterm=NONE
@@ -173,5 +173,9 @@ hi SignifySignChange ctermbg=NONE ctermfg=4 cterm=NONE
 hi SignifySignDelete ctermbg=NONE ctermfg=1 cterm=NONE
 hi NERDTreeDirSlash ctermbg=NONE ctermfg=4 cterm=NONE
 hi NERDTreeExecFile ctermbg=NONE ctermfg=7 cterm=NONE
+hi ALEErrorSign ctermbg=NONE ctermfg=1 cterm=NONE
+hi ALEWarningSign ctermbg=NONE ctermfg=3 cterm=NONE
+hi ALEError ctermbg=NONE ctermfg=1 cterm=NONE
+hi ALEWarning ctermbg=NONE ctermfg=3 cterm=NONE
 
 " }}}
