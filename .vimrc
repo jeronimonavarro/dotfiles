@@ -33,7 +33,7 @@ set timeoutlen=1000 ttimeoutlen=0
 "Enable syntax highlighting
 syntax on
 "set t_Co=256
-set background=light
+set background=dark
 colorscheme solarized
 
 "Set extra options when running in GUI mode
