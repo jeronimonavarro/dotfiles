@@ -379,13 +379,13 @@ main () {
    #reload_bar
 
    # Set dmenu
-   #set_dmenu
+   set_dmenu
 
    # Set icewm theme
    set_icewm
 
    # Reload icewmbg
-   #reload_icewmbg
+   reload_icewmbg
 }
 
 main

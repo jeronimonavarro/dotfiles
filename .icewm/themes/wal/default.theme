@@ -19,43 +19,43 @@ DlgBorderSizeY=0
 
 ## DIALOG *
 #  Background of dialog windows
-ColorDialog="#CB936A"
+ColorDialog="#D3C3B4"
 
 ## INPUT
 #  Background of text entry fields (e.g. the addressbar)
-ColorInput="#1E2929"
+ColorInput="#17262A"
 #  Textcolor of text entry fields (e.g. the addressbar)
 ColorInputText="#666666"
 #  Background of selected text in an entry field
-ColorInputSelection="#1E2929"
+ColorInputSelection="#17262A"
 #  Selected text in an entry field
-ColorInputSelectionText="#C57650"
+ColorInputSelectionText="#A68E9A"
 
 ## BUTTONS *
 #  Background of regular buttons
-ColorNormalButton="#1E2929"
+ColorNormalButton="#17262A"
 #  Textcolor of regular buttons
-ColorNormalButtonText="#768971"
+ColorNormalButtonText="#B4B3B9"
 #  Background of pressed buttons
-ColorActiveButton="#1E2929"
+ColorActiveButton="#17262A"
 #  Textcolor of pressed buttons
-ColorActiveButtonText="#768971"
+ColorActiveButtonText="#B4B3B9"
 
 ## TOOLBAR/WORKSPACE BUTTONS *
 ColorNormalWorkspaceButtonText="#666666"
-ColorActiveWorkspaceButtonText="#CDAF9F"
+ColorActiveWorkspaceButtonText="#C5BEC2"
 
 ## TITLEBAR *
 #  Textcolor of the titlebar of regular windows
-ColorNormalTitleBarText="#768971"
+ColorNormalTitleBarText="#B4B3B9"
 #  Textshadow of the titlebar of regular windows
 ColorNormalTitleBarShadow=""
 #  Background of the titlebar of active windows
-ColorActiveTitleBar="#768971"
+ColorActiveTitleBar="#B4B3B9"
 #  Background of the titlebar of regular windows
-ColorNormalTitleBar="#768971"
+ColorNormalTitleBar="#B4B3B9"
 #  Textcolor of the titlebar of active windows
-ColorActiveTitleBarText="#CDAF9F"
+ColorActiveTitleBarText="#C5BEC2"
 #  Textshadow of the titlebar of active windows
 ColorActiveTitleBarShadow=""
 
@@ -71,45 +71,45 @@ ColorActiveTitleBarShadow=""
 
 ## MENU *
 #  Background of pop-up menus
-ColorNormalMenu="#1E2929"
+ColorNormalMenu="#17262A"
 #  Background of selected menu item, leave empty to force transparency
 ColorActiveMenuItem=""
 #  Textcolor of regular menu items
 ColorNormalMenuItemText="#666666"
 #  Textcolor of selected menu items
-ColorActiveMenuItemText="#CDAF9F"
+ColorActiveMenuItemText="#C5BEC2"
 #  Textcolor of disabled menu items
-ColorDisabledMenuItemText="#1E2929"
+ColorDisabledMenuItemText="#17262A"
 #  Shadow of regular menu items
 ColorDisabledMenuItemShadow=""
 
 ## MOVE/RESIZE
 #  Background of move/resize status window
-ColorMoveSizeStatus="#CB936A"
+ColorMoveSizeStatus="#D3C3B4"
 #  Textcolor of move/resize status window
-ColorMoveSizeStatusText="#1E2929"
+ColorMoveSizeStatusText="#17262A"
 
 ## QUICK SWITCH
 #  Background of the quick switch window
-ColorQuickSwitch="#BE833E"
+ColorQuickSwitch="#D8A091"
 #  Textcolor in the quick switch window
-ColorQuickSwitchText="#CDAF9F"
+ColorQuickSwitchText="#17262A"
 #  Rectangle arround the active icon in the quick switch window
-ColorQuickSwitchActive="#BE833E"
+ColorQuickSwitchActive="#D8A091"
 
 ## TASKBAR *
 #  Background of the taskbar (tray, etc)
-ColorDefaultTaskBar="#1E2929"
+ColorDefaultTaskBar="#17262A"
 #  Background for task buttons of regular windows
-ColorNormalTaskBarApp="#1E2929"
+ColorNormalTaskBarApp="#17262A"
 #  Textcolor for task buttons of regular windows
 ColorNormalTaskBarAppText="#666666"
 #  Background for task buttons of the active window
-ColorActiveTaskBarApp="#C57650"
+ColorActiveTaskBarApp="#A68E9A"
 #  Textcolor for task buttons of the active window
-ColorActiveTaskBarAppText="#CDAF9F"
+ColorActiveTaskBarAppText="#C5BEC2"
 #  Background for task buttons of minimized windows
-ColorMinimizedTaskBarApp="#1E2929"
+ColorMinimizedTaskBarApp="#17262A"
 #  Textcolor for task buttons of minimized windows
 ColorMinimizedTaskBarAppText="#666666"
 #  Background for task buttons of windows on other workspaces
@@ -119,13 +119,13 @@ ColorMinimizedTaskBarAppText="#666666"
 
 ## LISTBOX *
 #  Background of listboxes (eg, WindowList)
-ColorListBox="#1E2929"
+ColorListBox="#17262A"
 #  Textcolor in listboxes
 ColorListBoxText="#666666"
 #  Background of selected listbox items
-ColorListBoxSelection="#B4A38F"
+ColorListBoxSelection="#EEC8A5"
 #  Textcolor of selected listbox items
-ColorListBoxSelectionText="#1E2929"
+ColorListBoxSelectionText="#17262A"
 
 ## SCROLLBAR 
 #  Scrollbar background (sliding area)
@@ -183,7 +183,7 @@ ColorClockText="#666666"
 ## BACKGROUND
 DesktopBackgroundCenter=1
 DesktopBackgroundScaled=1
-DesktopBackgroundImage="tacitas.jpeg"
+DesktopBackgroundImage="deepin.jpg"
 
 ## FONTS
 TitleFontNameXft="droid sans:size=8"

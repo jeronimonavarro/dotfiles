@@ -16,7 +16,7 @@ key "Alt+Ctrl+s"			xdg-open http://www.google.com
 
 key "Super+KP_Subtract"			amixer sset PCM 5%-
 key "Super+KP_Add"			amixer sset PCM 5%+
-key "Ctrl+Space" dmenu_run -i -b -nb "#303533" -nf "#E3CFCA" -sb "#303533" -sf "#BE833E"
+key "Ctrl+Space" dmenu_run -i -b -nb "#17262A" -nf "#C5BEC2" -sb "#17262A" -sf "#B4B3B9"
 
 # "Multimedia key" bindings for XFree86. Gather the keycodes of your
 # advanced function keys by watching the output of the xev command whilest

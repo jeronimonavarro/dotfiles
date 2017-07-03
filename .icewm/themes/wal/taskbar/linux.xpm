@@ -2,7 +2,7 @@
 static char *linux[] = {
 /* columns rows colors chars-per-pixel */
 "39 16 2 1 ",
-"  c gray60",
+"  c gray40",
 ". c None",
 /* pixels */
 ".......................................",

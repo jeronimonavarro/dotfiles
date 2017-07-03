@@ -2,7 +2,7 @@
 static char *expand[] = {
 /* columns rows colors chars-per-pixel */
 "15 14 2 1 ",
-"  c gray60",
+"  c gray40",
 ". c None",
 /* pixels */
 "...............",
