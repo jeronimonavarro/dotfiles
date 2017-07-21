@@ -89,7 +89,7 @@ HideBordersMaximized=1 # 0/1
 ShowMoveSizeStatus=1 # 0/1
 
 #  Show name of current workspace while switching
-ShowWorkspaceStatus=0 # 0/1
+ShowWorkspaceStatus=1 # 0/1
 
 #  Display mini-icons on desktop for minimized windows
 # MinimizeToDesktop=0 # 0/1
@@ -254,7 +254,7 @@ TaskBarShowMailboxStatus=0 # 0/1
 # TaskBarMailboxStatusCountMessages=0 # 0/1
 
 #  Show workspace switching buttons on task bar
-TaskBarShowWorkspaces=1 # 0/1
+TaskBarShowWorkspaces=0 # 0/1
 
 #  Show windows on the taskbar
 # TaskBarShowWindows=1 # 0/1
@@ -1332,7 +1332,7 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 #  
 
 #WorkspaceNames=" web ", " code ", " media "
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+WorkspaceNames="one", "two", "three", "four"
 
 #
 # icewmbg preferences
@@ -1364,6 +1364,4 @@ WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
 
 #  Image to announce for semi-transparent windows
 # DesktopTransparencyImage=""
-
-#  
 
