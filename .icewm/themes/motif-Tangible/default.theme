@@ -12,12 +12,12 @@ RolloverButtonsSupported=1
 TitleButtonsLeft="sr"
 TitleButtonsRight="xmi"
 
-BorderSizeX=4
-BorderSizeY=4
-CornerSizeX=27
-CornerSizeY=27
-DlgBorderSizeX=4
-DlgBorderSizeY=4
+BorderSizeX=3
+BorderSizeY=3
+CornerSizeX=26
+CornerSizeY=26
+DlgBorderSizeX=3
+DlgBorderSizeY=3
 
 ## DIALOG
 #  Background of dialog windows
@@ -69,9 +69,11 @@ ColorNormalTitleBarText="#bababa"
 #  Textshadow of the titlebar of regular windows
 ColorNormalTitleBarShadow=""
 #  Background of the titlebar of regular windows
-ColorNormalTitleBar="#8c8c8c"
+ColorNormalTitleBar="#A1A1A0"
+#ColorNormalTitleBar="#8c8c8c"
 #  Background of the titlebar of active windows
-ColorActiveTitleBar="#aba68c"
+ColorActiveTitleBar="#D4D4D3"
+#ColorActiveTitleBar="#C7B48D"
 #  Textcolor of the titlebar of active windows
 ColorActiveTitleBarText="#454d54"
 #  Textshadow of the titlebar of active windows
@@ -85,9 +87,9 @@ ColorActiveTitleButton="#eeeeec"
 ColorNormalTitleButtonText="#888a85"
 
 #  Border of inactive windows
-ColorNormalBorder="#8c8c8c"
+ColorNormalBorder="#A1A1A0"
 #  Border of active windows
-ColorActiveBorder="#aba68c"
+ColorActiveBorder="#D4D4D3"
 
 ## MINI ICONS
 #  Background for mini icons of regular windows
@@ -177,7 +179,7 @@ ColorScrollBarButton="#555753"
 ColorScrollBarButtonArrow="#bababa"
 
 ## CPU STATUS MONITOR
-ColorCPUStatusIdle="#585858"
+ColorCPUStatusIdle="#383838"
 ColorCPUStatusInterrupts="#cc0000"
 ColorCPUStatusIoWait="#fa2b2b"
 ColorCPUStatusSoftIrq="#ef1313"
@@ -192,7 +194,7 @@ ColorMEMStatusBuffers="#fce94f"
 ColorMEMStatusCached="#e8951c"
 
 ## NET STATUS MONITOR
-ColorNetIdle="#585858"
+ColorNetIdle="#383838"
 ColorNetReceive="#75db12"
 ColorNetSend="#f57900"
 
@@ -215,14 +217,14 @@ ColorLabelText="#484848"
 
 ## CLOCK
 #  Background of non-LCD clock, leave empty to force transparency
-ColorClock="#585858"
+ColorClock="#383838"
 #  Background of non-LCD monitor
 ColorClockText="#eeeeec"
 
 ## BACKGROUND
 DesktopBackgroundCenter=1
 DesktopBackgroundScaled=1
-DesktopBackgroundImage="tacitas.png"
+DesktopBackgroundImage="pareja.jpg"
 
 ## FONTS
 TitleFontNameXft="droid sans:size=8:bold"
@@ -239,7 +241,7 @@ ActiveWorkspaceFontNameXft="droid sans:size=12:bold"
 MinimizedWindowFontNameXft="droid sans:size=8"
 ListBoxFontNameXft="droid sans:size=8:bold"
 ToolTipFontNameXft="droid sans:size=8"
-ClockFontNameXft="droid sans:size=10:bold"
+ClockFontNameXft="fifthleg:size=12:bold"
 ApmFontNameXft="droid sans:size=8"
 InputFontNameXft="droid sans:size=9:bold"
 LabelFontNameXft="droid sans:size=8"

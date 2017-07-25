@@ -254,7 +254,7 @@ TaskBarShowMailboxStatus=0 # 0/1
 # TaskBarMailboxStatusCountMessages=0 # 0/1
 
 #  Show workspace switching buttons on task bar
-TaskBarShowWorkspaces=0 # 0/1
+TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
 # TaskBarShowWindows=1 # 0/1
@@ -287,7 +287,7 @@ TaskBarShowWindowIcons=1 # 0/1
 TaskBarShowWindowListMenu=1 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
-TaskBarShowCPUStatus=0 # 0/1
+TaskBarShowCPUStatus=1 # 0/1
 
 #  Show RAM usage in CPU status tool tip
 # CPUStatusShowRamUsage=0 # 0/1
@@ -305,10 +305,10 @@ TaskBarShowCPUStatus=0 # 0/1
 TaskBarShowMEMStatus=0 # 0/1
 
 #  Show network status on task bar (Linux only)
-TaskBarShowNetStatus=0 # 0/1
+TaskBarShowNetStatus=1 # 0/1
 
 #  Show a button to collapse the taskbar
-TaskBarShowCollapseButton=1 # 0/1
+TaskBarShowCollapseButton=0 # 0/1
 
 #  Use double-height task bar
 # TaskBarDoubleHeight=0 # 0/1
@@ -539,10 +539,10 @@ TaskbarButtonWidthDivisor=5 # [1-25]
 # NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
+IconPath="/home/jnavarro/.local/share/icons/Hedera/16/applications:/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
-# MailBoxPath=""
+# MailBoxPath="pop3://user:pass@mail:port/path"
 
 #  Command to run on mailbox
 # MailCommand="xterm -name alpine -title ALPINE -e alpine"
@@ -602,10 +602,10 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="wlp2s0"
+NetworkStatusDevice="eth2"
 
 #  Clock Time format (strftime format string)
-TimeFormat=" %R "
+TimeFormat=" %T "
 # TimeFormat="%R, %a %d de %b"
 
 #  Alternate Clock Time format (e.g. for blinking effects)
@@ -1330,10 +1330,7 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 # Gradients=""
 
 #  
-
-#WorkspaceNames=" web ", " code ", " media "
-WorkspaceNames="one", "two", "three", "four"
-
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
 #
 # icewmbg preferences
 #
