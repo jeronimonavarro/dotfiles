@@ -20,7 +20,7 @@ prog "Configurar sonido" multimedia-volume-control pavucontrol
 prog "Configurar pantallas" preferences-desktop-display arandr
 separator
 menu "Opciones gráficas" - {
-prog "Salida HDMI (TV)" xrandr /home/jnavarro/.screenlayout/solo-hdmi.sh
+prog "HDMI (TV)" xrandr /home/jnavarro/.screenlayout/solo-hdmi.sh
 prog "HDMI -- Notebook" xrandr /home/jnavarro/.screenlayout/extender-hdmi-left.sh
 prog "Notebook -- HDMI" xrandr /home/jnavarro/.screenlayout/extender-hdmi-right.sh
 prog "LCD Notebook" xrandr /home/jnavarro/.screenlayout/solo-notebook.sh
