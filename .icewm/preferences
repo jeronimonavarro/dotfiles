@@ -302,7 +302,7 @@ TaskBarShowCPUStatus=1 # 0/1
 # CPUStatusShowCpuFreq=1 # 0/1
 
 #  Show memory usage status on task bar (Linux only)
-TaskBarShowMEMStatus=0 # 0/1
+TaskBarShowMEMStatus=1 # 0/1
 
 #  Show network status on task bar (Linux only)
 TaskBarShowNetStatus=1 # 0/1
@@ -602,7 +602,7 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="wlp0s20u2"
+NetworkStatusDevice="eth2"
 
 #  Clock Time format (strftime format string)
 TimeFormat=" %R "

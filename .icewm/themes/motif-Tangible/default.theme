@@ -188,7 +188,7 @@ ColorCPUStatusSystem="#75507b"
 ColorCPUStatusNice="#ad7fa8"
 
 ## MEMORY STATUS MONITOR
-ColorMEMStatusFree="#585858"
+ColorMEMStatusFree="#383838"
 ColorMEMStatusUser="#edd400"
 ColorMEMStatusBuffers="#fce94f"
 ColorMEMStatusCached="#e8951c"
@@ -199,7 +199,7 @@ ColorNetReceive="#75db12"
 ColorNetSend="#f57900"
 
 ## BATTERY
-ColorApm="#585858"
+ColorApm="#383838"
 ColorApmText="#eeeeec"
 ColorApmBattary="#ef2929"
 ColorApmLine="#72cf8c"
