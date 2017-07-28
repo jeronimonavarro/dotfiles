@@ -4,7 +4,7 @@ ThemeAuthor="Jerónimo Navarro <navarroj@openmailbox.org>"
 License="GPL"
 Look=motif
 
-TitleBarHeight=20
+TitleBarHeight=21
 TitleButtonsSupported="hdsrxmi"
 TitleBarJustify=50
 RolloverButtonsSupported=1
@@ -14,8 +14,8 @@ TitleButtonsRight="xmi"
 
 BorderSizeX=3
 BorderSizeY=3
-CornerSizeX=23
-CornerSizeY=23
+CornerSizeX=22
+CornerSizeY=16
 DlgBorderSizeX=3
 DlgBorderSizeY=3
 
@@ -224,7 +224,7 @@ ColorClockText="#eeeeec"
 ## BACKGROUND
 DesktopBackgroundCenter=1
 DesktopBackgroundScaled=1
-DesktopBackgroundImage="pareja.jpg"
+DesktopBackgroundImage="bulbs.jpg"
 
 ## FONTS
 TitleFontNameXft="droid sans:size=8:bold"
