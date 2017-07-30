@@ -218,7 +218,7 @@ QuickSwitchMaxWidth=1 # 0/1
 # ShowTaskBar=1 # 0/1
 
 #  Task bar at top of the screen
-TaskBarAtTop=0 # 0/1
+TaskBarAtTop=1 # 0/1
 
 #  Keep the task bar below regular windows
 # TaskBarKeepBelow=0 # 0/1
@@ -257,7 +257,7 @@ TaskBarShowMailboxStatus=0 # 0/1
 TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
-# TaskBarShowWindows=1 # 0/1
+TaskBarShowWindows=0 # 0/1
 
 #  Show 'show desktop' button on taskbar
 TaskBarShowShowDesktopButton=1 # 0/1
@@ -284,7 +284,7 @@ TaskBarShowWindowIcons=1 # 0/1
 # TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=0 # 0/1
+TaskBarShowWindowListMenu=1 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
 TaskBarShowCPUStatus=1 # 0/1
@@ -380,7 +380,7 @@ ShowHelp=0 # 0/1
 # EnableAddressBar=1 # 0/1
 
 #  Show address bar in task bar
-# ShowAddressBar=1 # 0/1
+ShowAddressBar=0 # 0/1
 
 #  Overrides automatic multiple byte detection
 # MultiByte=1 # 0/1
@@ -602,7 +602,7 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="eth2"
+NetworkStatusDevice="wlp0s20u2"
 
 #  Clock Time format (strftime format string)
 TimeFormat=" %R "
@@ -1330,7 +1330,7 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 # Gradients=""
 
 #  
-WorkspaceNames=" 1 ", " 2 "
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
 #
 # icewmbg preferences
 #

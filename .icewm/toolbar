@@ -4,8 +4,11 @@
 # since modifications to this file will be discarded when you
 # (re)install icewm.
 #
-#prog "Terminal urxvt" terminal urxvtc-256color
-#prog "Navegador Firefox" firefox xdg-open about:blank
+prog "Terminal urxvt" utilities-terminal urxvtc-256color
+prog "Navegador Firefox" firefox xdg-open about:blank
+prog "Google Chrome" google-chrome google-chrome
+prog Geany geany geany
+prog Nautilus utilities-file-manager nautilus 
 #prog "Configurar pantallas" grandr arandr
 #prog "Configurar sonido" preferences-sound pavucontrol
 
