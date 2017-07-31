@@ -46,10 +46,10 @@ ColorActiveTaskBarApp="#3a3a3a"
 ColorActiveTaskBarAppText="white"
 ColorMinimizedTaskBarAppText="white"
 
-DesktopBackgroundColor="rgb:aa/a1/84"
-#DesktopBackgroundCenter = 1
-#DesktopBackgroundScaled = 1
-#DesktopBackgroundImage = ''
+#DesktopBackgroundColor="rgb:aa/a1/84"
+DesktopBackgroundCenter = 1
+DesktopBackgroundScaled = 1
+DesktopBackgroundImage = 'dots.jpg'
 
 ColorToolTip="#51a0f3"
 ColorToolTipText="white"
