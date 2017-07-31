@@ -8,7 +8,10 @@ prog "Terminal urxvt" utilities-terminal urxvtc-256color
 prog "Navegador Firefox" firefox xdg-open about:blank
 prog "Google Chrome" google-chrome google-chrome
 prog Geany geany geany
-prog Nautilus utilities-file-manager nautilus 
+#prog Nautilus utilities-file-manager nautilus 
+runonce "Oracle VM VirtualBox" system-virtualbox ".VirtualBox" VirtualBox 
+#runonce "title" icon_name "res_name.res_class" program_executable options
+prog "PCManFM" utilities-file-manager pcmanfm 
 #prog "Configurar pantallas" grandr arandr
 #prog "Configurar sonido" preferences-sound pavucontrol
 
