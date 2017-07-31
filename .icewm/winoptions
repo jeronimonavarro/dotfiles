@@ -46,5 +46,6 @@
 ## Custom
 #xconsole.XConsole.workspace: 4
 Geany.dTitleBar: 0
-#URxvt.dTitleBar: 0
+URxvt.dTitleBar: 0
+VirtualBox.dTitleBar: 0
 #Firefox.dTitleBar: 0
