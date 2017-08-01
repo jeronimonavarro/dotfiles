@@ -257,16 +257,16 @@ TaskBarShowMailboxStatus=0 # 0/1
 TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
-TaskBarShowWindows=0 # 0/1
+TaskBarShowWindows=1 # 0/1
 
 #  Show 'show desktop' button on taskbar
-TaskBarShowShowDesktopButton=1 # 0/1
+TaskBarShowShowDesktopButton=0 # 0/1
 
 #  Show Ellipsis in taskbar items
 # ShowEllipsis=0 # 0/1
 
 #  Show windows in the tray
-# TaskBarShowTray=1 # 0/1
+TaskBarShowTray=0 # 0/1
 
 #  Show windows from all workspaces on tray
 # TrayShowAllWindows=1 # 0/1
@@ -278,13 +278,13 @@ TaskBarShowShowDesktopButton=1 # 0/1
 # TaskBarShowAllWindows=0 # 0/1
 
 #  Show icons of windows on the task bar
-TaskBarShowWindowIcons=1 # 0/1
+TaskBarShowWindowIcons=0 # 0/1
 
 #  Show 'Start' menu on task bar
-# TaskBarShowStartMenu=1 # 0/1
+TaskBarShowStartMenu=0 # 0/1
 
 #  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=1 # 0/1
+TaskBarShowWindowListMenu=0 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
 TaskBarShowCPUStatus=1 # 0/1
@@ -314,7 +314,7 @@ TaskBarShowCollapseButton=0 # 0/1
 # TaskBarDoubleHeight=0 # 0/1
 
 #  Place workspace pager on left, not right
-TaskBarWorkspacesLeft=1 # 0/1
+TaskBarWorkspacesLeft=0 # 0/1
 
 #  Place workspace pager on top row when using dual-height taskbar
 # TaskBarWorkspacesTop=0 # 0/1
@@ -606,7 +606,7 @@ NetworkStatusDevice="wlp0s20u2"
 
 #  Clock Time format (strftime format string)
 TimeFormat=" %R "
-# TimeFormat="%R, %a %d de %b"
+#TimeFormat="%R, %a %d de %b"
 
 #  Alternate Clock Time format (e.g. for blinking effects)
 # TimeFormatAlt=""
