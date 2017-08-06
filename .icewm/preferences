@@ -92,16 +92,16 @@ ShowMoveSizeStatus=1 # 0/1
 ShowWorkspaceStatus=1 # 0/1
 
 #  Display mini-icons on desktop for minimized windows
-# MinimizeToDesktop=0 # 0/1
+MinimizeToDesktop=1 # 0/1
 
 #  Place the mini-icons horizontal instead of vertical
-# MiniIconsPlaceHorizontal=0 # 0/1
+MiniIconsPlaceHorizontal=0 # 0/1
 
 #  Place new mini-icons from right to left
 # MiniIconsRightToLeft=0 # 0/1
 
 #  Place new mini-icons from bottom to top
-# MiniIconsBottomToTop=0 # 0/1
+MiniIconsBottomToTop=1 # 0/1
 
 #  Always maintain focus under mouse window (makes some keyboard support non-functional or unreliable
 # StrongPointerFocus=0 # 0/1
@@ -122,10 +122,10 @@ ShowWorkspaceStatus=1 # 0/1
 HideTitleBarWhenMaximized=0 # 0/1
 
 #  Center large windows
-# CenterLarge=0 # 0/1
+CenterLarge=1 # 0/1
 
 #  Center dialogs on owner window
-# CenterTransientsOnOwner=1 # 0/1
+CenterTransientsOnOwner=1 # 0/1
 
 #  Menus track mouse even with no mouse buttons held
 # MenuMouseTracking=0 # 0/1
@@ -257,7 +257,7 @@ TaskBarShowMailboxStatus=0 # 0/1
 TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
-TaskBarShowWindows=1 # 0/1
+TaskBarShowWindows=0 # 0/1
 
 #  Show 'show desktop' button on taskbar
 TaskBarShowShowDesktopButton=0 # 0/1
@@ -281,7 +281,7 @@ TaskBarShowTray=0 # 0/1
 TaskBarShowWindowIcons=0 # 0/1
 
 #  Show 'Start' menu on task bar
-TaskBarShowStartMenu=0 # 0/1
+TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
 TaskBarShowWindowListMenu=0 # 0/1
@@ -314,7 +314,7 @@ TaskBarShowCollapseButton=0 # 0/1
 # TaskBarDoubleHeight=0 # 0/1
 
 #  Place workspace pager on left, not right
-TaskBarWorkspacesLeft=0 # 0/1
+TaskBarWorkspacesLeft=1 # 0/1
 
 #  Place workspace pager on top row when using dual-height taskbar
 # TaskBarWorkspacesTop=0 # 0/1
@@ -494,16 +494,16 @@ ConfirmLogout=0 # 0/1
 # TaskBarCPUDelay=500 # [10-3600000]
 
 #  Width of CPU Monitor
-# TaskBarCPUSamples=20 # [2-1000]
+TaskBarCPUSamples=20 # [2-1000]
 
 #  Width of Memory Monitor
-# TaskBarMEMSamples=20 # [2-1000]
+TaskBarMEMSamples=20 # [2-1000]
 
 #  Delay between Memory Monitor samples in ms
 # TaskBarMEMDelay=500 # [10-3600000]
 
-#  Width of Net Monitor
-# TaskBarNetSamples=20 # [2-1000]
+Width of Net Monitor
+TaskBarNetSamples=20 # [2-1000]
 
 #  Delay between Net Monitor samples in ms
 # TaskBarNetDelay=500 # [10-3600000]
@@ -515,7 +515,7 @@ TaskbarButtonWidthDivisor=5 # [1-25]
 # TaskBarWidthPercentage=100 # [0-100]
 
 #  Taskbar justify left, right or center
-# TaskBarJustify="left"
+TaskBarJustify="center"
 
 #  Width of APM Monitor
 # TaskBarApmGraphWidth=10 # [1-1000]
@@ -874,7 +874,7 @@ TimeFormat=" %R "
 # TaskBarClockLeds=0 # 0/1
 
 #  Surround the tray with plastic border
-TrayDrawBevel=0 # 0/1
+TrayDrawBevel=1 # 0/1
 
 #  Draw window title centered (obsoleted by TitleBarJustify)
 # TitleBarCentered=0 # 0/1
