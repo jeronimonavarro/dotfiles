@@ -9,13 +9,7 @@
 #prog NEdit nedit nedit
 #prog XChat xchat xchat
 #
-prog "Terminal" utilities-terminal urxvtc-256color
-prog "Mozilla Firefox" firefox firefox
-prog "PCManFM" system-file-manager pcmanfm
-prog "Google Chrome" google-chrome google-chrome
-prog Gimp gimp gimp
-prog Geany geany geany
-separator
+#separator
 prog "Configurar sonido" multimedia-volume-control pavucontrol
 prog "Configurar pantallas" preferences-desktop-display arandr
 separator
