@@ -4,14 +4,17 @@
 # since modifications to this file will be discarded when you
 # (re)install icewm.
 #
-prog "Terminal urxvt" utilities-terminal urxvtc-256color
-prog "Navegador Firefox" firefox xdg-open about:blank
-prog "Google Chrome" google-chrome google-chrome
-prog Geany geany geany
-#prog Nautilus utilities-file-manager nautilus 
-runonce "Oracle VM VirtualBox" system-virtualbox ".VirtualBox" VirtualBox 
+menu "Favoritos" settings-default-applications {
+	prog "Terminal urxvt" utilities-terminal urxvtc-256color
+	prog "Firefox" firefox xdg-open about:blank
+	prog "Google Chrome" google-chrome google-chrome
+	prog Geany geany geany
+	prog Nautilus utilities-file-manager nautilus 
+   prog "PCManFM" utilities-file-manager pcmanfm 
+	runonce "Oracle VM VirtualBox" system-virtualbox ".VirtualBox" VirtualBox 
+   prog Gimp gimp gimp
+}
 #runonce "title" icon_name "res_name.res_class" program_executable options
-prog "PCManFM" utilities-file-manager pcmanfm 
 #prog "Configurar pantallas" grandr arandr
 #prog "Configurar sonido" preferences-sound pavucontrol
 
