@@ -2,7 +2,7 @@
 static char * titleAB_xpm[] = {
 "4 18 2 1",
 " 	c None",
-".	c #51A0F3",
+".	c #E8E8E7",
 "....",
 "....",
 "....",

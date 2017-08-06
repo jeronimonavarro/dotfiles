@@ -6,7 +6,7 @@ Look=flat
 
 TitleBarHeight=18
 TitleButtonsSupported="xmis"
-TitleBarJustify=52
+TitleBarJustify=1
 ShowMenuButtonIcon=1
 RolloverButtonsSupported=1
 
@@ -22,8 +22,8 @@ ColorActiveBorder="#51a0f3"
 ColorActiveTitleBar="#51a0f3"
 ColorNormalTitleBar="#404040"
 ColorNormalTitleBarText="#878787"
-ColorActiveTitleBarText="white"
-ColorActiveTitleBarShadow="#444444"
+ColorActiveTitleBarText="#404040"
+ColorActiveTitleBarShadow=""
 
 ColorNormalMenu="#3a3a3a"
 ColorActiveMenuItem="#3a3a3a"
@@ -39,12 +39,21 @@ ColorActiveButtonText="#d3d3d3"
 ColorMoveSizeStatus="#51a0f3"
 ColorMoveSizeStatusText="white"
 
-ColorDefaultTaskBar="#3a3a3a"
-ColorNormalTaskBarApp="#3a3a3a"
+ColorDefaultTaskBar="#272727"
+ColorNormalTaskBarApp="#272727"
 ColorNormalTaskBarAppText="#777777"
-ColorActiveTaskBarApp="#3a3a3a"
+ColorActiveTaskBarApp="#272727"
 ColorActiveTaskBarAppText="#bbbbbb"
 ColorMinimizedTaskBarAppText="#555555"
+
+#  Background for mini icons of regular windows
+# ColorNormalMinimizedWindow="rgb:C0/C0/C0"
+#  Textcolor for mini icons of regular windows
+# ColorNormalMinimizedWindowText="rgb:00/00/00"
+#  Background for mini icons of active windows
+# ColorActiveMinimizedWindow="rgb:E0/E0/E0"
+#  Textcolor for mini icons of active windows
+# ColorActiveMinimizedWindowText="rgb:00/00/00"
 
 #DesktopBackgroundColor="rgb:aa/a1/84"
 DesktopBackgroundCenter = 1
@@ -72,11 +81,11 @@ ColorClockText="#d3d3d3"
 ColorCPUStatusUser="#22a9e1"
 ColorCPUStatusSystem="#255086"
 ColorCPUStatusNice="#bfbfbe"
-ColorCPUStatusIdle="#141414"
+ColorCPUStatusIdle="#272727"
 ColorNetSend="#255086"
 ColorNetReceive="#bfbfbe"
-ColorNetIdle="#141414"
-ColorMEMStatusFree="#141414"
+ColorNetIdle="#272727"
+ColorMEMStatusFree="#272727"
 ColorMEMStatusUser="#bfbfbe"
 ColorMEMStatusBuffers="#255086"
 ColorMEMStatusCached="#22a9e1"
@@ -85,7 +94,7 @@ ColorQuickSwitch="#3a3a3a"
 ColorQuickSwitchText="white"
 ColorQuickSwitchActive="#4e9ef1"
 
-TitleFontNameXft="droid sans:size=9:bold"
+TitleFontNameXft="droid sans:size=9"
 MenuFontNameXft="droid sans:size=9"
 StatusFontNameXft="droid sans:size=10"
 QuickSwitchFontNameXft="droid sans:size=10"
