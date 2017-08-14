@@ -24,6 +24,7 @@ alias reX='xrdb -merge ~/.Xresources && xrdb -load ~/.Xresources'
 alias ran='W3MIMGDISPLAY_PATH=/usr/libexec/w3m/w3mimgdisplay ranger'
 alias ranger='W3MIMGDISPLAY_PATH=/usr/libexec/w3m/w3mimgdisplay ranger'
 alias gato='telnet nyancat.dakko.us'
+alias yast='/usr/bin/xdg-su -c /sbin/yast2'
 # estado pc
 alias suspend='systemctl suspend'
 alias nosuspender='kill -9 `pidof xautolock`'
