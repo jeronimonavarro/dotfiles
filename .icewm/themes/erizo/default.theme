@@ -10,12 +10,12 @@ TitleBarJustify=1
 ShowMenuButtonIcon=1
 RolloverButtonsSupported=1
 
-BorderSizeX=1
-BorderSizeY=1
+BorderSizeX=0
+BorderSizeY=0
 CornerSizeX=18
 CornerSizeY=18
-DlgBorderSizeX=1
-DlgBorderSizeY=1
+DlgBorderSizeX=0
+DlgBorderSizeY=0
 
 ColorNormalBorder="#404040"
 ColorActiveBorder="#51a0f3"
