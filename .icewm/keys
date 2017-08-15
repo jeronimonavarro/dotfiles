@@ -11,8 +11,9 @@
 #
 key "Alt+Ctrl+t"			urxvtc-256color
 key "Super+Return"		urxvtc-256color
-key "Alt+Ctrl+b"			xdg-open about:blank
-key "Alt+Ctrl+s"			xdg-open http://www.google.com
+key "Super+f"			nautilus
+key "Super+g"			geany
+key "Super+q"			xdg-open https://www.google.com.ar
 
 key "Super+KP_Subtract"			amixer sset Master 5%-
 key "Super+KP_Add"			amixer sset Master 5%+
