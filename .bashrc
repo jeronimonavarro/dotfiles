@@ -12,10 +12,10 @@ test -s ~/.env && . ~/.env || true
 
 if [[ $EUID -ne 0 ]]; then
    # Default prompt
-   PS1="\[\e[1;32m\]@\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
+   PS1="\[\e[1;32m\]@\h:\[\e[1;34m\]\w\[\e[m\] > "
 else
    # Root prompt
-   PS1="\[\e[1;31m\](root) @\h:\[\e[1;34m\]\w\[\e[m\] ➤ "
+   PS1="\[\e[1;31m\](root) @\h:\[\e[1;34m\]\w\[\e[m\] > "
 fi
 
 # Prompt dentro de tmux con status bar disabled
