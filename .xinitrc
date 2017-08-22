@@ -66,6 +66,9 @@ xset b off
 # Establecer distribucion del teclado
 setxkbmap -layout latam
 
+# Habilita teclado numerico
+numlockx &
+
 # 
 # finally start the window manager
 #
