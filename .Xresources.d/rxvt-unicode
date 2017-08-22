@@ -5,8 +5,9 @@ URxvt.scrollstyle: rxvt
 URxvt.termName: xterm-256color
 URxvt.urgentOnBell: False
 URxvt.cursorBlink: True
-URxvt.letterSpace: -1
-URxvt.iconFile: /usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png
+!URxvt.letterSpace: -1
+!URxvt.iconFile: /usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png
+URxvt.iconFile: /home/jnavarro/.local/share/icons/la-capitaine-icon-theme/apps/scalable/utilities-terminal.png
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -21,8 +22,8 @@ URxvt*scrollTtyKeypress: true
 URxvt*locale: true
 
 ! Tipografias
-URxvt.font: xft:Hack:size=9
-URxvt.boldFont: xft:Hack:style=bold:size=9
+URxvt.font: xft:Ubuntu Mono:size=12
+URxvt.boldFont: xft:Ubuntu Mono:style=bold:size=12
 !URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
 !URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
 

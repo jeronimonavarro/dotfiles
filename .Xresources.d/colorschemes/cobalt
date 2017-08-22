@@ -1,0 +1,37 @@
+! Cobalt colorscheme
+
+*.foreground:  #ffffff
+*.background:  #001b33
+*.cursorColor: #ffffff
+
+! Black
+*.color0:      #001b33 
+*.color8:      #193549
+
+! Red
+*.color9:      #ff0044
+*.color1:      #ff9d00
+
+! Green
+*.color2:      #3ad900
+*.color10:     #3ad900
+
+! Yellow
+*.color3:      #ff9d00
+*.color11:     #ff9d00
+
+! Blue
+*.color4:      #0088ff
+*.color12:     #0088ff
+
+! Magenta
+*.color5:      #ff0044
+*.color13:     #ff0044
+
+! Cyan
+*.color6:      #80ffbb
+*.color14:     #0088ff
+
+! White
+*.color7:      #ffffff
+*.color15:     #cccccc
