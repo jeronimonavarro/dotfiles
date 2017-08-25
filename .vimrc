@@ -13,7 +13,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'albertorestifo/github.vim'
+Plugin 'morhetz/gruvbox'
+"Plugin 'albertorestifo/github.vim'
 "Plugin 'dracula/vim'
 "Plugin 'altercation/vim-colors-solarized'
 
@@ -32,11 +33,14 @@ set noerrorbells visualbell t_vb=
 "Eliminating delays on ESC in vim
 set timeoutlen=1000 ttimeoutlen=0
 
+"Enable italics
+"let g:gruvbox_italic=1
+
 "Enable syntax highlighting
 syntax on
-set t_Co=256
-"set background=light
-colorscheme github
+"set t_Co=256
+set background=light
+colorscheme gruvbox
 "colorscheme solarized
 
 "Set extra options when running in GUI mode
