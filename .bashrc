@@ -33,3 +33,6 @@ umask 022
 
 # Agregamos perl6 al PATH si esta instalado
 test -s ~/.rakudobrew/bin/ && export PATH=~/.rakudobrew/bin:$PATH || true
+
+# Load gruvbox color palette
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
