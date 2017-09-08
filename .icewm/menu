@@ -9,7 +9,15 @@
 #prog NEdit nedit nedit
 #prog XChat xchat xchat
 #
-#separator
+prog "Terminal urxvt" utilities-terminal urxvtc-256color
+prog "Firefox" firefox xdg-open about:blank
+prog "Google Chrome" google-chrome google-chrome
+prog Geany geany geany
+prog Nautilus utilities-file-manager nautilus 
+#prog "PCManFM" utilities-file-manager pcmanfm 
+prog "Oracle VM VirtualBox" system-virtualbox VirtualBox 
+prog Gimp gimp gimp
+separator
 prog "Configurar sonido" multimedia-volume-control pavucontrol
 prog "Configurar pantallas" preferences-desktop-display arandr
 separator
