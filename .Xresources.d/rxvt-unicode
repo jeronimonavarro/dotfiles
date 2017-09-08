@@ -22,8 +22,8 @@ URxvt*scrollTtyKeypress: true
 URxvt*locale: true
 
 ! Tipografias
-URxvt.font: xft:Ubuntu Mono:size=12
-URxvt.boldFont: xft:Ubuntu Mono:style=bold:size=12
+URxvt.font: xft:Droid Sans Mono:size=10
+URxvt.boldFont: xft:Droid Sans Mono:style=bold:size=10
 !URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
 !URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
 
