@@ -92,7 +92,7 @@ ShowMoveSizeStatus=1 # 0/1
 ShowWorkspaceStatus=1 # 0/1
 
 #  Display mini-icons on desktop for minimized windows
-MinimizeToDesktop=1 # 0/1
+MinimizeToDesktop=0 # 0/1
 
 #  Place the mini-icons horizontal instead of vertical
 MiniIconsPlaceHorizontal=0 # 0/1
@@ -218,7 +218,7 @@ QuickSwitchMaxWidth=1 # 0/1
 # ShowTaskBar=1 # 0/1
 
 #  Task bar at top of the screen
-TaskBarAtTop=1 # 0/1
+TaskBarAtTop=0 # 0/1
 
 #  Keep the task bar below regular windows
 # TaskBarKeepBelow=0 # 0/1
@@ -257,7 +257,7 @@ TaskBarShowMailboxStatus=0 # 0/1
 TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
-TaskBarShowWindows=0 # 0/1
+TaskBarShowWindows=1 # 0/1
 
 #  Show 'show desktop' button on taskbar
 TaskBarShowShowDesktopButton=0 # 0/1
@@ -278,7 +278,7 @@ TaskBarShowTray=0 # 0/1
 # TaskBarShowAllWindows=0 # 0/1
 
 #  Show icons of windows on the task bar
-TaskBarShowWindowIcons=0 # 0/1
+TaskBarShowWindowIcons=1 # 0/1
 
 #  Show 'Start' menu on task bar
 TaskBarShowStartMenu=1 # 0/1
@@ -1330,7 +1330,9 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 # Gradients=""
 
 #  
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+#### WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+#
+WorkspaceNames=" 1 ", " 2 "
 #
 # icewmbg preferences
 #
