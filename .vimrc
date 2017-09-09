@@ -9,11 +9,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 "Mis plugins
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'morhetz/gruvbox'
+"Plugin 'morhetz/gruvbox'
 "Plugin 'albertorestifo/github.vim'
 "Plugin 'dracula/vim'
 "Plugin 'altercation/vim-colors-solarized'
@@ -38,9 +38,10 @@ set timeoutlen=1000 ttimeoutlen=0
 
 "Enable syntax highlighting
 syntax on
-"set t_Co=256
-set background=light
-colorscheme gruvbox
+"enable 256 colors
+set t_Co=256
+set background=dark
+"colorscheme gruvbox
 "colorscheme solarized
 
 "Set extra options when running in GUI mode
