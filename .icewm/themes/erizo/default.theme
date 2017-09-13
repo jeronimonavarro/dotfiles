@@ -4,16 +4,16 @@ ThemeAuthor="Ren Canteros Sousa <ren.kudun@gmail.com>"
 License="GPL"
 Look=flat
 
-TitleBarHeight=24
-TitleButtonsSupported="xmis"
-TitleBarJustify=1
-ShowMenuButtonIcon=1
+TitleBarHeight=18
+TitleButtonsSupported="xmi"
+TitleBarCentered=1
+ShowMenuButtonIcon=0
 RolloverButtonsSupported=1
 
 BorderSizeX=0
 BorderSizeY=0
-CornerSizeX=24
-CornerSizeY=24
+CornerSizeX=18
+CornerSizeY=18
 DlgBorderSizeX=0
 DlgBorderSizeY=0
 
@@ -21,8 +21,8 @@ ColorNormalBorder="#404040"
 ColorActiveBorder="#51a0f3"
 ColorActiveTitleBar="#51a0f3"
 ColorNormalTitleBar="#404040"
-ColorNormalTitleBarText="#404040"
-ColorActiveTitleBarText="#878787"
+ColorNormalTitleBarText="#ffffff"
+ColorActiveTitleBarText="#ffffff"
 ColorActiveTitleBarShadow=""
 
 ColorNormalMenu="#3a3a3a"
