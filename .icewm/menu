@@ -13,8 +13,9 @@ prog "Terminal urxvt" utilities-terminal urxvtc-256color
 prog "Firefox" firefox xdg-open about:blank
 prog "Google Chrome" google-chrome google-chrome
 prog Geany geany geany
-prog Nautilus utilities-file-manager nautilus 
-#prog "PCManFM" utilities-file-manager pcmanfm 
+prog "pgAdmin" pgadmin3 pgadmin3 
+#prog Nautilus utilities-file-manager nautilus 
+prog "PCManFM" utilities-file-manager pcmanfm 
 prog "Oracle VM VirtualBox" system-virtualbox VirtualBox 
 prog Gimp gimp gimp
 separator
