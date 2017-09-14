@@ -6,16 +6,17 @@ Look=flat
 
 TitleBarHeight=18
 TitleButtonsSupported="xmi"
-TitleBarCentered=1
+TitleBarJustify=0
+TitleBarHorzOffset=-25
 ShowMenuButtonIcon=0
 RolloverButtonsSupported=1
 
-BorderSizeX=0
-BorderSizeY=0
+BorderSizeX=1
+BorderSizeY=1
 CornerSizeX=18
 CornerSizeY=18
-DlgBorderSizeX=0
-DlgBorderSizeY=0
+DlgBorderSizeX=18
+DlgBorderSizeY=18
 
 ColorNormalBorder="#404040"
 ColorActiveBorder="#51a0f3"
