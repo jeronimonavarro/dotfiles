@@ -59,7 +59,8 @@ ColorMinimizedTaskBarAppText="#555555"
 #DesktopBackgroundColor="rgb:aa/a1/84"
 DesktopBackgroundCenter = 1
 DesktopBackgroundScaled = 1
-DesktopBackgroundImage = 'dots.jpg'
+##DesktopBackgroundImage = 'dots.jpg'
+DesktopBackgroundImage = 'nintendo_scaled.jpg'
 ##DesktopBackgroundImage = 'rebirth.png'
 
 ColorToolTip="#51a0f3"
