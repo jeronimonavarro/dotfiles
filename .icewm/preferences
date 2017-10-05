@@ -77,31 +77,31 @@
 # ConsiderSizeHintsMaximized=1 # 0/1
 
 #  Center maximized windows which can't fit the screen (like terminals)
-CenterMaximizedWindows=1 # 0/1
+# CenterMaximizedWindows=0 # 0/1
 
 #  Hide window borders if window is maximized
-HideBordersMaximized=1 # 0/1
+# HideBordersMaximized=0 # 0/1
 
 #  Maximized windows can be resized
 # SizeMaximized=0 # 0/1
 
 #  Show position status window during move/resize
-ShowMoveSizeStatus=1 # 0/1
+# ShowMoveSizeStatus=1 # 0/1
 
 #  Show name of current workspace while switching
-ShowWorkspaceStatus=1 # 0/1
+# ShowWorkspaceStatus=1 # 0/1
 
 #  Display mini-icons on desktop for minimized windows
-MinimizeToDesktop=0 # 0/1
+# MinimizeToDesktop=0 # 0/1
 
 #  Place the mini-icons horizontal instead of vertical
-MiniIconsPlaceHorizontal=0 # 0/1
+# MiniIconsPlaceHorizontal=0 # 0/1
 
 #  Place new mini-icons from right to left
 # MiniIconsRightToLeft=0 # 0/1
 
 #  Place new mini-icons from bottom to top
-MiniIconsBottomToTop=1 # 0/1
+# MiniIconsBottomToTop=0 # 0/1
 
 #  Always maintain focus under mouse window (makes some keyboard support non-functional or unreliable
 # StrongPointerFocus=0 # 0/1
@@ -119,13 +119,13 @@ MiniIconsBottomToTop=1 # 0/1
 # SmartPlacement=1 # 0/1
 
 #  Hide title bar when maximized
-HideTitleBarWhenMaximized=0 # 0/1
+# HideTitleBarWhenMaximized=0 # 0/1
 
 #  Center large windows
-CenterLarge=1 # 0/1
+# CenterLarge=0 # 0/1
 
 #  Center dialogs on owner window
-CenterTransientsOnOwner=1 # 0/1
+# CenterTransientsOnOwner=1 # 0/1
 
 #  Menus track mouse even with no mouse buttons held
 # MenuMouseTracking=0 # 0/1
@@ -179,7 +179,7 @@ CenterTransientsOnOwner=1 # 0/1
 QuickSwitchSmallWindow=1 # 0/1
 
 #  Go trough all window titles and choose width of the longest one
-QuickSwitchMaxWidth=1 # 0/1
+# QuickSwitchMaxWidth=0 # 0/1
 
 #  Place the icons and titles vertical instead of horizontal
 # QuickSwitchVertical=1 # 0/1
@@ -218,34 +218,34 @@ QuickSwitchMaxWidth=1 # 0/1
 # ShowTaskBar=1 # 0/1
 
 #  Task bar at top of the screen
-TaskBarAtTop=0 # 0/1
+# TaskBarAtTop=0 # 0/1
 
 #  Keep the task bar below regular windows
 # TaskBarKeepBelow=0 # 0/1
 
 #  Auto hide task bar after delay
-TaskBarAutoHide=0 # 0/1
+# TaskBarAutoHide=0 # 0/1
 
 #  Auto show task bar when fullscreen window active
-TaskBarFullscreenAutoShow=0 # 0/1
+# TaskBarFullscreenAutoShow=1 # 0/1
 
 #  Show clock on task bar
-TaskBarShowClock=1 # 0/1
+# TaskBarShowClock=1 # 0/1
 
 #  Show APM/ACPI/Battery/Power status monitor on task bar
-TaskBarShowAPMStatus=0 # 0/1
+# TaskBarShowAPMStatus=0 # 0/1
 
 #  Enable TaskBarShowAPMStatus if a battery is present
-TaskBarShowAPMAuto=1 # 0/1
+# TaskBarShowAPMAuto=1 # 0/1
 
 #  Show APM status on task bar in time-format
 # TaskBarShowAPMTime=1 # 0/1
 
 #  Show APM status in graph mode
-TaskBarShowAPMGraph=1 # 0/1
+# TaskBarShowAPMGraph=1 # 0/1
 
 #  Show mailbox status on task bar
-TaskBarShowMailboxStatus=0 # 0/1
+TaskBarShowMailboxStatus=1 # 0/1
 
 #  Beep when new mail arrives
 # TaskBarMailboxStatusBeepOnNewMail=0 # 0/1
@@ -254,19 +254,19 @@ TaskBarShowMailboxStatus=0 # 0/1
 # TaskBarMailboxStatusCountMessages=0 # 0/1
 
 #  Show workspace switching buttons on task bar
-TaskBarShowWorkspaces=1 # 0/1
+# TaskBarShowWorkspaces=1 # 0/1
 
 #  Show windows on the taskbar
-TaskBarShowWindows=1 # 0/1
+# TaskBarShowWindows=1 # 0/1
 
 #  Show 'show desktop' button on taskbar
-TaskBarShowShowDesktopButton=0 # 0/1
+# TaskBarShowShowDesktopButton=1 # 0/1
 
 #  Show Ellipsis in taskbar items
-# ShowEllipsis=0 # 0/1
+# ShowEllipsis=1 # 0/1
 
 #  Show windows in the tray
-TaskBarShowTray=0 # 0/1
+# TaskBarShowTray=1 # 0/1
 
 #  Show windows from all workspaces on tray
 # TrayShowAllWindows=1 # 0/1
@@ -278,19 +278,19 @@ TaskBarShowTray=0 # 0/1
 # TaskBarShowAllWindows=0 # 0/1
 
 #  Show icons of windows on the task bar
-TaskBarShowWindowIcons=1 # 0/1
+# TaskBarShowWindowIcons=1 # 0/1
 
 #  Show 'Start' menu on task bar
-TaskBarShowStartMenu=1 # 0/1
+# TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
-TaskBarShowWindowListMenu=0 # 0/1
+# TaskBarShowWindowListMenu=1 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
-TaskBarShowCPUStatus=1 # 0/1
+# TaskBarShowCPUStatus=1 # 0/1
 
 #  Show RAM usage in CPU status tool tip
-# CPUStatusShowRamUsage=0 # 0/1
+# CPUStatusShowRamUsage=1 # 0/1
 
 #  Show swap usage in CPU status tool tip
 # CPUStatusShowSwapUsage=1 # 0/1
@@ -302,19 +302,19 @@ TaskBarShowCPUStatus=1 # 0/1
 # CPUStatusShowCpuFreq=1 # 0/1
 
 #  Show memory usage status on task bar (Linux only)
-TaskBarShowMEMStatus=1 # 0/1
+# TaskBarShowMEMStatus=1 # 0/1
 
 #  Show network status on task bar (Linux only)
-TaskBarShowNetStatus=1 # 0/1
+# TaskBarShowNetStatus=1 # 0/1
 
 #  Show a button to collapse the taskbar
-TaskBarShowCollapseButton=0 # 0/1
+# TaskBarShowCollapseButton=0 # 0/1
 
 #  Use double-height task bar
 # TaskBarDoubleHeight=0 # 0/1
 
 #  Place workspace pager on left, not right
-TaskBarWorkspacesLeft=1 # 0/1
+# TaskBarWorkspacesLeft=1 # 0/1
 
 #  Place workspace pager on top row when using dual-height taskbar
 # TaskBarWorkspacesTop=0 # 0/1
@@ -356,7 +356,7 @@ TaskBarWorkspacesLeft=1 # 0/1
 # ShowLogoutMenu=1 # 0/1
 
 #  Show the help menu item
-ShowHelp=0 # 0/1
+# ShowHelp=1 # 0/1
 
 #  Show logout submenu
 # ShowLogoutSubMenu=1 # 0/1
@@ -380,13 +380,13 @@ ShowHelp=0 # 0/1
 # EnableAddressBar=1 # 0/1
 
 #  Show address bar in task bar
-ShowAddressBar=0 # 0/1
+# ShowAddressBar=1 # 0/1
 
 #  Overrides automatic multiple byte detection
 # MultiByte=1 # 0/1
 
 #  Confirm logout
-ConfirmLogout=0 # 0/1
+# ConfirmLogout=1 # 0/1
 
 #  Don't cut client windows by shapes set trough frame corner pixmap
 # ShapesProtectClientWindow=1 # 0/1
@@ -428,10 +428,10 @@ ConfirmLogout=0 # 0/1
 # ToolTipTime=0 # [0-60000]
 
 #  Delay before task bar is hidden
-#AutoHideDelay=3000 # [0-5000]
+# AutoHideDelay=300 # [0-5000]
 
 #  Delay before task bar is shown
-#AutoShowDelay=50 # [0-5000]
+# AutoShowDelay=500 # [0-5000]
 
 #  Delay before windows are auto raised
 # AutoRaiseDelay=400 # [0-5000]
@@ -494,16 +494,16 @@ ConfirmLogout=0 # 0/1
 # TaskBarCPUDelay=500 # [10-3600000]
 
 #  Width of CPU Monitor
-TaskBarCPUSamples=20 # [2-1000]
+# TaskBarCPUSamples=20 # [2-1000]
 
 #  Width of Memory Monitor
-TaskBarMEMSamples=20 # [2-1000]
+# TaskBarMEMSamples=20 # [2-1000]
 
 #  Delay between Memory Monitor samples in ms
 # TaskBarMEMDelay=500 # [10-3600000]
 
-Width of Net Monitor
-TaskBarNetSamples=20 # [2-1000]
+#  Width of Net Monitor
+# TaskBarNetSamples=20 # [2-1000]
 
 #  Delay between Net Monitor samples in ms
 # TaskBarNetDelay=500 # [10-3600000]
@@ -515,7 +515,7 @@ TaskbarButtonWidthDivisor=5 # [1-25]
 # TaskBarWidthPercentage=100 # [0-100]
 
 #  Taskbar justify left, right or center
-TaskBarJustify="center"
+# TaskBarJustify="left"
 
 #  Width of APM Monitor
 # TaskBarApmGraphWidth=10 # [1-1000]
@@ -539,10 +539,10 @@ TaskBarJustify="center"
 # NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/home/jnavarro/.local/share/icons/Hedera/16/applications:/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/Adwaita/scalable/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/icons/hicolor/scalable/apps:/usr/share/pixmaps"
+IconPath="/usr/share/icons/Adwaita/16x16/apps:/usr/share/icons/hicolor/16x16/apps:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
-# MailBoxPath="pop3://user:pass@mail:port/path"
+# MailBoxPath=""
 
 #  Command to run on mailbox
 # MailCommand="xterm -name alpine -title ALPINE -e alpine"
@@ -554,10 +554,7 @@ IconPath="/home/jnavarro/.local/share/icons/Hedera/16/applications:/usr/share/ic
 # NewMailCommand=""
 
 #  Command to lock display/screensaver
-LockCommand="i3lock -c 000000 -n"
-
-#  Command to suspend
-SuspendCommand="/bin/sh -c 'systemctl suspend ||:'"
+LockCommand="xscreensaver-command -lock || xlock -mousemotion"
 
 #  Command to run on clock
 # ClockCommand="xclock -name icewm -title Clock"
@@ -602,11 +599,10 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="wlp0s20u2"
+NetworkStatusDevice="eth0"
 
 #  Clock Time format (strftime format string)
-TimeFormat=" %R "
-#TimeFormat="%R, %a %d de %b"
+# TimeFormat="%X"
 
 #  Alternate Clock Time format (e.g. for blinking effects)
 # TimeFormatAlt=""
@@ -874,7 +870,7 @@ TimeFormat=" %R "
 # TaskBarClockLeds=0 # 0/1
 
 #  Surround the tray with plastic border
-TrayDrawBevel=1 # 0/1
+# TrayDrawBevel=0 # 0/1
 
 #  Draw window title centered (obsoleted by TitleBarJustify)
 # TitleBarCentered=0 # 0/1
@@ -886,7 +882,7 @@ TrayDrawBevel=1 # 0/1
 # TitleBarJoinRight=0 # 0/1
 
 #  Show application icon over menu button
-ShowMenuButtonIcon=0 # 0/1
+# ShowMenuButtonIcon=1 # 0/1
 
 #  Horizontal window border
 # BorderSizeX=6 # [0-128]
@@ -949,7 +945,7 @@ ShowMenuButtonIcon=0 # 0/1
 # QuickSwitchIconBorder=2 # [0-64]
 
 #  Height of the separator between (all reachable) icons and text, 0 to avoid it
-QuickSwitchSeparatorSize=0 # [0-64]
+# QuickSwitchSeparatorSize=6 # [0-64]
 
 #  Theme author, e-mail address, credits
 # ThemeAuthor=""
@@ -958,10 +954,10 @@ QuickSwitchSeparatorSize=0 # [0-64]
 # ThemeDescription=""
 
 #  Titlebar buttons from left to right (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
-#TitleButtonsLeft="sdr"
+# TitleButtonsLeft="s"
 
 #  Titlebar buttons from right to left (x=close,  m=max,  i=min,  h=hide, r=rollup,       s=sysmenu,      d=depth)
-#TitleButtonsRight="xmih"
+# TitleButtonsRight="xmir"
 
 #  Titlebar buttons supported by theme (x,m,i,r,h,s,d)
 # TitleButtonsSupported="xmis"
@@ -1024,13 +1020,13 @@ QuickSwitchSeparatorSize=0 # [0-64]
 # NormalWorkspaceFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
 
 #  fallback: NormalButtonFontName
-NormalWorkspaceFontNameXft="noto-sans:size=8"
+# NormalWorkspaceFontNameXft="sans-serif:size=12"
 
 #  fallback: ActiveButtonFontName
 # ActiveWorkspaceFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
 
 #  fallback: ActiveButtonFontName
-ActiveWorkspaceFontNameXft="noto-sans:size=9"
+# ActiveWorkspaceFontNameXft="sans-serif:size=12"
 
 #  
 # MinimizedWindowFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
@@ -1330,9 +1326,9 @@ ActiveWorkspaceFontNameXft="noto-sans:size=9"
 # Gradients=""
 
 #  
-#### WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
-#
-WorkspaceNames=" 1 ", " 2 "
+
+WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+
 #
 # icewmbg preferences
 #
@@ -1341,26 +1337,25 @@ WorkspaceNames=" 1 ", " 2 "
 #
 
 #  Display desktop background centered and not tiled
-#DesktopBackgroundCenter=1 # 0/1
+DesktopBackgroundCenter=0 # 0/1
 
 #  Support for semitransparent terminals like Eterm or gnome-terminal
 # SupportSemitransparency=1 # 0/1
 
 #  Desktop background scaled to full screen
-#DesktopBackgroundScaled=1 # 0/1
+DesktopBackgroundScaled=1 # 0/1
 
 #  Desktop background color
 # DesktopBackgroundColor="rgb:00/20/40"
-#DesktopBackgroundColor="rgb:2D/2D/2D"
 
 #  Desktop background image
-#DesktopBackgroundImage="/usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg"
-#DesktopBackgroundImage="/home/jnavarro/Imágenes/cityscape-minimalism.jpg"
+DesktopBackgroundImage="/usr/share/wallpapers/openSUSEdefault/contents/images/1920x1080.jpg"
 
 #  Color to announce for semi-transparent windows
 # DesktopTransparencyColor=""
-#DesktopTransparencyColor="rgb:2D/2D/2D"
 
 #  Image to announce for semi-transparent windows
 # DesktopTransparencyImage=""
+
+#  
 

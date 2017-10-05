@@ -7,7 +7,7 @@ URxvt.urgentOnBell: False
 URxvt.cursorBlink: True
 !URxvt.letterSpace: -1
 !URxvt.iconFile: /usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png
-URxvt.iconFile: /home/jnavarro/.local/share/icons/la-capitaine-icon-theme/apps/scalable/utilities-terminal.png
+!URxvt.iconFile: /home/jnavarro/.local/share/icons/la-capitaine-icon-theme/apps/scalable/utilities-terminal.png
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -22,21 +22,24 @@ URxvt*scrollTtyKeypress: true
 URxvt*locale: true
 
 ! Tipografias
-URxvt.font: xft:Droid Sans Mono:size=10
-URxvt.boldFont: xft:Droid Sans Mono:style=bold:size=10
-!URxvt*font: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
-!URxvt*boldFont: -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-9
+URxvt*font: xft:Source Code Pro:size=10
+!URxvt*font: xft:Source Code Pro:size=10:antialias=true:hinting=true
+!URxvt*boldFont: xft:Source Code Pro:size=12:antialias=true:hinting=true
+!URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=12:antialias=true:hinting=true
+!URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=12:antialias=true:hinting=true
+!URxvt.font: 8x13
+!URxvt*boldFont: 8x13
 
 ! Geometria
-URxvt.geometry: 95x32
+URxvt.geometry: 106x36
 
 ! Borders
 ! pixels for external border
-URxvt*externalBorder:     0
+!URxvt*externalBorder:     0
 ! pixels for internal border
-URxvt*internalBorder:     15
+!URxvt*internalBorder:     15
 ! remove border
-URxvt*borderLess:         false
+!URxvt*borderLess:         false
 
 ! Extensiones
 URxvt.perl-ext-common: selection-to-clipboard,fullscreen

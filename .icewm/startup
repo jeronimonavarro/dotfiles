@@ -1,8 +1,8 @@
 #!/bin/sh
 
-dunst -lb "#C5BEC2" -nb "#C5BEC2" -cb "#C5BEC2" -lf "#17262A" -bf "#17262A" -cf "#A68E9A" &
+dunst &
 pulseaudio -D
 urxvtd-256color &
 compton -b &
 nm-applet &
-volctl &
+## volctl &

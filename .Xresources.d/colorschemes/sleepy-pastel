@@ -1,0 +1,37 @@
+! Sleepy Pastel colorscheme
+
+*.foreground:  #dfdee0
+*.background:  #2e3436
+*.cursorColor: #dfdee0
+
+! Black
+*.color0:      #2e3436 
+*.color8:      #4c5153
+
+! Red
+*.color1:      #D7616D
+*.color9:      #DC8383
+
+! Green
+*.color2:      #93cf55
+*.color10:     #8ae234
+
+! Yellow
+*.color3:      #CB956D
+*.color11:     #CB956D
+
+! Blue
+*.color4:      #729FCF
+*.color12:     #729FCF
+
+! Magenta
+*.color5:      #c0afd3
+*.color13:     #c0afd3
+
+! Cyan
+*.color6:      #5DB895
+*.color14:     #5DB895
+
+! White
+*.color7:      #dfdee0
+*.color15:     #eeeeec

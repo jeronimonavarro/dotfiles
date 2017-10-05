@@ -13,10 +13,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'morhetz/gruvbox'
-"Plugin 'albertorestifo/github.vim'
-"Plugin 'dracula/vim'
-"Plugin 'altercation/vim-colors-solarized'
+Plugin 'jsit/disco.vim'
+"Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'veloce/vim-aldmeris'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,27 +37,19 @@ set timeoutlen=1000 ttimeoutlen=0
 
 "Enable syntax highlighting
 syntax on
+
 "enable 256 colors
 set t_Co=256
-set background=dark
-"colorscheme gruvbox
-"colorscheme solarized
-
-"Set extra options when running in GUI mode
-"if has("gui_running")
-"   set guioptions-=T
-"   set guioptions-=r
-"   set guioptions-=m
-"   set guioptions-=e
-"   set guitablabel=%M\ %t
-"endif
+"let g:aldmeris_termcolors = "tango"
+set background=light
+colorscheme disco
 
 "Color numero de linea actual
 "hi LineNr ctermfg=Gray
 
-"set relativenumber
-"set colorcolumn=85
-"set number
+set relativenumber
+"set colorcolumn=90
+set number
 
 "Oculta el buffer si tiene cambios al abrir otro (!)
 set hidden
@@ -92,7 +83,7 @@ set showmatch
 "set laststatus=1
 
 "Turn backup and swap off
-set backup
+"set backup
 set noswapfile
 set nowb
 

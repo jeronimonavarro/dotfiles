@@ -1,0 +1,37 @@
+! URxvt colorscheme
+
+*.foreground:  #000000
+*.background:  #fafafa
+*.cursorColor: #000000
+
+! Black
+*.color0:      #000000 
+*.color8:      #151515
+
+! Red
+*.color9:      #cd0000
+*.color1:      #cd0000
+
+! Green
+*.color2:      #50A14F
+*.color10:     #50A14F
+
+! Yellow
+*.color3:      #986801
+*.color11:     #c18401
+
+! Blue
+*.color4:      #0000cd
+*.color12:     #0000cd
+
+! Magenta
+*.color5:      #a626a4
+*.color13:     #cd00cd
+
+! Cyan
+*.color6:      #0184bc
+*.color14:     #00cdcd
+
+! White
+*.color7:      #fafafa
+*.color15:     #e5e5e5

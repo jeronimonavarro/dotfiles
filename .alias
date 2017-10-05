@@ -1,7 +1,7 @@
 # base
 alias l="ls"       
-alias la="ls -lah"       
-alias ll="ls -lh"       
+alias la="ls -ltrah"       
+alias ll="ls -ltrh"       
 alias ld="ls -ldh */"   # Solo directories
 alias ..="cd .."
 alias ...="cd ../.."
@@ -9,6 +9,7 @@ alias ....="cd ../../.."
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ee='exit'
+alias cal='cal -3'
 # util
 alias du='du -sxh'
 alias cc='clear'
@@ -40,3 +41,14 @@ alias dup='sudo zypper dup'
 alias remove='sudo zypper rm'
 alias purge='sudo zypper remove -u'
 alias ref='sudo zypper ref'
+# git
+alias gs='git status'
+alias ga='git add'
+alias gco='git commit'
+alias gch='git checkout'
+alias gcb='git checkout -b'
+alias gm='git merge'
+alias gl='git log --oneline --graph --decorate'
+alias gla='git log --oneline --graph --decorate --all'
+alias gr='git reset HEAD'
+alias gd='git diff --'
