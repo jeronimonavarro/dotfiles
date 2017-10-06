@@ -25,11 +25,6 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
-export EDITOR=/usr/bin/vim
-export TERM="rxvt-unicode-256color"
-## export TERM=xterm-256color
-export PROMPT_DIRTRIM=2
-
 set timeoutlen=1000
 set ttimeoutlen=0
 
@@ -42,10 +37,3 @@ if [[ $EUID -eq 0 ]]; then
    # Root prompt
    PS1="\[\e[1;31m\]$PS1\[\e[m\]"
 fi
-
-# Fix variable TERM en tmux
-if [ -n "$TMUX" ]; then
-   export TERM="screen-256color"
-fi
-
-export PATH="$HOME/Descargas/apps/rakudo/install/bin:$HOME/Descargas/apps/rakudo/install/share/perl6/site/bin:$PATH"
