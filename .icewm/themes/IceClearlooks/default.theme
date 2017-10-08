@@ -106,7 +106,7 @@ ColorClockText="rgb:00/00/00"
 DesktopBackgroundImage="wallpapers/centos_1366x768.jpg"
 
 TitleFontNameXft		=	"sans-serif:size=10:bold"
-MenuFontNameXft			=	"sans-serif:size=10"
+MenuFontNameXft			=	"sans-serif:size=9"
 MinimizedWindowFontNameXft	=	"sans-serif:size=10"
 ActiveButtonFontNameXft		=	"sans-serif:size=10"
 NormalButtonFontNameXft		=	"sans-serif:size=10"
