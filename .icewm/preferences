@@ -356,7 +356,7 @@ TaskBarShowMailboxStatus=1 # 0/1
 # ShowLogoutMenu=1 # 0/1
 
 #  Show the help menu item
-# ShowHelp=1 # 0/1
+ShowHelp=0 # 0/1
 
 #  Show logout submenu
 # ShowLogoutSubMenu=1 # 0/1
@@ -368,7 +368,7 @@ TaskBarShowMailboxStatus=1 # 0/1
 # ShowRun=1 # 0/1
 
 #  Show the window menu item
-# ShowWindowList=1 # 0/1
+ShowWindowList=0 # 0/1
 
 #  Allow to switch a window to fullscreen
 # AllowFullscreen=1 # 0/1
