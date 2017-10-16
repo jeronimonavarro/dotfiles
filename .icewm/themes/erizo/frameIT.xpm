@@ -1,5 +1,5 @@
 /* XPM */
-static char * frameIT_xpm[] = {
+static char * frameAT_xpm[] = {
 "1 1 1 1",
-" 	c #AFC5D4",
+" 	c #5B89B1",
 " "};

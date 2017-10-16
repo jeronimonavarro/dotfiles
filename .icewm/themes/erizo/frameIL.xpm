@@ -1,6 +1,6 @@
 /* XPM */
-static char * frameIL_xpm[] = {
+static char * frameAL_xpm[] = {
 "1 1 2 1",
 " 	c None",
-".	c #85A2B5",
+".	c #4D6E8B",
 "."};

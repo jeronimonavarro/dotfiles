@@ -1,8 +1,8 @@
 /* XPM */
-static char * frameABR_xpm[] = {
+static char * frameIBR_xpm[] = {
 "18 18 2 1",
 " 	c None",
-".	c #4D6E8B",
+".	c #85A2B5",
 "                 .",
 "                 .",
 "                 .",

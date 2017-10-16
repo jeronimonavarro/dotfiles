@@ -18,10 +18,10 @@ CornerSizeY=18
 DlgBorderSizeX=1
 DlgBorderSizeY=1
 
-ColorNormalBorder="#86a3b6"
-ColorActiveBorder="#4e7290"
-ColorActiveTitleBar="#4e7290"
-ColorNormalTitleBar="#86a3b6"
+ColorNormalBorder="#4e7290"
+ColorActiveBorder="#86a3b6"
+ColorActiveTitleBar="#86a3b6"
+ColorNormalTitleBar="#4e7290"
 ColorNormalTitleBarText="#ffffff"
 ColorActiveTitleBarText="#ffffff"
 ColorActiveTitleBarShadow=""
@@ -96,7 +96,7 @@ ColorQuickSwitch="#3a3a3a"
 ColorQuickSwitchText="white"
 ColorQuickSwitchActive="#4e9ef1"
 
-TitleFontNameXft="droid sans:size=9:bold"
+TitleFontNameXft="droid sans:size=8:bold"
 MenuFontNameXft="droid sans:size=9"
 StatusFontNameXft="droid sans:size=10"
 QuickSwitchFontNameXft="droid sans:size=10"
