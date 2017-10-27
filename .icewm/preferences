@@ -260,7 +260,7 @@ TaskBarShowMailboxStatus=1 # 0/1
 # TaskBarShowWindows=1 # 0/1
 
 #  Show 'show desktop' button on taskbar
-# TaskBarShowShowDesktopButton=1 # 0/1
+TaskBarShowShowDesktopButton=0 # 0/1
 
 #  Show Ellipsis in taskbar items
 # ShowEllipsis=1 # 0/1
@@ -284,10 +284,10 @@ TaskBarShowMailboxStatus=1 # 0/1
 # TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
-# TaskBarShowWindowListMenu=1 # 0/1
+TaskBarShowWindowListMenu=0 # 0/1
 
 #  Show CPU status on task bar (Linux & Solaris)
-# TaskBarShowCPUStatus=1 # 0/1
+TaskBarShowCPUStatus=0 # 0/1
 
 #  Show RAM usage in CPU status tool tip
 # CPUStatusShowRamUsage=1 # 0/1
@@ -302,10 +302,10 @@ TaskBarShowMailboxStatus=1 # 0/1
 # CPUStatusShowCpuFreq=1 # 0/1
 
 #  Show memory usage status on task bar (Linux only)
-# TaskBarShowMEMStatus=1 # 0/1
+TaskBarShowMEMStatus=0 # 0/1
 
 #  Show network status on task bar (Linux only)
-# TaskBarShowNetStatus=1 # 0/1
+TaskBarShowNetStatus=0 # 0/1
 
 #  Show a button to collapse the taskbar
 # TaskBarShowCollapseButton=0 # 0/1
@@ -347,7 +347,7 @@ TaskBarShowMailboxStatus=1 # 0/1
 # ShowSettingsMenu=1 # 0/1
 
 #  Show focus mode submenu
-# ShowFocusModeMenu=1 # 0/1
+ShowFocusModeMenu=0 # 0/1
 
 #  Show themes submenu
 # ShowThemesMenu=1 # 0/1
@@ -599,7 +599,7 @@ RebootCommand="/bin/sh -c 'systemctl reboot ||:'"
 # AddressBarCommand=""
 
 #  Network device to show status for
-NetworkStatusDevice="eth0"
+NetworkStatusDevice="wlp0s20u2"
 
 #  Clock Time format (strftime format string)
 # TimeFormat="%X"
@@ -1327,7 +1327,7 @@ NetworkStatusDevice="eth0"
 
 #  
 
-WorkspaceNames=" 1 ", " 2 ", " 3 ", " 4 "
+WorkspaceNames=" 1 ", " 2 "
 
 #
 # icewmbg preferences

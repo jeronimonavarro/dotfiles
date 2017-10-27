@@ -4,6 +4,6 @@
 # since modifications to this file will be discarded when you
 # (re)install icewm.
 #
-prog urxvt utilities-terminal urxvtc-256color
-prog firefox web-browser xdg-open about:blank
+#prog urxvt utilities-terminal urxvtc-256color
+#prog firefox web-browser xdg-open about:blank
 
