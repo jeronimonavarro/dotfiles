@@ -187,8 +187,8 @@ filextype *.djvu
 
 " Audio
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
-       \ {Play using ffplay}
-       \ ffplay -nodisp %c,
+       \ {Play using mpv}
+       \ mpv --hwdec=vaapi --player-operation-mode=pseudo-gui %f &,
        \ {Play using MPlayer}
        \ mplayer %f,
 fileviewer *.mp3 mp3info
@@ -198,8 +198,8 @@ fileviewer *.flac soxi
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
          \*.as[fx]
-        \ {View using ffplay}
-        \ ffplay -fs %f,
+        \ {View using mpv}
+        \ mpv --hwdec=vaapi --player-operation-mode=pseudo-gui %f &,
         \ {View using Dragon}
         \ dragon %f:p,
         \ {View using mplayer}
@@ -211,8 +211,6 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
 
 " Web
 filextype *.html,*.htm
-        \ {Open with dwb}
-        \ dwb %f %i &,
         \ {Open with firefox}
         \ firefox %f &,
         \ {Open with uzbl}
@@ -228,8 +226,8 @@ fileviewer *.[1-8] man ./%c | col -b
 
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-        \ {View in sxiv}
-        \ sxiv,
+        \ {View in feh}
+        \ feh %f &,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
