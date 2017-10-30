@@ -225,15 +225,22 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " Images
-filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif
         \ {View in feh}
         \ feh %f &,
         \ {View in gpicview}
         \ gpicview %c,
         \ {View in shotwell}
         \ shotwell,
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif
          \ convert -identify %f -verbose /dev/null
+
+" Other Images
+filextype *.xpm,*.xcf
+        \ {Edit in gimp}
+        \ gimp %f &,
+"fileviewer *.xpm
+"         \ convert -identify %f -verbose /dev/null
 
 " OpenRaster
 filextype *.ora
