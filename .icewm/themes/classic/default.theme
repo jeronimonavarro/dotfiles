@@ -1,0 +1,107 @@
+ThemeName="erizo"
+ThemeDescription="Un tema oscuro con un toque de azul"
+ThemeAuthor="Jerónimo Navarro <>"
+License="GPL"
+Look=flat
+
+TitleBarHeight=18
+TitleButtonsSupported="xmi"
+TitleBarJustify=50
+TitleBarHorzOffset=25
+ShowMenuButtonIcon=0
+RolloverButtonsSupported=1
+
+BorderSizeX=1
+BorderSizeY=1
+CornerSizeX=18
+CornerSizeY=18
+DlgBorderSizeX=1
+DlgBorderSizeY=1
+
+ColorNormalBorder="#4e7290"
+ColorActiveBorder="#86a3b6"
+ColorActiveTitleBar="#86a3b6"
+ColorNormalTitleBar="#4e7290"
+ColorNormalTitleBarText="#ffffff"
+ColorActiveTitleBarText="#ffffff"
+ColorActiveTitleBarShadow=""
+
+ColorNormalMenu="#ededed"
+ColorActiveMenuItem="#4a90d9"
+ColorNormalMenuItemText="#2e3436"
+ColorActiveMenuItemText="#ffffff"
+ColorDisabledMenuItemText="#656865"
+
+ColorNormalButton="#ededed"
+ColorNormalButtonText="#2e3436"
+ColorActiveButton="#4a90d9"
+ColorActiveButtonText="#000000"
+
+ColorMoveSizeStatus="#4a90d9"
+ColorMoveSizeStatusText="#ffffff"
+
+ColorDefaultTaskBar="#e6e6e6"
+ColorNormalTaskBarApp="#e6e6e6"
+ColorNormalTaskBarAppText="#2e3436"
+ColorActiveTaskBarApp="#e6e6e6"
+ColorActiveTaskBarAppText="#2e3436"
+ColorMinimizedTaskBarApp="#e6e6e6"
+ColorMinimizedTaskBarAppText="#2e3436"
+
+#DesktopBackgroundColor="rgb:aa/a1/84"
+DesktopBackgroundCenter = 1
+DesktopBackgroundScaled = 1
+DesktopBackgroundImage = 'dots.jpg'
+
+ColorToolTip="#e2e2e2"
+ColorToolTipText="#2e3436"
+ColorLabel="#e2e2e2"
+ColorLabelText="#2e3436"
+
+ColorListBox="#e6e6e6"
+ColorListBoxText="2e3436"
+ColorListBoxSelection="#4a90d9"
+ColorListBoxSelectionText="#ffffff"
+
+ColorScrollBar="#e6e6e6"
+ColorScrollBarSlider="#e6e6e6"
+ColorScrollBarButton="#e6e6e6e6"
+ColorScrollBarButtonArrow="#2e3436"
+
+ColorClock=""
+ColorClockText="#2e3436"
+
+ColorCPUStatusUser="#22a9e1"
+ColorCPUStatusSystem="#255086"
+ColorCPUStatusNice="#bfbfbe"
+ColorCPUStatusIdle="#272727"
+ColorNetSend="#255086"
+ColorNetReceive="#bfbfbe"
+ColorNetIdle="#272727"
+ColorMEMStatusFree="#272727"
+ColorMEMStatusUser="#bfbfbe"
+ColorMEMStatusBuffers="#255086"
+ColorMEMStatusCached="#22a9e1"
+
+ColorQuickSwitch="#000000"
+ColorQuickSwitchText="#ffffff"
+ColorQuickSwitchActive="#4a90d9"
+
+TitleFontNameXft="droid sans:size=8:bold"
+MenuFontNameXft="droid sans:size=9"
+StatusFontNameXft="droid sans:size=10"
+QuickSwitchFontNameXft="droid sans:size=10"
+NormalButtonFontNameXft="droid sans:size=9"
+ActiveButtonFontNameXft="droid sans:size=9"
+NormalTaskBarFontNameXft="droid sans:size=9"
+ActiveTaskBarFontNameXft="droid sans:size=9"
+ToolButtonFontNameXft="droid sans:size=10"
+NormalWorkspaceFontNameXft="droid sans:size=9:bold"
+ActiveWorkspaceFontNameXft="droid sans:size=9:bold"
+MinimizedWindowFontNameXft="droid sans:size=9"
+ListBoxFontNameXft="droid sans:size=10"
+ToolTipFontNameXft="droid sans:size=10"
+ClockFontNameXft="droid sans:size=9"
+ApmFontNameXft="droid sans:size=10"
+InputFontNameXft="droid sans:size=10"
+LabelFontNameXft="droid sans:size=10"
