@@ -4,7 +4,7 @@ An IceWM (1.2.27) port of the 'Clearlooks' Metacity & GTK themes
 
 ThemeAuthor="unknown"
 
-Look=metal
+Look=flat
 
 RolloverButtonsSupported=1
 TitleButtonsSupported="xmis"
