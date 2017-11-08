@@ -1,0 +1,34 @@
+*foreground: #262626
+*background: #eeeeee
+
+! black
+*color0: #bcbcbc
+*color8: #eeeeee
+
+! red
+*color1: #ff0000
+*color9: #3a3a3a
+
+! green
+*color2: #5faf00
+*color10: #4e4e4e
+
+! yellow
+*color3: #6c6c6c
+*color11: #808080
+
+! blue
+*color12: #5f87d7
+*color4: #585858
+
+! magenta
+*color13: #af5fff
+*color5: #626262
+
+! cyan
+*color6: #949494
+*color14: #9e9e9e
+
+! white
+*color7: #1c1c1c
+*color15: #262626
