@@ -13,7 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'jsit/disco.vim'
+"Plugin 'jsit/disco.vim'
+Plugin 'nowk/genericdc'
 "Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'veloce/vim-aldmeris'
 
@@ -42,10 +43,10 @@ syntax on
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
 set background=light
-colorscheme disco
+colorscheme genericdc-light
 
 "Color numero de linea actual
-"hi LineNr ctermfg=Gray
+"hi LineNr ctermfg=LightGray
 
 set relativenumber
 "set colorcolumn=90
