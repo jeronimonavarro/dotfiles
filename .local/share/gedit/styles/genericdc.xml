@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<style-scheme id="genericdc" name="Genericdc" version="1.0">
+	<author>Jerónimo Navarro</author>
+	<_description>A light theme for Gedit</_description>
+
+	<!-- Dracula colors -->
+	<color name="background" value="#eeeeee"/>
+	<color name="current-line" value="#dcdcdc"/>
+	<color name="selection" value="#4e4e4e"/>
+	<color name="foreground" value="#262626"/>
+	<color name="comment" value="#9e9e9e"/>
+	<color name="cyan" value="#5f87d7"/>
+	<color name="green" value="#5faf00"/>
+	<color name="orange" value="#6c6c6c"/>
+	<color name="pink" value="#626262"/>
+	<color name="purple" value="#af5fff"/>
+	<color name="red" value="#3a3a3a"/>
+	<color name="yellow" value="#808080"/>
+
+	<!-- Helper colors -->
+	<color name="white" value="#ffffff"/>
+	<color name="bone-white" value="#f8f8f0"/>
+	<color name="weird-gray" value="#9e9e9e"/>
+
+	<style name="text" foreground="foreground" background="background"/>
+	<style name="selection" background="selection"/>
+	<style name="cursor" foreground="selection" background="background"/>
+	<style name="current-line" foreground="current-line" background="current-line"/>
+	<style name="line-numbers" foreground="weird-gray" background="background"/>
+	<style name="bracket-match" foreground="yellow" background="background" underline="true"/>
+	<style name="search-match" foreground="selection" background="yellow"/>
+
+	<style name="def:function" foreground="green"/>
+	<style name="def:identifier" foreground="pink"/>
+	<style name="def:keyword" foreground="pink"/>
+	<style name="def:number" foreground="purple" />
+	<style name="def:boolean" foreground="purple"/>
+	<style name="def:string" foreground="cyan"/>
+	<style name="def:special-char" foreground="pink"/>
+	<style name="def:function" foreground="green"/>
+	<style name="def:builtin" foreground="cyan"/>
+	<style name="def:type" foreground="green"/>
+	<style name="def:preprocessor" foreground="green"/>
+	<style name="def:comment" foreground="comment"/>
+	
+	<!-- Python-specific stuff -->
+	<style name="python:module-handler" foreground="pink"/>
+	<style name="python:function-name" foreground="green"/>
+	<style name="python:decorator" foreground="green"/>
+	<style name="python:class-name" foreground="white"/>
+	<style name="python:special-variable" foreground="cyan"/>
+	<style name="python:builtin-constant" foreground="purple"/>
+
+
+	<style name="def:specials" foreground="#f8f8f2"/>
+	<style name="def:statement" foreground="pink"/>
+
+	<style background="#bcbcbc" bold="true" foreground="#5faf00" name="diff:added-line"/>
+	<style foreground="#ff0000" name="diff:removed-line"/>
+	<style background="#bcbcbc" foreground="#5f87d7" name="diff:changed-line"/>
+
+</style-scheme>
