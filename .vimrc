@@ -14,7 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
 "Plugin 'jsit/disco.vim'
-Plugin 'nowk/genericdc'
+"Plugin 'nowk/genericdc'
 "Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'veloce/vim-aldmeris'
 
@@ -42,8 +42,8 @@ syntax on
 "enable 256 colors
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
-set background=light
-colorscheme genericdc-light
+"set background=light
+colorscheme builder-light
 
 "Color numero de linea actual
 "hi LineNr ctermfg=LightGray
