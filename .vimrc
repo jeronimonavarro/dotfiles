@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
+Plugin 'altercation/vim-colors-solarized'
 "Plugin 'viniciusban/vim-github-colorscheme'
 "Plugin 'jsit/disco.vim'
 "Plugin 'nowk/genericdc'
@@ -43,16 +44,18 @@ syntax on
 "enable 256 colors
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
-"set background=light
-colorscheme cobalt
-"colorscheme github
+set background=light
+colorscheme solarized
+"colorscheme builder-light
+"colorscheme cobalt
 
 "Color numero de linea actual
 "hi LineNr ctermfg=LightGray
 
-set relativenumber
+set foldcolumn=1
+"set relativenumber
 "set colorcolumn=90
-set number
+"set number
 
 "Oculta el buffer si tiene cambios al abrir otro (!)
 set hidden
@@ -83,7 +86,7 @@ set smartcase
 
 set showmatch
 
-"set laststatus=1
+set laststatus=2
 
 "Turn backup and swap off
 "set backup

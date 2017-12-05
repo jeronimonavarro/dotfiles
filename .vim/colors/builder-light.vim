@@ -5,7 +5,7 @@ if exists("syntax on")
   syntax reset
 endif
 
-let g:colors_name = "builder"
+let g:colors_name = "builder-light"
 
 hi Normal       ctermfg=0 ctermbg=7
 hi Special      ctermfg=13 ctermbg=NONE
@@ -25,7 +25,7 @@ hi Operator     ctermfg=11 ctermbg=NONE
 hi Error        ctermfg=9   ctermbg=NONE
 hi TODO         ctermfg=13 ctermbg=NONE
 hi linenr       ctermfg=15 ctermbg=NONE
-hi CursorLineNR ctermfg=0 ctermbg=15
+hi CursorLineNR ctermfg=7 ctermbg=NONE cterm=bold
 
 hi Visual          ctermfg=0 ctermbg=6
 hi SpecialKey      ctermfg=8 ctermbg=NONE
