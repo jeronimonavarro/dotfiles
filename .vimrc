@@ -44,13 +44,20 @@ syntax on
 "enable 256 colors
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
-set background=light
+set background=dark
 colorscheme solarized
 "colorscheme builder-light
 "colorscheme cobalt
 
 "Color numero de linea actual
 "hi LineNr ctermfg=LightGray
+
+if has("gui_running")
+   set guioptions-=T
+   set guioptions-=m
+   set guioptions-=r
+   set guioptions-=L
+endif
 
 set foldcolumn=1
 "set relativenumber
@@ -86,7 +93,7 @@ set smartcase
 
 set showmatch
 
-set laststatus=2
+"set laststatus=2
 
 "Turn backup and swap off
 "set backup
