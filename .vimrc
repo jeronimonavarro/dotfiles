@@ -44,7 +44,7 @@ syntax on
 "enable 256 colors
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
-set background=light
+set background=dark
 colorscheme solarized
 "colorscheme builder-light
 "colorscheme cobalt
@@ -58,6 +58,7 @@ if has("gui_running")
    set guioptions-=r
    set guioptions-=L
    set lines=40 columns=135
+   set guifont=Monospace
 endif
 
 set foldcolumn=1
