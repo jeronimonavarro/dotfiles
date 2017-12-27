@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 "Plugin 'viniciusban/vim-github-colorscheme'
 "Plugin 'jsit/disco.vim'
 "Plugin 'nowk/genericdc'
@@ -45,12 +45,13 @@ syntax on
 set t_Co=256
 "let g:aldmeris_termcolors = "tango"
 set background=light
-colorscheme solarized
+colorscheme default
 "colorscheme builder-light
 "colorscheme cobalt
 
 "Color numero de linea actual
 "hi LineNr ctermfg=LightGray
+hi Comment ctermfg=LightGray
 
 if has("gui_running")
    set guioptions-=T
