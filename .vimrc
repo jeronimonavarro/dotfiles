@@ -8,17 +8,10 @@ call vundle#begin()
 "let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"Mis plugins
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine'
-Plugin 'altercation/vim-colors-solarized'
-"Plugin 'viniciusban/vim-github-colorscheme'
-"Plugin 'jsit/disco.vim'
-"Plugin 'nowk/genericdc'
-"Plugin 'NLKNguyen/papercolor-theme'
-"Plugin 'veloce/vim-aldmeris'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,22 +28,17 @@ set noerrorbells visualbell t_vb=
 "Eliminating delays on ESC in vim
 set timeoutlen=1000 ttimeoutlen=0
 
-"Enable italics
-"let g:gruvbox_italic=1
-
 "Enable syntax highlighting
 syntax on
 
 "enable 256 colors
 set t_Co=256
-"let g:aldmeris_termcolors = "tango"
-set background=dark
-colorscheme solarized
-"colorscheme builder-light
-"colorscheme cobalt
+set background=light
+colorscheme default
 
 "Color numero de linea actual
-"hi LineNr ctermfg=LightGray
+hi Comment ctermfg=LightGray
+hi FoldColumn ctermbg=White
 
 if has("gui_running")
    set guioptions-=T
@@ -63,7 +51,7 @@ endif
 
 set foldcolumn=1
 "set relativenumber
-"set colorcolumn=90
+"set colorcolumn=95
 "set number
 
 "Oculta el buffer si tiene cambios al abrir otro (!)

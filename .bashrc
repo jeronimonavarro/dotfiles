@@ -25,9 +25,6 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
-set timeoutlen=1000
-set ttimeoutlen=0
-
 test -s ~/.alias && . ~/.alias || true
 test -s ~/.alias_especifico && . ~/.alias_especifico || true
 test -s ~/.functions && . ~/.functions || true
@@ -37,5 +34,5 @@ if [[ $EUID -eq 0 ]]; then
    # Root prompt
    PS1="\[\e[1;31m\]$PS1\[\e[m\]"
 else
-   PS1="\[\033[38;5;206m\]\u\[\033[38;5;245m\]@\[\033[38;5;081m\]\H \[\033[38;5;245m\]\w \[\033[38;5;206m\]$ \[\e[0m\]"
+   PS1="\[\e[0;35m\]\u\[\e[0;32m\]@\h \[\e[1;38m\]\w \[\e[0;35m\]$ \[\e[0m\]"
 fi
