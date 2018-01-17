@@ -1,12 +1,12 @@
 # base
-alias l="ls"       
-alias la="ls -ltrah"       
-alias ll="ls -ltrh"       
-alias ld="ls -ldh */"   # Solo directories
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias ls='ls --color=auto'
+alias l='ls'       
+alias la='ls -ltrah'
+alias ll='ls -ltrh'       
+alias ld='ls -ldh */'   # Solo directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 alias ee='exit'
 alias cal='cal -3'
